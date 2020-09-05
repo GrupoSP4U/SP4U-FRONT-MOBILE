@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Fund">#292929</color>
+    <color name="Green">#47FF0A</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Blue">#0AC2FF</color>
+    <color name="LightRed">#FD5E53</color>
+    <color name="DarkBlue">#2E6596</color>
+    <color name="LightPink">#FF8B8B</color>
+    <color name="DarkPink">#FF0AC2</color>
+    <color name="Pink">#FF6FFF</color>
+    <color name="Grey">#5F5F63</color>
+    <color name="LightBlue">#79FFFE</color>
+    <color name="Yellow">#FFF533</color>
+</resources>
