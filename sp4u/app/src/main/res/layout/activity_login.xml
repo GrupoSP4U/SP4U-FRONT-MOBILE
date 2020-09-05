@@ -109,6 +109,7 @@
         app:layout_constraintLeft_toRightOf="@id/tv_cadastrar"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="220sp"
+        android:fontFamily="@font/montserrat"
         />
 
     <Button
@@ -122,6 +123,8 @@
         android:textColor="@color/White"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18sp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
