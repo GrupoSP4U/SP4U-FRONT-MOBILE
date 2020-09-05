@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-849536867/SP4U-APP.iml" filepath="$PROJECT_DIR$/.idea/modules/-849536867/SP4U-APP.iml" group="SP4U-APP" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SP4U-APP-app.iml" filepath="$PROJECT_DIR$/.idea/modules/SP4U-APP-app.iml" group="SP4U-APP/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="SP4U-APP/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-602639488/sp4u-SP4U-APP.iml" filepath="$PROJECT_DIR$/.idea/modules/-602639488/sp4u-SP4U-APP.iml" group="SP4U-APP" />
     </modules>
   </component>
 </project>
