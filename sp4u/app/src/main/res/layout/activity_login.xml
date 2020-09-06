@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_titulo_login"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="36dp"
-        android:src="@drawable/logo_inicio"
+        android:src="@drawable/icon_cadastro_login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
