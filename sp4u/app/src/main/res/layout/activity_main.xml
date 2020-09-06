@@ -10,26 +10,26 @@
 
 
     <ImageView
-        android:src="@drawable/logo_inicio"
+        android:id="@+id/img_logo_inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/logo_inicio"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="213dp"
-        android:id="@+id/logo_inicio"
         />
 
 
     <TextView
+        android:id="@+id/tv_slogan"
         android:layout_width="174dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
-        android:fontFamily="@font/montserrat"
         android:text="O melhor de SP nas suas mãos"
         android:textColor="@color/Green"
         android:textSize="18sp"
-        android:id="@+id/slogan"
         />
 
 
