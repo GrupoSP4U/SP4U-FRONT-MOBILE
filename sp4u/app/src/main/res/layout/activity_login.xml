@@ -13,6 +13,7 @@
         android:layout_height="28dp"
         android:id="@+id/tv_titulo_login"
         android:text="login"
+        tools:layout_editor_absoluteY="60dp"
         android:textSize="18sp"
         android:background="@color/White"
         tools:ignore="MissingConstraints"
@@ -38,13 +39,14 @@
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/White"
-        android:text="e-mail"
-        app:layout_constraintTop_toBottomOf="@id/img_inicio"
-        android:textSize="16sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/montserrat"
-    />
+        android:text="e-mail"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/img_inicio"
+        tools:layout_editor_absoluteX="66dp"
+        />
 
     <EditText
         android:layout_width="280dp"
@@ -53,7 +55,8 @@
         app:layout_constraintTop_toBottomOf="@id/tv_email"
         android:hint="Digite seu e-mail"
         android:layout_marginTop="8sp"
-        android:background="@color/White"
+        android:background="@color/Fund"
+        android:textColorHint="@color/White"
         android:fontFamily="@font/montserrat"
         android:inputType="textEmailAddress"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -70,6 +73,7 @@
         android:textSize="16sp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat"
+        app:layout_constraintLeft_toLeftOf="@id/tv_email"
         />
 
     <EditText
@@ -79,24 +83,25 @@
         app:layout_constraintTop_toBottomOf="@id/tv_senha"
         android:hint="Digite sua senha"
         android:layout_marginTop="8sp"
-        android:background="@color/White"
+        android:background="@color/Fund"
         android:fontFamily="@font/montserrat"
+        android:textColorHint="@color/White"
         android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
 
     <TextView
+        android:id="@+id/tv_cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat"
         android:text="cadastre-se"
-        android:id="@+id/tv_cadastrar"
-        app:layout_constraintTop_toBottomOf="@id/et_senha"
         android:textColor="@color/White"
         android:textSize="10sp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/montserrat"
-        />
+        app:layout_constraintTop_toBottomOf="@id/et_senha"
+        tools:layout_editor_absoluteX="66dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@id/et_senha"
         app:layout_constraintLeft_toRightOf="@id/tv_cadastrar"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="220sp"
+        android:layout_marginLeft="146sp"
         android:fontFamily="@font/montserrat"
         />
 

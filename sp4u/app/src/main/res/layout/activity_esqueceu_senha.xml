@@ -11,7 +11,9 @@
         android:layout_height="80dp"
         android:id="@+id/tv_titulo_esqueceu_senha"
         android:text="esqueceu sua senha?"
+        android:textAlignment="center"
         android:textSize="32sp"
+        tools:layout_editor_absoluteY="60dp"
         android:textColor="@color/White"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -28,6 +30,7 @@
         android:textSize="16sp"
         android:layout_marginTop="68dp"
         android:layout_marginLeft="100dp"
+        tools:layout_editor_absoluteX="66dp"
         />
 
     <EditText
@@ -36,7 +39,8 @@
         android:id="@+id/et_nova_senha"
         app:layout_constraintTop_toBottomOf="@id/tv_nova_senha"
         android:layout_marginTop="8sp"
-        android:background="@color/White"
+        android:background="@color/Fund"
+        android:textColorHint="@color/White"
         android:fontFamily="@font/montserrat"
         android:inputType="textPassword"
         android:hint="Digite a nova senha"
@@ -55,6 +59,7 @@
         android:textSize="16sp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="100dp"
+        tools:layout_editor_absoluteX="66dp"
         />
 
     <EditText
@@ -64,8 +69,9 @@
         app:layout_constraintTop_toBottomOf="@id/tv_confirma_senha"
         android:textColor="@color/Fund"
         android:fontFamily="@font/montserrat"
-        android:background="@color/White"
+        android:background="@color/Fund"
         android:textSize="16sp"
+        android:textColorHint="@color/White"
         android:hint="Confirmar nova senha"
         android:inputType="textPassword"
         android:layout_marginTop="8dp"
