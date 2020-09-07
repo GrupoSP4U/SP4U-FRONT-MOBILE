@@ -4,4 +4,23 @@
     <string name="sertanejo">sertanejo</string>
     <string name="subTitile">precisamos entender o que você curte quando quer dar um rolê por ai.... vou te fazer algumas perguntas, vai ser rápidinho, prometo!</string>
     <string name="title">uhull, bem-vindx ao SP4U!</string>
+    <string name="trap">trap</string>
+    <string name="eletronica">eletronica</string>
+    <string name="gospel">gospel</string>
+    <string name="hip_hop">hip-hop</string>
+    <string name="metal">metal</string>
+    <string name="rap">rap</string>
+    <string name="classico">classico</string>
+    <string name="pop">pop</string>
+    <string name="trance">trance</string>
+    <string name="jazz">jazz</string>
+    <string name="forro">forro</string>
+    <string name="kpop">kpop</string>
+    <string name="samba">samba</string>
+    <string name="mpb">mpb</string>
+    <string name="folk">folk</string>
+    <string name="rock">rock</string>
+    <string name="axe">axe</string>
+    <string name="funk">funk</string>
+    <string name="pagode">pagode</string>
 </resources>
