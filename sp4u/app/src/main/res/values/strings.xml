@@ -23,4 +23,10 @@
     <string name="axe">axe</string>
     <string name="funk">funk</string>
     <string name="pagode">pagode</string>
+    <string name="qual_voc_prefere">qual você prefere?</string>
+    <string name="restaurantes">restaurantes</string>
+    <string name="bares">bares</string>
+    <string name="baladas">baladas</string>
+    <string name="pub">pub</string>
+    <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
 </resources>

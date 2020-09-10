@@ -2,11 +2,17 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="4.7in WXGA" />
+        <device id="pixel_2" />
+      </config>
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52cf3cdd-44a5-4b4d-ae60-5619f0094c6b" name="Default Changelist" comment="" />
+    <list default="true" id="52cf3cdd-44a5-4b4d-ae60-5619f0094c6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/welcome_local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome_local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/welcome_music.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome_music.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +27,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -50,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1599502499166" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1599690165211" />
   </component>
   <component name="RunManager" selected="Android App.SP4U-APP-app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -177,14 +188,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="212" key="AndroidCreateResourceFileDialog" timestamp="1599503584330">
+    <state x="308" y="212" key="AndroidCreateResourceFileDialog" timestamp="1599690561900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="308" y="212" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1599503584330" />
-    <state x="568" y="304" key="AndroidCreateXmlResourceDialog" timestamp="1599507986412">
+    <state x="308" y="212" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1599690561900" />
+    <state x="568" y="304" key="AndroidCreateXmlResourceDialog" timestamp="1599696601863">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="568" y="304" key="AndroidCreateXmlResourceDialog/0.0.1440.900@0.0.1440.900" timestamp="1599507986412" />
+    <state x="568" y="304" key="AndroidCreateXmlResourceDialog/0.0.1440.900@0.0.1440.900" timestamp="1599696601863" />
     <state x="363" y="119" key="Downloadable.Font.Dialog.Size" timestamp="1598995860554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -193,6 +204,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599263325096" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599695568739">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599695568739" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.824@0.23.1440.824" timestamp="1599693402435" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599695568737">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599695568737" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.824@0.23.1440.824" timestamp="1599693402432" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599695568736">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599695568736" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.824@0.23.1440.824" timestamp="1599693402429" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599695568737">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599695568737" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.824@0.23.1440.824" timestamp="1599693402434" />
+    <state x="100" y="100" width="1240" height="700" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1599698182898">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1440.824@0.23.1440.824" timestamp="1599698182898" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1599258820918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
