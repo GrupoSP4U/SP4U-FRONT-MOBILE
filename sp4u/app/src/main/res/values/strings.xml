@@ -29,4 +29,11 @@
     <string name="baladas">baladas</string>
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
+    <string name="humor">como você está se sentindo hoje?</string>
+    <string name="feliz">feliz</string>
+    <string name="com_fome">com fome</string>
+    <string name="animado">animado</string>
+    <string name="entediado">entediado</string>
+    <string name="desanimado">desanimado</string>
+    <string name="fogoso">fogoso</string>
 </resources>
