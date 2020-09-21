@@ -29,4 +29,7 @@
     <string name="baladas">baladas</string>
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
+    <string name="com_base_no_seu_humor">com base no seu humor</string>
+    <string name="os_mais_frequentados_da_sua_regi_o">os mais frequentados da sua região</string>
+    <string name="para_os_econ_micos_do_rol">para os econômicos do rolê</string>
 </resources>
