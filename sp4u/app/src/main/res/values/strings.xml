@@ -30,4 +30,12 @@
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
     <string name="como_voc_est_se_sentindo_hoje">Como você está se sentindo hoje?</string>
+    <string name="feliz">feliz</string>
+    <string name="animado">animado</string>
+    <string name="todo">TODO</string>
+    <string name="desanimado">desanimado</string>
+    <string name="com_fome">com fome</string>
+    <string name="fogoso">fogoso</string>
+    <string name="entediado">entediado</string>
+
 </resources>

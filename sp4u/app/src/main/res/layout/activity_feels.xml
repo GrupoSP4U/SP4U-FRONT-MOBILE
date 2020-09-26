@@ -50,7 +50,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="feliz"
+                        android:text="@string/feliz"
                         android:textSize="20sp"
                         android:textColor="@color/Fund"
                         android:fontFamily="@font/montserrat"/>
@@ -64,8 +64,9 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                       android:layout_alignParentRight="true"
-                        android:src="@drawable/feliz_img" />
+                       android:layout_alignParentEnd="true"
+                        android:src="@drawable/feliz_img"
+                        android:contentDescription="@string/todo" />
 
                 </RelativeLayout>
                 </LinearLayout>
@@ -93,7 +94,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="com fome"
+                            android:text="@string/com_fome"
                             android:textSize="20sp"
                             android:textColor="@color/Fund"
                             android:fontFamily="@font/montserrat"/>
@@ -107,8 +108,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/pizza_icon" />
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/pizza_icon"
+                            android:contentDescription="@string/todo" />
 
                     </RelativeLayout>
                 </LinearLayout>
@@ -136,7 +138,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="animado"
+                            android:text="@string/animado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -150,8 +152,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/disco_ball" />
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/disco_ball"
+                            android:contentDescription="@string/todo" />
 
                     </RelativeLayout>
                 </LinearLayout>
@@ -180,7 +183,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="entediado"
+                            android:text="@string/entediado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -194,8 +197,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/entediado_icon" />
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/entediado_icon"
+                            android:contentDescription="@string/todo" />
 
                     </RelativeLayout>
                 </LinearLayout>
@@ -223,7 +227,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="desanimado"
+                            android:text="@string/desanimado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -237,8 +241,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/triste_icon" />
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/triste_icon"
+                            android:contentDescription="@string/todo" />
 
                     </RelativeLayout>
                 </LinearLayout>
@@ -266,7 +271,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="fogoso"
+                            android:text="@string/fogoso"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -280,8 +285,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/fogoso_icon" />
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/fogoso_icon"
+                            android:contentDescription="@string/todo" />
 
                     </RelativeLayout>
                 </LinearLayout>
