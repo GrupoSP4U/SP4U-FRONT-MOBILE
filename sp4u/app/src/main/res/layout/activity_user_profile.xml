@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/Fund">
+    android:background="@color/Fund"
+    tools:context=".UserProfileActivity">
 
     <TextView
         android:id="@+id/tv_menu"
@@ -45,7 +46,7 @@
 
     <EditText
         android:id="@+id/et_nome"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -73,7 +74,7 @@
 
     <EditText
         android:id="@+id/et_nome_social"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -101,7 +102,7 @@
 
     <EditText
         android:id="@+id/et_data_nasc"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -111,7 +112,7 @@
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_blue"
         android:textColorHint="@color/White"
-        android:inputType="text"
+        android:inputType="date"
         />
 
     <TextView
@@ -129,7 +130,7 @@
 
     <EditText
         android:id="@+id/et_email"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -139,7 +140,7 @@
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_blue"
         android:textColorHint="@color/White"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         />
 
     <TextView
@@ -157,7 +158,7 @@
 
     <EditText
         android:id="@+id/et_telefone"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -167,7 +168,7 @@
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_blue"
         android:textColorHint="@color/White"
-        android:inputType="text"
+        android:inputType="number"
         />
 
     <TextView
@@ -198,7 +199,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

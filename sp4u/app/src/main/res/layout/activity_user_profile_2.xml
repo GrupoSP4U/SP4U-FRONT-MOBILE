@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fund"
+    tools:context=".UserProfile2Activity">
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="18sp"
+        android:background="@color/DarkBlue"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/img_usuario"
+        android:layout_width="95dp"
+        android:layout_height="126dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteY="60dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/usuario"
+        />
+
+    <TextView
+        android:id="@+id/tv_emailAntigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_menu"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="30dp"
+        android:text="e-mail antigo"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_emailAntigo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emailAntigo"
+        android:fontFamily="@font/montserrat"
+        android:hint="email@email.com"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/tv_emailNovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_emailAntigo"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="10dp"
+        android:text="novo e-mail"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_emailNovo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emailNovo"
+        android:fontFamily="@font/montserrat"
+        android:hint="novoemail@email.com"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirmaEmailNovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_emailNovo"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="10dp"
+        android:text="confirmar novo e-mail"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_confirmaEmailNovo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_confirmaEmailNovo"
+        android:fontFamily="@font/montserrat"
+        android:hint="novoemail@email.com"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

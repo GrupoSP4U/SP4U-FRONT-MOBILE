@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_foreground_sp4u"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".UserProfile3Activity"></activity>
+        <activity android:name=".UserProfile2Activity" />
+        <activity android:name=".UserProfileActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
