@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fund"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/com_base_no_seu_humor_recomendamos"
+        android:textColor="#FFF"
+        android:fontFamily="@font/montserrat"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/solteiros"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalSolteiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSolteiros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/Pink"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#FFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/Pink"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#FFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/Pink"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#FFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="casal"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalCasal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCasais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#FFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#FFF"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#FFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="amigx"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalAmigx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAmigx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/Green"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="287dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_rectangle_background"
+                    android:backgroundTint="@color/Green"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/recanto"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="14dp"/>
+
+                        <TextView
+                            android:layout_width="273dp"
+                            android:layout_height="54dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
