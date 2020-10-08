@@ -32,256 +32,254 @@
         android:src="@drawable/icon_cadastro_login"
         />
 
-    <TextView
-        android:id="@+id/tv_nome"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/img_inicio"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="44dp"
-        android:text="nome"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+        android:layout_height="400dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_inicio">
 
-    <EditText
-        android:id="@+id/et_nome"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nome"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_nome_social"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_nome"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="nome social"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/montserrat"
+                android:text="nome"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/img_inicio"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_nome_social"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nome_social"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        android:hint="Digite seu e-mail"
-        />
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_nome" />
 
-    <TextView
-        android:id="@+id/tv_nascimento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_nome_social"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="data de nascimento"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_nome_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="nome social"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_nome"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_nascimento"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nascimento"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="date"
-        />
+            <EditText
+                android:id="@+id/et_nome_social"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_nome_social" />
 
-    <TextView
-        android:id="@+id/tv_telefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_nascimento"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="telefone"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_nascimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="data de nascimento"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_nome_social"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_telefone"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_telefone"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="phone"
-        />
+            <EditText
+                android:id="@+id/et_nascimento"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="date"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_nascimento" />
 
-    <TextView
-        android:id="@+id/tv_genero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_telefone"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="genero"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="telefone"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_nascimento"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_genero"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_genero"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        />
+            <EditText
+                android:id="@+id/et_telefone"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="phone"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_telefone" />
 
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_genero"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="e-mail"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_genero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="genero"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_telefone"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        android:id="@+id/et_email"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_email"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="textEmailAddress"
-        />
+            <EditText
+                android:id="@+id/et_genero"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_genero" />
 
-    <TextView
-        android:id="@+id/tv_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_email"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="senha"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="e-mail"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_genero"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_senha"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_senha"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite sua senha"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="textPassword"
-        />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_email" />
 
-    <TextView
-        android:id="@+id/tv_confirmar_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_senha"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="25dp"
-        android:text="genero"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="senha"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_email"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_confirmar_senha"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_confirmar_senha"
-        android:fontFamily="@font/montserrat"
-        android:hint="Digite seu e-mail"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_green"
-        android:textColorHint="@color/White"
-        android:inputType="textPassword"
-        />
+            <EditText
+                android:id="@+id/et_senha"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite sua senha"
+                android:inputType="textPassword"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_senha" />
 
-    <TextView
-        android:id="@+id/tv_fazer_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="146sp"
-        app:layout_constraintTop_toBottomOf="@id/et_confirmar_senha"
-        android:fontFamily="@font/montserrat"
-        android:text="Ja é cadastrado? Faça o login"
-        android:textColor="@color/White"
-        android:textSize="10sp"
-        />
+            <TextView
+                android:id="@+id/tv_confirmar_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="genero"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_senha"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <Button
-        android:id="@+id/bt_cadastrar"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_fazer_login"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="30dp"
-        android:background="@color/Green"
-        android:text="entrar"
-        android:textColor="@color/Fund"
-        android:textSize="18sp"
-        />
+            <EditText
+                android:id="@+id/et_confirmar_senha"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_green"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite seu e-mail"
+                android:inputType="textPassword"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_confirmar_senha" />
+
+            <TextView
+                android:id="@+id/tv_fazer_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="146sp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Ja é cadastrado? Faça o login"
+                android:textColor="@color/White"
+                android:textSize="10sp"
+                app:layout_constraintTop_toBottomOf="@id/et_confirmar_senha" />
+
+            <Button
+                android:id="@+id/bt_cadastrar"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/Green"
+                android:fontFamily="@font/montserrat"
+                android:text="entrar"
+                android:textColor="@color/Fund"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_fazer_login" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

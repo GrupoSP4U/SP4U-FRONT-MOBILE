@@ -20,232 +20,217 @@
         android:textAlignment="center"
         />
 
-    <TextView
-        android:id="@+id/tv_endereco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv_titulo_cadastro_empresa"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="endereço"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_endereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="endereço"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_titulo_cadastro_empresa"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_enderece"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_endereco"
-        android:fontFamily="@font/montserrat"
-        android:hint="  Digite seu endereço "
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        />
+            <EditText
+                android:id="@+id/et_enderece"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  Digite seu endereço "
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_endereco" />
 
-    <TextView
-        android:id="@+id/tv_cep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_enderece"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="cep"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+                <TextView
+                    android:id="@+id/tv_cep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="cep"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/et_enderece"
+                    tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_cep"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  00000-000"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_cep"
-        tools:layout_editor_absoluteX="66dp"
-        />
+                <EditText
+                    android:id="@+id/et_cep"
+                    android:layout_width="125dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8sp"
+                    android:background="@drawable/et_style_orange"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="  00000-000"
+                    android:inputType="text"
+                    android:textColorHint="@color/White"
+                    app:layout_constraintTop_toBottomOf="@id/tv_cep"
+                    tools:layout_editor_absoluteX="66dp" />
 
-    <TextView
-        android:id="@+id/tv_bairro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_enderece"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="bairro"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="215dp"
-        />
 
-    <EditText
-        android:id="@+id/et_bairro"
-        android:layout_width="130dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  bairro"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_bairro"
-        tools:layout_editor_absoluteX="215dp"
-        />
+                <TextView
+                    android:id="@+id/tv_bairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="bairro"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/et_enderece"
+                    tools:layout_editor_absoluteX="215dp" />
 
-    <TextView
-        android:id="@+id/tv_cidade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_cep"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="cidade"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+                <EditText
+                    android:id="@+id/et_bairro"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8sp"
+                    android:background="@drawable/et_style_orange"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="  bairro"
+                    android:inputType="text"
+                    android:textColorHint="@color/White"
+                    app:layout_constraintTop_toBottomOf="@id/tv_bairro"
+                    tools:layout_editor_absoluteX="215dp" />
 
-    <EditText
-        android:id="@+id/et_cidade"
-        android:layout_width="112dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  cidade"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_cidade"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_cidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="cidade"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_cep"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <TextView
-        android:id="@+id/tv_estado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_cep"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="estado"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="195dp"
-        />
+            <EditText
+                android:id="@+id/et_cidade"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  cidade"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintTop_toBottomOf="@id/tv_cidade"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_estado"
-        android:layout_width="62dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  --"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_estado"
-        tools:layout_editor_absoluteX="195dp"
-        />
+            <TextView
+                android:id="@+id/tv_estado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="estado"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_cep"
+                tools:layout_editor_absoluteX="195dp" />
 
-    <TextView
-        android:id="@+id/tv_numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_cep"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="número"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="275dp"
-        />
+            <EditText
+                android:id="@+id/et_estado"
+                android:layout_width="62dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  --"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintTop_toBottomOf="@id/tv_estado"
+                tools:layout_editor_absoluteX="195dp" />
 
-    <EditText
-        android:id="@+id/et_numero"
-        android:layout_width= "70dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  -- "
-        android:inputType="number"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_numero"
-        tools:layout_editor_absoluteX="275dp"
-        />
+            <TextView
+                android:id="@+id/tv_numero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="número"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_cep"
+                tools:layout_editor_absoluteX="275dp" />
 
-    <TextView
-        android:id="@+id/tv_complemento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_cidade"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="complemento"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <EditText
+                android:id="@+id/et_numero"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  -- "
+                android:inputType="number"
+                android:textColorHint="@color/White"
+                app:layout_constraintTop_toBottomOf="@id/tv_numero"
+                tools:layout_editor_absoluteX="275dp" />
 
-    <EditText
-        android:id="@+id/et_complemento"
-        android:layout_width="125dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  --"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_complemento"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_complemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="complemento"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_cidade"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <TextView
-        android:id="@+id/tv_email_contato"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_complemento"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="28dp"
-        android:text="email para contato"
-        android:textColor="@color/White"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <EditText
+                android:id="@+id/et_complemento"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  --"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintTop_toBottomOf="@id/tv_complemento"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_email_contato"
-        android:layout_width= "280dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8sp"
-        android:background="@drawable/et_style_orange"
-        android:fontFamily="@font/montserrat"
-        android:hint="  example@email.com"
-        android:inputType="text"
-        android:textColorHint="@color/White"
-        app:layout_constraintTop_toBottomOf="@id/tv_email_contato"
-        tools:layout_editor_absoluteX="66dp"
-        />
+            <TextView
+                android:id="@+id/tv_email_contato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/montserrat"
+                android:text="email para contato"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_complemento"
+                tools:layout_editor_absoluteX="66dp" />
 
-    <ImageView
-        android:id="@+id/img_next"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:layout_constraintTop_toBottomOf="@id/et_email_contato"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="27dp"
-        android:src="@drawable/icon_next"
-        tools:layout_editor_absoluteX="315dp"
-        />
+            <EditText
+                android:id="@+id/et_email_contato"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:hint="  example@email.com"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_contato"
+                tools:layout_editor_absoluteX="66dp" />
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27dp"
+                android:src="@drawable/icon_next"
+                app:layout_constraintTop_toBottomOf="@id/et_email_contato"
+                tools:layout_editor_absoluteX="315dp" />
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
