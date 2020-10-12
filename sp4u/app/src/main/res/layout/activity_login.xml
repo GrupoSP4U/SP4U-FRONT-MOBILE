@@ -130,6 +130,7 @@
         android:text="entrar"
         android:textColor="@color/White"
         android:textSize="18sp"
+        android:onClick="login"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
