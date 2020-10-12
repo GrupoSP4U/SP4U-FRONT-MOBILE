@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".HomeActivity"></activity>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,4 +23,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
