@@ -10,8 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".FeelsActivity"></activity>
+        <activity android:name=".ForgotPasswordActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterEstablishmentActivity"></activity>
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".WelcomeLocalActivity"></activity>
+        <activity android:name=".WelcomeMusicActivity"></activity>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

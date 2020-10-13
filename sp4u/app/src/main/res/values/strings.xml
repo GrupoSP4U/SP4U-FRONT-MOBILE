@@ -48,20 +48,21 @@
     <string name="para_os_casalz_es_da_por">para os casalzões da por**</string>
     <string name="caos">Caos</string>
     <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Casa noturna descolada com pegada alternativa e shows animados por sob efeitos luminosos.</string>
-    <string name="titulo_cadastro_estabelecimento">você é dono de um estabelecimento? </string>
-    <string name="subtitulo_cadastro_estabelecimento">se cadastre na nossa plataforma SP4U para empresa e aumente seu público!</string>
-    <string name="informacoes_cadastro_estabelecimento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula finibus diam blandit maximus. Donec vulputate molestie est eget rhoncus. Etiam non laoreet ex. Nullam fauci</string>
-    <string name="cadastro_estabelecimento">cadastre-se</string>
-    <string name="login_errado">Email ou senha incorretos</string>
-    <string name="validacao_null">Deve ser preenchido</string>
 
-<!--    <string name="TelaCadastroEstabelecimento">-->
-<!--        <item name="titulo">você é dono de um estabelecimento? </string>-->
-<!--        -->
-<!--    </string>-->
 
-<!--    <string-array name="teste">-->
-<!--        <item name = "titulo">aaaaaaa</item>-->
-<!--        <item name = "titulo2">bbbbbb</item>-->
-<!--    </string-array>-->
+    <!-- Iniciando tela de cadastro de estabelecimento  -->
+    <string name="estabilishment_titulo_cadastro_estabelecimento">você é dono de um estabelecimento? </string>
+    <string name="estabilishment_subtitulo_cadastro_estabelecimento">se cadastre na nossa plataforma SP4U para empresa e aumente seu público!</string>
+    <string name="estabilishment_informacoes_cadastro_estabelecimento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula finibus diam blandit maximus. Donec vulputate molestie est eget rhoncus. Etiam non laoreet ex. Nullam fauci</string>
+    <string name="estabilishment_cadastro_estabelecimento">cadastre-se</string>
+    <!-- Finalziando tela de cadastro de estabelecimento  -->
+
+    <!-- Iniciando tela de login  -->
+    <string name="login_senha_email_incorreto">Email ou senha incorretos</string>
+    <!-- Finalizando tela de login  -->
+
+    <!-- Iniciando validator -->
+    <string name="validator_null">Deve ser preenchido</string>
+    <!-- Finalizando validator -->
+
 </resources>

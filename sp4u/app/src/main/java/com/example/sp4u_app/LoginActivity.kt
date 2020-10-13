@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                 } else if (response?.code() == 404) {
                     Toast.makeText(
                         this@LoginActivity,
-                        resources.getString(R.string.login_errado),
+                        resources.getString(R.string.login_senha_email_incorreto),
                         Toast.LENGTH_SHORT).show()
                 }
             }
