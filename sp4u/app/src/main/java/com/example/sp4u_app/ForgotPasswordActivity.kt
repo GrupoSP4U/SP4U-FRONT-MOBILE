@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class ForgotPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register_establishment)
+        setContentView(R.layout.activity_forgot_password)
     }
 
     fun savePassword(button:View){
