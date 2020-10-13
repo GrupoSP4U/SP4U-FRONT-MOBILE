@@ -99,6 +99,7 @@
         android:text="cadastre-se"
         android:textColor="@color/White"
         tools:layout_editor_absoluteX="66dp"
+        android:onClick="goToRegister"
         />
 
     <TextView
@@ -113,6 +114,7 @@
         android:textSize="10sp"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="146sp"
+        android:onClick="goToForgotPassword"
         />
 
     <Button

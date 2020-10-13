@@ -49,4 +49,18 @@
     <string name="caos">Caos</string>
     <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Casa noturna descolada com pegada alternativa e shows animados por sob efeitos luminosos.</string>
     <string name="todo">TODO</string>
+    <string name="titulo_cadastro_estabelecimento">você é dono de um estabelecimento? </string>
+    <string name="subtitulo_cadastro_estabelecimento">se cadastre na nossa plataforma SP4U para empresa e aumente seu público!</string>
+    <string name="informacoes_cadastro_estabelecimento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula finibus diam blandit maximus. Donec vulputate molestie est eget rhoncus. Etiam non laoreet ex. Nullam fauci</string>
+    <string name="cadastro_estabelecimento">cadastre-se</string>
+
+<!--    <string name="TelaCadastroEstabelecimento">-->
+<!--        <item name="titulo">você é dono de um estabelecimento? </string>-->
+<!--        -->
+<!--    </string>-->
+
+<!--    <string-array name="teste">-->
+<!--        <item name = "titulo">aaaaaaa</item>-->
+<!--        <item name = "titulo2">bbbbbb</item>-->
+<!--    </string-array>-->
 </resources>
