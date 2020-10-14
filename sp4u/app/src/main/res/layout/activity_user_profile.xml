@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/montserrat"
-            android:text="alterar foto de perfil"
+            android:text="@string/user_profile_alterar_foto"
             android:textColor="@color/Blue"
             android:textSize="12sp"/>
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:fontFamily="@font/montserrat"
-            android:text="João Teodoro"
+            android:text="@string/user_profile_apelido"
             android:textColor="@color/White"
             android:textSize="16sp" />
     </LinearLayout>
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:background="@color/DarkBlue"
             android:padding="7dp"
-            android:text="configurações básicas"
+            android:text="@string/user_profile_configuracoes_basicas"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp" />
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:background="@color/DarkBlue"
             android:padding="5dp"
-            android:text="alterar e-mail"
+            android:text="@string/user_profile_alterar_email"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:background="@color/DarkBlue"
             android:padding="5dp"
-            android:text="alterar senha"
+            android:text="@string/user_profile_alterar_senha"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat"
-                android:text="nome"
+                android:text="@string/user_profile_nome"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/tv_menu"
@@ -133,7 +133,7 @@
                 android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
                 android:fontFamily="@font/montserrat"
-                android:hint="Digite o nome completo"
+                android:hint="@string/user_profile_hint_nome"
                 android:inputType="text"
                 android:textColorHint="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="nome social"
+                android:text="@string/user_profile_nome_social"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/et_nome"
@@ -159,7 +159,7 @@
                 android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
                 android:fontFamily="@font/montserrat"
-                android:hint="Digite o nome social"
+                android:hint="@string/user_profile_hint_nome_social"
                 android:inputType="text"
                 android:textColorHint="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -172,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="data de nascimento"
+                android:text="@string/user_profile_data_nascimento"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/et_nome_social"
@@ -185,7 +185,7 @@
                 android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
                 android:fontFamily="@font/montserrat"
-                android:hint="00/00/0000"
+                android:hint="@string/user_profile_hint_data_nascimento"
                 android:inputType="date"
                 android:textColorHint="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="e-mail"
+                android:text="@string/user_profile_email"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/et_data_nasc"
@@ -211,7 +211,7 @@
                 android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
                 android:fontFamily="@font/montserrat"
-                android:hint="Digite o e-mail"
+                android:hint="@string/user_profile_hint_email"
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="telefone"
+                android:text="@string/user_profile_telefone"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/et_email"
@@ -237,7 +237,7 @@
                 android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
                 android:fontFamily="@font/montserrat"
-                android:hint="(XX) 00000-0000"
+                android:hint="@string/user_profile_hint_telefone"
                 android:inputType="number"
                 android:textColorHint="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -250,25 +250,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat"
-                android:text="gênero"
+                android:text="@string/user_profile_genero"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 app:layout_constraintTop_toBottomOf="@id/et_telefone"
                 tools:layout_editor_absoluteX="66dp" />
 
-            <Spinner
-                android:id="@+id/sp_genero"
-                android:layout_width="300dp"
+            <EditText
+                android:id="@+id/et_genero"
+                android:layout_width="280dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="8sp"
                 android:background="@drawable/et_style_blue"
-                android:outlineSpotShadowColor="@color/White"
-                app:layout_constraintTop_toBottomOf="@id/tv_genero"
-                tools:layout_editor_absoluteX="66dp"/>
-
-            <TextView
-                android:id="@+id/tv_resultado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/user_profile_hint_genero"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_genero" />
 
             <Button
                 android:id="@+id/bt_concluir"
@@ -277,12 +277,12 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 android:background="@color/LightBlue"
-                android:text="concluir"
+                android:text="@string/user_profile_botao_concluir"
                 android:textAllCaps="false"
                 android:textColor="@color/White"
                 android:textSize="16sp"
                 android:layout_gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@id/tv_resultado"/>
+                app:layout_constraintTop_toBottomOf="@id/tv_genero"/>
 
         </LinearLayout>
     </ScrollView>

@@ -29,4 +29,35 @@
     <string name="baladas">baladas</string>
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
+
+    <!-- Tela de edição de dados do usuário  -->
+    <string name="user_profile_alterar_foto">alterar foto de perfil</string>
+    <string name="user_profile_apelido">João Teodoro</string>
+    <string name="user_profile_configuracoes_basicas">configurações básicas</string>
+    <string name="user_profile_alterar_email">alterar e-mail</string>
+    <string name="user_profile_alterar_senha">alterar senha</string>
+    <string name="user_profile_nome">nome</string>
+    <string name="user_profile_nome_social">nome social</string>
+    <string name="user_profile_data_nascimento">data de nascimento</string>
+    <string name="user_profile_email">e-mail</string>
+    <string name="user_profile_telefone">telefone</string>
+    <string name="user_profile_genero">gênero</string>
+    <string name="user_profile_botao_concluir">concluir</string>
+    <string name="user_profile_hint_nome">Digite o nome completo</string>
+    <string name="user_profile_hint_nome_social">Digite o nome social</string>
+    <string name="user_profile_hint_data_nascimento">00/00/0000</string>
+    <string name="user_profile_hint_email">email@email.com</string>
+    <string name="user_profile_hint_telefone">(XX) 00000-0000</string>
+    <string name="user_profile_hint_genero">Digite o seu gênero</string>
+    <string name="user_profile_email_antigo">e-mail antigo</string>
+    <string name="user_profile_email_novo">novo e-mail</string>
+    <string name="user_profile_hint_email_novo">novoemail@email.com</string>
+    <string name="user_profile_confirma_email">confirmar novo e-mail</string>
+    <string name="user_profile_botao_alterar_email">alterar e-mail</string>
+    <string name="user_profile_senha_antiga">senha antiga</string>
+    <string name="user_profile_hint_senha">*****************</string>
+    <string name="user_profile_senha_nova">nova senha</string>
+    <string name="user_profile_confirma_senha">confirmar nova senha</string>
+    <string name="user_profile_botao_alterar_senha">alterar senha</string>
+
 </resources>
