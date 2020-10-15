@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP4U</string>
+    <string name="user_profile_alterar_foto">change profile photo</string>
+    <string name="user_profile_configuracoes_basicas">basic settings</string>
+    <string name="user_profile_alterar_email">change e-mail</string>
+    <string name="user_profile_alterar_senha">change password</string>
+    <string name="user_profile_nome">name</string>
+    <string name="user_profile_nome_social">social name</string>
+    <string name="user_profile_data_nascimento">date of birth</string>
+    <string name="user_profile_email">e-mail</string>
+    <string name="user_profile_telefone">telephone</string>
+    <string name="user_profile_genero">gender</string>
+    <string name="user_profile_botao_concluir">conclude</string>
+    <string name="user_profile_hint_nome">Enter the full name</string>
+    <string name="user_profile_hint_nome_social">Enter the social name</string>
+    <string name="user_profile_hint_genero">Enter your gender</string>
+    <string name="user_profile_email_antigo">old e-mail</string>
+    <string name="user_profile_email_novo">new e-mail</string>
+    <string name="user_profile_hint_email_novo">newemail@email.com</string>
+    <string name="user_profile_confirma_email">confirm new e-mail</string>
+    <string name="user_profile_botao_alterar_email">change e-mail</string>
+    <string name="user_profile_senha_antiga">old password</string>
+    <string name="user_profile_senha_nova">new password</string>
+    <string name="user_profile_confirma_senha">confirm new password</string>
+    <string name="user_profile_botao_alterar_senha">change password</string>
+</resources>
