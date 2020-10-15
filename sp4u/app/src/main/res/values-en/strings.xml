@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SP4U</string>
@@ -24,4 +25,21 @@
     <string name="user_profile_senha_nova">new password</string>
     <string name="user_profile_confirma_senha">confirm new password</string>
     <string name="user_profile_botao_alterar_senha">change password</string>
+
+    <!-- Start establishment registration screen -->
+    <string name="estabilishment_titulo_cadastro_estabelecimento">do you own an estabilishment? </string>
+    <string name="estabilishment_subtitulo_cadastro_estabelecimento">register on our SP4U platform for companies and increase your audience!</string>
+    <string name="estabilishment_informacoes_cadastro_estabelecimento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula finibus diam blandit maximus. Donec vulputate molestie est eget rhoncus. Etiam non laoreet ex. Nullam fauci</string>
+    <string name="estabilishment_cadastro_estabelecimento">sign up</string>
+    <!-- End establishment registration screen -->
+
+    <!-- Start login screen  -->
+    <string name="login_senha_email_incorreto">Email or password incorrect</string>
+    <!-- End login screen  -->
+
+    <!-- Start validator -->
+    <string name="validator_null">Must be filled</string>
+    <!-- End validator -->
+
 </resources>
+

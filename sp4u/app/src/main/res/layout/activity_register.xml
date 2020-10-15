@@ -282,6 +282,7 @@
         android:text="entrar"
         android:textColor="@color/Fund"
         android:textSize="18sp"
+        android:onClick="goToWelcomeMusic"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

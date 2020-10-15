@@ -30,6 +30,7 @@
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
 
+
     <!-- Tela de edição de dados do usuário  -->
     <string name="user_profile_alterar_foto">alterar foto de perfil</string>
     <string name="user_profile_apelido">João Teodoro</string>
@@ -60,4 +61,43 @@
     <string name="user_profile_confirma_senha">confirmar nova senha</string>
     <string name="user_profile_botao_alterar_senha">alterar senha</string>
 
+
+
+    <string name="recanto">Recanto</string>
+    <string name="restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar">Restobar rústico e aconchegante serve opções de petiscos mistos da casa com área externa e boemia familiar.</string>
+    <string name="com_base_no_seu_humor_recomendamos">com base no seu humor recomendamos:</string>
+    <string name="solteiros">solteiros</string>
+    <string name="como_voc_est_se_sentindo_hoje">Como você está se sentindo hoje?</string>
+    <string name="feliz">feliz</string>
+    <string name="animado">animado</string>
+    <string name="todo">TODO</string>
+    <string name="desanimado">desanimado</string>
+    <string name="com_fome">com fome</string>
+    <string name="fogoso">fogoso</string>
+    <string name="entediado">entediado</string>
+    <string name="com_base_no_seu_humor">com base no seu humor</string>
+    <string name="os_mais_frequentados_da_sua_regi_o">os mais frequentados da sua região</string>
+    <string name="para_os_econ_micos_do_rol">para os econômicos do rolê</string>
+    <string name="para_os_solteir_es">para os solteirões</string>
+    <string name="para_os_casalz_es_da_por">para os casalzões da por**</string>
+    <string name="caos">Caos</string>
+    <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Casa noturna descolada com pegada alternativa e shows animados por sob efeitos luminosos.</string>
+
+
+    <!-- Iniciando tela de cadastro de estabelecimento  -->
+    <string name="estabilishment_titulo_cadastro_estabelecimento">você é dono de um estabelecimento? </string>
+    <string name="estabilishment_subtitulo_cadastro_estabelecimento">se cadastre na nossa plataforma SP4U para empresa e aumente seu público!</string>
+    <string name="estabilishment_informacoes_cadastro_estabelecimento">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula finibus diam blandit maximus. Donec vulputate molestie est eget rhoncus. Etiam non laoreet ex. Nullam fauci</string>
+    <string name="estabilishment_cadastro_estabelecimento">cadastre-se</string>
+    <!-- Finalziando tela de cadastro de estabelecimento  -->
+
+    <!-- Iniciando tela de login  -->
+    <string name="login_senha_email_incorreto">Email ou senha incorretos</string>
+    <!-- Finalizando tela de login  -->
+
+    <!-- Iniciando validator -->
+    <string name="validator_null">Deve ser preenchido</string>
+    <!-- Finalizando validator -->
+
 </resources>
+
