@@ -154,6 +154,7 @@
         android:layout_marginTop="27dp"
         android:src="@drawable/icon_next"
         tools:layout_editor_absoluteX="315dp"
+        android:onClick="goToRegisterEstablishmentAdress"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
