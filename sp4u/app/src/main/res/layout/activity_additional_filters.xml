@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/Fund"
+    >
+
+    <TextView
+    android:id="@+id/tv_titulo_filtros_adicionais"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:fontFamily="@font/montserrat"
+    android:text="quer refinar sua busca?"
+    android:textAlignment="center"
+    android:textColor="@color/White"
+    android:textSize="24sp"
+    tools:layout_editor_absoluteY="20dp"
+    />
+
+    <TextView
+        android:id="@+id/tv_cardapio_vegetariano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_filtros_adicionais"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="35dp"
+        android:text="possui cardápio vegetariano?"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <Switch
+        android:id="@+id/sw_cardapio_vegetariano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Cardápio Vegatariano"
+        android:textColor="@color/White"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegetariano"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_cardapio_vegano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegetariano"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="30dp"
+        android:text="possui cardápio vegano?"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="66dp"
+    />
+    <Switch
+        android:id="@+id/sw_cardapio_vegano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Cardápio Vegano"
+        android:textColor="@color/White"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegano"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_animais_permitidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegano"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="30dp"
+        android:text="animais são permitidos?"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <Switch
+        android:id="@+id/sw_animais_permitidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Animais Permitidos"
+        android:textColor="@color/White"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_idade_permitida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/sw_animais_permitidos"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="30dp"
+        android:text="idade mínima do público:"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <Switch
+        android:id="@+id/sw_idade_permitida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="+ 18 anos"
+        android:textColor="@color/White"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_idade_permitida"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/bt_vamos_la"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="180dp"
+        android:background="@color/Blue"
+        android:text="vamos la"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
