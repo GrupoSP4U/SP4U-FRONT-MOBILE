@@ -289,18 +289,16 @@
                 android:layout_marginBottom="40dp"
                 android:background="@color/Green"
                 android:fontFamily="@font/montserrat"
-                android:onClick="goToLogin"
                 android:text="confirmar"
                 android:textAllCaps="false"
+                android:onClick="register"
                 android:textColor="@color/Fund"
                 android:textSize="20sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_fazer_login" />
 
-
         </LinearLayout>
-
     </ScrollView>
 
 </LinearLayout>
