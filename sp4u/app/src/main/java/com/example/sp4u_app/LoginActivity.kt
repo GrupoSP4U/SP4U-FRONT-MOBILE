@@ -21,50 +21,63 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun login(component: View) {
-        if(!validator(listOf(et_email, et_senha))) {
+        if (!validator(listOf(et_email, et_senha))) {
             return
         }
-        val authenticate = AuthenticateRequestDTO(et_email.text.toString(), et_senha.text.toString())
+        val request = AuthenticateRequestDTO(
+            email = et_email.text.toString(),
+            password = et_senha.text.toString()
+        )
+        callEndpoint(request)
+    }
+
+    fun goToForgotPassword(button: View) {
+        val forgotPassword = Intent(this, ForgotPasswordActivity::class.java)
+        startActivity(forgotPassword)
+    }
+
+    fun goToRegister(button: View) {
+        val register = Intent(this, RegisterActivity::class.java)
+        startActivity(register)
+    }
+
+    private fun goToHome(body: AuthenticateResponseDTO) {
+        val intent = Intent(this, HomeActivity::class.java)
+        intent.putExtra("USER_ID", body.userId)
+        intent.putExtra("TOKEN", body.jwttoken)
+        startActivity(intent)
+    }
+
+    private fun callEndpoint(request: AuthenticateRequestDTO) {
         val call =
             RetrofitInitializer("http://ec2-100-26-215-123.compute-1.amazonaws.com:8080/")
                 .authenticateService()
-                .authenticate(authenticate)
+                .authenticate(request)
 
-        call.enqueue(object: Callback<AuthenticateResponseDTO?> {
-            override fun onResponse(call: Call<AuthenticateResponseDTO?>?,
-                                    response: Response<AuthenticateResponseDTO?>?) {
-                if(response?.code() == 200) {
+        call.enqueue(object : Callback<AuthenticateResponseDTO?> {
+            override fun onResponse(
+                call: Call<AuthenticateResponseDTO?>?,
+                response: Response<AuthenticateResponseDTO?>?
+            ) {
+                if (response?.code() == 200) {
                     response?.body()?.let {
-                        val body: AuthenticateResponseDTO = it
-                        println(body)
-                        goToHome()
+                        goToHome(it)
                     }
                 } else if (response?.code() == 404) {
                     Toast.makeText(
                         this@LoginActivity,
                         resources.getString(R.string.login_senha_email_incorreto),
-                        Toast.LENGTH_SHORT).show()
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
-            override fun onFailure(call: Call<AuthenticateResponseDTO?>?,
-                                   t: Throwable?) {
+
+            override fun onFailure(
+                call: Call<AuthenticateResponseDTO?>?,
+                t: Throwable?
+            ) {
                 println(t.toString())
             }
         })
-    }
-
-    fun goToForgotPassword(button: View){
-        val forgotPassword = Intent(this, ForgotPasswordActivity::class.java)
-        startActivity(forgotPassword)
-    }
-
-    fun goToRegister(button: View){
-        val register = Intent(this, RegisterActivity::class.java)
-        startActivity(register)
-    }
-
-    private fun goToHome(){
-        val home = Intent(this, RegisterEstablishmentPrincipalActivity::class.java)
-        startActivity(home)
     }
 }

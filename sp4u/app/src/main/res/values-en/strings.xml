@@ -48,8 +48,7 @@
     <string name="feels_entediado">bored</string>
     <!-- End mood screen  -->
 
-    <!-- Start validator -->
-    <string name="validator_null">Must be filled</string>
+    <!---->
     <string name="app_slogan">The best of SP in your hands</string>
     <string name="sertanejo">country</string>
     <string name="subTitile">we need to understand what you like to do when you want to go out... I will ask you a few questions and I promise it will be quick</string>
@@ -69,7 +68,17 @@
     <string name="para_os_solteir_es">for singles</string>
     <string name="para_os_casalz_es_da_por">for couples</string>
     <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Cool and alternative nightclub with animated shows under light effects.</string>
-    <!-- End validator -->
+    <!-- -->
+
+    <!-- Start Validator -->
+    <string name="validator_null">Must be filled</string>
+    <string name="validator_senhas_diferentes">The passwords must be equals</string>
+    <!-- End Validator -->
+
+    <!-- Start requisition -->
+    <string name="erro_interno">Internal error</string>
+    <string name="email_ja_cadastrado">Email already used</string>
+    <!-- End requisition -->
 
     <!-- Start the first establishment edit screen -->
     <string name="estabilishment_config_nome_estabelecimento">Caos</string>

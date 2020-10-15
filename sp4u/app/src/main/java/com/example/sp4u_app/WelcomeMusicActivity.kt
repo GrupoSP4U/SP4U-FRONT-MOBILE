@@ -11,9 +11,13 @@ class WelcomeMusicActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome_music)
     }
 
-    fun goToHomeWelcomeLocalUser(){
-        val welcomeLocalUser = Intent(this, WelcomeLocalActivity::class.java)
-        startActivity(welcomeLocalUser)
-    }
+    fun goToWelcomeLocal(component: View) {
+        val userId = intent.getIntExtra("USER_ID", 0)
+        val token = intent.getStringExtra("TOKEN")
 
+        val welcomeLocalIntent = Intent(this, WelcomeLocalActivity::class.java)
+        welcomeLocalIntent.putExtra("USER_ID", userId)
+        welcomeLocalIntent.putExtra("TOKEN", token)
+        startActivity(welcomeLocalIntent)
+    }
 }

@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_foreground_sp4u"
         android:label="@string/app_name"
@@ -32,6 +33,7 @@
         <activity android:name=".RegisterEstablishmentFiltersActivity" />
         <activity android:name=".AdditionalFiltersActivity" />
         <activity android:name="RegisterEstabilishmentConfigActivity" />
+
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

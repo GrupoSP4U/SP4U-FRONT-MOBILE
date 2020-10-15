@@ -401,6 +401,7 @@
             android:hint="@string/mpb"
             android:textColorHint="@color/Fund"
             android:textSize="12sp"
+            android:onClick="goToWelcomeLocal"
             app:layout_constraintStart_toEndOf="@+id/bt_samba"
             app:layout_constraintTop_toBottomOf="@+id/bt_jazz" />
 
@@ -412,7 +413,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="right|center_horizontal"
                 android:layout_marginTop="12dp"
-                android:onClick="goToHomeWelcomeLocalUser"
+                android:onClick="goToWelcomeLocal"
                 android:src="@drawable/icon_next_user"
                 app:layout_constraintTop_toBottomOf="@id/bt_pagode"
                 tools:layout_editor_absoluteX="315dp" />

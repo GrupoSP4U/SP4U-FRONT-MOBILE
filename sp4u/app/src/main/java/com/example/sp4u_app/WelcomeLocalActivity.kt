@@ -11,8 +11,13 @@ class WelcomeLocalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome_local)
     }
 
-    fun goToHomeLeavingLocal(){
-        val leavingLocal = Intent(this, LoginActivity::class.java)
-        startActivity(leavingLocal)
+    fun goToHomeLeavingLocal(component: View){
+        val userId = intent.getIntExtra("USER_ID", 0)
+        val token = intent.getStringExtra("TOKEN")
+        val homeIntent = Intent(this, HomeActivity::class.java)
+        homeIntent.putExtra("USER_ID", userId)
+        homeIntent.putExtra("TOKEN", token)
+
+        startActivity(homeIntent)
     }
 }
