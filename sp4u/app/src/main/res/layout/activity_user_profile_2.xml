@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Fund"
+    tools:context=".UserProfile2Activity">
+
+    <TextView
+        android:id="@+id/tv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/DarkBlue"
+        android:fontFamily="@font/montserrat"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_dados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/img_usuario"
+            android:layout_width="95dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/usuario"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_alterar_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/user_profile_alterar_foto"
+            android:textColor="@color/Blue"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/user_profile_apelido"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_dados"
+        tools:layout_editor_absoluteX="10dp">
+
+        <Button
+            android:id="@+id/bt_configuracoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkBlue"
+            android:padding="7dp"
+            android:text="@string/user_profile_configuracoes_basicas"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkBlue"
+            android:padding="5dp"
+            android:text="@string/user_profile_alterar_email"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintRight_toLeftOf="@id/bt_configuracoes" />
+
+        <Button
+            android:id="@+id/bt_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/DarkBlue"
+            android:padding="5dp"
+            android:text="@string/user_profile_alterar_senha"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/bt_email" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_emailAntigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_menu"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="30dp"
+        android:text="@string/user_profile_email_antigo"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_emailAntigo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emailAntigo"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/user_profile_hint_email"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/tv_emailNovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_emailAntigo"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_profile_email_novo"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_emailNovo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emailNovo"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/user_profile_hint_email_novo"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirmaEmailNovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_emailNovo"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_profile_confirma_email"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="66dp"
+        />
+
+    <EditText
+        android:id="@+id/et_confirmaEmailNovo"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_confirmaEmailNovo"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/user_profile_hint_email_novo"
+        android:layout_marginTop="8sp"
+        android:background="@drawable/et_style_blue"
+        android:textColorHint="@color/White"
+        android:inputType="textEmailAddress"
+        />
+
+    <Button
+        android:id="@+id/bt_concluir"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/LightBlue"
+        android:text="@string/user_profile_botao_alterar_email"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/et_confirmaEmailNovo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
