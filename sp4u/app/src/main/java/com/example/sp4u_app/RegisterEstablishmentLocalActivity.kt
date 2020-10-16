@@ -13,4 +13,9 @@ class RegisterEstablishmentLocalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register_establishment_local)
     }
 
+    fun goToRegisterEstablishmentFilters(button: View){
+        val registerFilters = Intent(this, RegisterEstablishmentFiltersActivity::class.java)
+        startActivity(registerFilters)
+    }
+
 }

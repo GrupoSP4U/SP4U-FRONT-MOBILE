@@ -111,6 +111,8 @@
         android:layout_marginTop="70dp"
         android:src="@drawable/icon_next"
         app:layout_constraintTop_toBottomOf="@id/bt_pub"
-        tools:layout_editor_absoluteX="315dp" />
+        tools:layout_editor_absoluteX="315dp"
+        android:onClick="goToRegisterEstablishmentFilters"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
