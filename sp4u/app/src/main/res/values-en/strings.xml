@@ -39,6 +39,32 @@
 
     <!-- Start validator -->
     <string name="validator_null">Must be filled</string>
+    <string name="como_voc_est_se_sentindo_hoje">How are you feeling today?</string>
+    <string name="feliz">happy</string>
+    <string name="animado">excited</string>
+    <string name="desanimado">sad</string>
+    <string name="com_fome">hungry</string>
+    <string name="fogoso">hot</string>
+    <string name="entediado">bored</string>
+    <string name="app_slogan">The best of SP in your hands</string>
+    <string name="sertanejo">country</string>
+    <string name="subTitile">we need to understand what you like to do when you want to go out... I will ask you a few questions and I promise it will be quick</string>
+    <string name="title">uhull, welcome to SP4U!</string>
+    <string name="eletronica">electronic</string>
+    <string name="classico">classic</string>
+    <string name="qual_voc_prefere">which do you prefer?</string>
+    <string name="restaurantes">restaurants</string>
+    <string name="bares">bars</string>
+    <string name="baladas">nightclubs</string>
+    <string name="pub">pub</string>
+    <string name="qual_o_seu_estilo_de_m_sica">what is your favorite kind of music?</string>
+    <string name="restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar">The rustic and cozy restaurant/bar serves options of mixed snacks with an outdoor area and a bohemian family atmosphere.</string>
+    <string name="com_base_no_seu_humor">based on your mood we recommend</string>
+    <string name="os_mais_frequentados_da_sua_regi_o">the usually frequented in your region</string>
+    <string name="para_os_econ_micos_do_rol">for the economics</string>
+    <string name="para_os_solteir_es">for singles</string>
+    <string name="para_os_casalz_es_da_por">for couples</string>
+    <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Cool and alternative nightclub with animated shows under light effects.</string>
     <!-- End validator -->
 
 </resources>
