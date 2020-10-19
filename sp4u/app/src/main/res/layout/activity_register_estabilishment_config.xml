@@ -51,11 +51,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="configurações básicas"
-                    android:textColor="@color/White"
+                    android:textColor="@color/Grey"
                     android:textColorHint="@color/LightBlue"
                     android:width="100dp"
                     android:height="40dp"
                     android:layout_marginLeft="24dp"/>
+
                 <TextView
                     android:id="@+id/tv_desc_role"
                     android:layout_width="wrap_content"
@@ -66,6 +67,7 @@
                     android:width="100dp"
                     android:height="40dp"
                     android:layout_marginLeft="24dp"/>
+
                 <TextView
                     android:id="@+id/tv_alterar_img"
                     android:layout_width="wrap_content"
@@ -85,6 +87,7 @@
             android:layout_height="400dp">
 
             <LinearLayout
+                android:id="@+id/ll_configuracao_basica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -122,7 +125,7 @@
                     android:text="nome fantasia"
                     android:textColor="@color/White"
                     android:textSize="16sp"
-                    tools:layout_editor_absoluteX="66dp" />
+                    tools:layout_editor_absoluteX="66dp"/>
 
                 <EditText
                     android:id="@+id/et_nome_fantasia"

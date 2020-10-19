@@ -71,5 +71,29 @@
     <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Cool and alternative nightclub with animated shows under light effects.</string>
     <!-- End validator -->
 
+    <!-- Start the first establishment edit screen -->
+    <string name="estabilishment_config_nome_estabelecimento">Caos</string>
+    <string name="estabilishment_config_menu_config_basica">basic settings</string>
+    <string name="estabilishment_config_menu_config_role">role description</string>
+    <string name="estabilishment_config_menu_config_img">change images</string>
+    <string name="estabilishment_config_desc_basica_razao_social">company name</string>
+    <string name="estabilishment_config_desc_basica_edite_razao_social">Type the company name</string>
+    <string name="estabilishment_config_desc_basica_nome_fantasia">fantasy name</string>
+    <string name="estabilishment_config_desc_basica_edite_nome_fantasia">Type the fantasy name</string>
+    <string name="estabilishment_config_desc_basica_telefone">telephone</string>
+    <string name="estabilishment_config_desc_basica_edite_telefone">Type the telephone</string>
+    <string name="estabilishment_config_desc_basica_endereço">address</string>
+    <string name="estabilishment_config_desc_basica_edite_endereco">type the address</string>
+    <string name="estabilishment_config_desc_basica_cep">cep</string>
+    <string name="estabilishment_config_desc_basica_edite_cep">type the cep</string>
+    <string name="estabilishment_config_desc_basica_bairro">neighborhood</string>
+    <string name="estabilishment_config_desc_basica_edite_bairro">Type the neighborhood</string>
+    <string name="estabilishment_config_desc_basica_cidade">city</string>
+    <string name="estabilishment_config_desc_basica_estado">state</string>
+    <string name="estabilishment_config_desc_basica_nuemro">number</string>
+    <string name="estabilishment_config_desc_basica_complemento">address complement</string>
+    <string name="estabilishment_config_desc_basica_email">email</string>
+    <!-- Finish the first establishment edit screen -->
+
 </resources>
 
