@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SP4U</string>
+    <!-- Start user profile screen -->
     <string name="user_profile_alterar_foto">change profile photo</string>
     <string name="user_profile_configuracoes_basicas">basic settings</string>
     <string name="user_profile_alterar_email">change e-mail</string>
@@ -24,6 +25,7 @@
     <string name="user_profile_senha_nova">new password</string>
     <string name="user_profile_confirma_senha">confirm new password</string>
     <string name="user_profile_botao_alterar_senha">change password</string>
+    <!-- End user profile screen  -->
 
     <!-- Start establishment registration screen -->
     <string name="estabilishment_titulo_cadastro_estabelecimento">do you own an estabilishment? </string>
@@ -36,15 +38,18 @@
     <string name="login_senha_email_incorreto">Email or password incorrect</string>
     <!-- End login screen  -->
 
+    <!-- Start mood screen  -->
+    <string name="feels_titulo">How are you feeling today?</string>
+    <string name="feels_feliz">happy</string>
+    <string name="feels_animado">excited</string>
+    <string name="feels_desanimado">sad</string>
+    <string name="feels_com_fome">hungry</string>
+    <string name="feels_fogoso">hot</string>
+    <string name="feels_entediado">bored</string>
+    <!-- End mood screen  -->
+
     <!-- Start validator -->
     <string name="validator_null">Must be filled</string>
-    <string name="como_voc_est_se_sentindo_hoje">How are you feeling today?</string>
-    <string name="feliz">happy</string>
-    <string name="animado">excited</string>
-    <string name="desanimado">sad</string>
-    <string name="com_fome">hungry</string>
-    <string name="fogoso">hot</string>
-    <string name="entediado">bored</string>
     <string name="app_slogan">The best of SP in your hands</string>
     <string name="sertanejo">country</string>
     <string name="subTitile">we need to understand what you like to do when you want to go out... I will ask you a few questions and I promise it will be quick</string>

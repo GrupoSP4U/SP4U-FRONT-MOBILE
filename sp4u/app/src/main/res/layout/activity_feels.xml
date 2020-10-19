@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="@string/como_voc_est_se_sentindo_hoje"
+        android:text="@string/feels_titulo"
         android:textColor="#FFF"
         android:fontFamily="@font/montserrat"
         android:textSize="24sp"
@@ -50,7 +50,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="@string/feliz"
+                        android:text="@string/feels_feliz"
                         android:textSize="20sp"
                         android:textColor="@color/Fund"
                         android:fontFamily="@font/montserrat"/>
@@ -94,7 +94,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/com_fome"
+                            android:text="@string/feels_com_fome"
                             android:textSize="20sp"
                             android:textColor="@color/Fund"
                             android:fontFamily="@font/montserrat"/>
@@ -138,7 +138,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/animado"
+                            android:text="@string/feels_animado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -183,7 +183,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/entediado"
+                            android:text="@string/feels_entediado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -227,7 +227,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/desanimado"
+                            android:text="@string/feels_desanimado"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
@@ -271,7 +271,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="@string/fogoso"
+                            android:text="@string/feels_fogoso"
                             android:textSize="20sp"
                             android:textColor="#FFF"
                             android:fontFamily="@font/montserrat"/>
