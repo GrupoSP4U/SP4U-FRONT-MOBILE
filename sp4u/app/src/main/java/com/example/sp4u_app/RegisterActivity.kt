@@ -11,9 +11,9 @@ class RegisterActivity: AppCompatActivity()  {
         setContentView(R.layout.activity_register)
     }
 
-    fun goToWelcomeMusic(button: View){
-        val welcome = Intent(this, WelcomeMusicActivity::class.java)
-        startActivity(welcome)
+    fun goToLogin(button: View){
+        val login = Intent(this, LoginActivity::class.java)
+        startActivity(login)
     }
 
 }
