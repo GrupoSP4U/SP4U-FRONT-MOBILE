@@ -96,7 +96,7 @@
 
     <!-- Iniciando tela de login  -->
     <string name="login_senha_email_incorreto">Email ou senha incorretos</string>
-    <!-- Finalizando tela de login  -->
+    <!-- Finalizando tela de login -->
 
     <!-- Iniciando validator -->
     <string name="validator_null">Deve ser preenchido</string>
@@ -107,24 +107,37 @@
     <string name="estabilishment_config_menu_config_basica">configurações básicas</string>
     <string name="estabilishment_config_menu_config_role">descrição do rolê</string>
     <string name="estabilishment_config_menu_config_img">alterar imagens</string>
-    <string name="estabilishment_config_desc_basica_razao_social">razão social</string>
-    <string name="estabilishment_config_desc_basica_edite_razao_social">Digite a razão social</string>
-    <string name="estabilishment_config_desc_basica_nome_fantasia">nome fantasia</string>
-    <string name="estabilishment_config_desc_basica_edite_nome_fantasia">Digite o nome fantasia</string>
-    <string name="estabilishment_config_desc_basica_telefone">telefone</string>
-    <string name="estabilishment_config_desc_basica_edite_telefone">Digite o telefone</string>
-    <string name="estabilishment_config_desc_basica_endereço">endereço</string>
-    <string name="estabilishment_config_desc_basica_edite_endereco">Digite o endereço</string>
-    <string name="estabilishment_config_desc_basica_cep">cep</string>
-    <string name="estabilishment_config_desc_basica_edite_cep">Digite o cep</string>
-    <string name="estabilishment_config_desc_basica_bairro">bairro</string>
-    <string name="estabilishment_config_desc_basica_edite_bairro">Digite o bairro</string>
-    <string name="estabilishment_config_desc_basica_cidade">cidade</string>
-    <string name="estabilishment_config_desc_basica_estado">estado</string>
-    <string name="estabilishment_config_desc_basica_nuemro">numero</string>
-    <string name="estabilishment_config_desc_basica_complemento">complemento</string>
-    <string name="estabilishment_config_desc_basica_email">email</string>
+    <string name="estabilishment_config_basica_razao_social">razão social</string>
+    <string name="estabilishment_config_basica_edite_razao_social">Digite a razão social</string>
+    <string name="estabilishment_config_basica_nome_fantasia">nome fantasia</string>
+    <string name="estabilishment_config_basica_edite_nome_fantasia">Digite o nome fantasia</string>
+    <string name="estabilishment_config_basica_telefone">telefone</string>
+    <string name="estabilishment_config_basica_edite_telefone">Digite o telefone</string>
+    <string name="estabilishment_config_basica_endereço">endereço</string>
+    <string name="estabilishment_config_basica_edite_endereco">Digite o endereço</string>
+    <string name="estabilishment_config_basica_cep">cep</string>
+    <string name="estabilishment_config_basica_edite_cep">Digite o cep</string>
+    <string name="estabilishment_config_basica_bairro">bairro</string>
+    <string name="estabilishment_config_basica_edite_bairro">Digite o bairro</string>
+    <string name="estabilishment_config_basica_cidade">cidade</string>
+    <string name="estabilishment_config_basica_estado">estado</string>
+    <string name="estabilishment_config_basica_numero">numero</string>
+    <string name="estabilishment_config_basica_complemento">complemento</string>
+    <string name="estabilishment_config_basica_email">email</string>
+    <string name="estabilishment_config_basica_edite_email">Digite seu email</string>
+    <string name="estabilishment_config_basica_concluir">Concluir</string>
     <!-- Finalizando  primeira tela de edição de estabelecimento -->
+
+    <!-- Inicializando segunda tela de edição de estabelecimento -->
+    <string name="estabilishment_config_desc_role_atual">descrição atual</string>
+    <string name="estabilishment_config_desc_role_cardapio_vegetariano">possui cardápio vegetariano?</string>
+    <string name="estabilishment_config_desc_role_vegano">possui cardápio vegano?</string>
+    <string name="estabilishment_config_desc_role_animais">são permitidos animais no local?</string>
+    <string name="estabilishment_config_desc_role_maioridade">menores de idade são permitidos?</string>
+    <string name="estabilishment_config_desc_role_concluir">concluir</string>
+    <!-- Finalizando  segunda tela de edição de estabelecimento -->
+
+
 </resources>
 
 
