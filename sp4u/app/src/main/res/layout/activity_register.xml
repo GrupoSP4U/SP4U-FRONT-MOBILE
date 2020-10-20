@@ -24,6 +24,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/White"
                 android:fontFamily="@font/montserrat"
+                android:layout_marginTop="12sp"
                 android:gravity="center"
                 android:text="cadastro"
                 android:textSize="20sp"

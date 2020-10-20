@@ -6,12 +6,21 @@
     android:background="@color/Fund"
     >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp">
+
     <TextView
     android:id="@+id/tv_titulo_filtros_adicionais"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12sp"
     android:fontFamily="@font/montserrat"
     android:text="quer refinar sua busca?"
     android:textAlignment="center"
@@ -27,10 +36,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_titulo_filtros_adicionais"
         android:fontFamily="@font/montserrat"
         android:layout_marginTop="35dp"
-        android:text="possui cardápio vegetariano?"
+        android:text="Possui cardápio vegetariano?"
         android:textAlignment="center"
         android:textColor="@color/White"
-        android:textSize="14sp"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="66dp"
         />
 
@@ -39,8 +48,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:text="Cardápio Vegatariano"
-        android:textColor="@color/White"
         android:layout_marginTop="12sp"
         app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegetariano"
         tools:layout_editor_absoluteX="66dp"
@@ -53,10 +60,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegetariano"
         android:fontFamily="@font/montserrat"
         android:layout_marginTop="30dp"
-        android:text="possui cardápio vegano?"
+        android:text="Possui cardápio vegano?"
         android:textAlignment="center"
         android:textColor="@color/White"
-        android:textSize="14sp"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="66dp"
     />
     <Switch
@@ -64,8 +71,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:text="Cardápio Vegano"
-        android:textColor="@color/White"
         android:layout_marginTop="12sp"
         app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegano"
         tools:layout_editor_absoluteX="66dp"
@@ -78,10 +83,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegano"
         android:fontFamily="@font/montserrat"
         android:layout_marginTop="30dp"
-        android:text="animais são permitidos?"
+        android:text="Animais são permitidos?"
         android:textAlignment="center"
         android:textColor="@color/White"
-        android:textSize="14sp"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="66dp"
         />
 
@@ -90,8 +95,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:text="Animais Permitidos"
-        android:textColor="@color/White"
         android:layout_marginTop="12sp"
         app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos"
         tools:layout_editor_absoluteX="66dp"
@@ -104,10 +107,10 @@
         app:layout_constraintTop_toBottomOf="@+id/sw_animais_permitidos"
         android:fontFamily="@font/montserrat"
         android:layout_marginTop="30dp"
-        android:text="idade mínima do público:"
+        android:text="Permitido menores de idade?"
         android:textAlignment="center"
         android:textColor="@color/White"
-        android:textSize="14sp"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="66dp"
         />
 
@@ -116,7 +119,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:text="+ 18 anos"
+        android:text=""
         android:textColor="@color/White"
         android:layout_marginTop="12sp"
         app:layout_constraintTop_toBottomOf="@id/tv_idade_permitida"
@@ -133,14 +136,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida"
         android:fontFamily="@font/montserrat"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="60dp"
         android:background="@color/Blue"
         android:text="vamos la"
         android:textColor="@color/White"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:onClick="goToHome"
         />
 
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
