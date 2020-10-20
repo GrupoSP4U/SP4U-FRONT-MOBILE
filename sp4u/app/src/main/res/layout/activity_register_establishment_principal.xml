@@ -67,6 +67,7 @@
         android:hint="Digite a razão social"
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_orange"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         android:inputType="text"
         />
@@ -95,6 +96,7 @@
         android:hint="Digite o nome fantasia"
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_orange"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         android:inputType="text"
         />
@@ -124,6 +126,7 @@
         android:hint="(XX) 00000-0000"
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_orange"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         android:inputType="phone"
         />
@@ -152,6 +155,7 @@
         android:hint="(XX) 00000-0000"
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_orange"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         android:inputType="phone"
         />
