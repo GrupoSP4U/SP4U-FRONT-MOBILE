@@ -23,6 +23,11 @@
         <activity android:name=".RegisterEstablishmentLocalActivity"></activity>
         <activity android:name=".RegisterEstablishmentFiltersActivity"></activity>
         <activity android:name=".AdditionalFiltersActivity"></activity>
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".UserProfile2Activity" />
+        <activity android:name=".UserProfile3Activity" />
+        <activity android:name=".RegisterEstablishmentPrincipalActivity" />
+        <activity android:name=".RegisterEstablishmentAdressActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
