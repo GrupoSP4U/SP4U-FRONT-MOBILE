@@ -20,9 +20,9 @@
             android:layout_width="193dp"
             android:layout_height="28dp"
             android:layout_gravity="center"
+            android:layout_marginTop="12sp"
             android:background="@color/White"
             android:fontFamily="@font/montserrat"
-            android:layout_marginTop="12sp"
             android:text="login"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -132,7 +132,9 @@
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_esqueci_senha" />
+            app:layout_constraintTop_toBottomOf="@id/tv_esqueci_senha"
+            android:layout_marginLeft="20dp"
+            />
 
     </LinearLayout>
 
