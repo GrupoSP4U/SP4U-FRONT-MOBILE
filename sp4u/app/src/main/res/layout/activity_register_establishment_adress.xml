@@ -44,6 +44,7 @@
         android:hint="  Digite seu endereço "
         android:layout_marginTop="8sp"
         android:background="@drawable/et_style_orange"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         android:inputType="text"
         />
@@ -71,6 +72,7 @@
         android:hint="  00000-000"
         android:inputType="text"
         android:textColorHint="@color/White"
+        android:backgroundColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_cep"
         tools:layout_editor_absoluteX="66dp"
         />
@@ -98,6 +100,7 @@
         android:hint="  bairro"
         android:inputType="text"
         android:textColorHint="@color/White"
+        android:backgroundColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_bairro"
         tools:layout_editor_absoluteX="215dp"
         />
@@ -125,6 +128,7 @@
         android:hint="  cidade"
         android:inputType="text"
         android:textColorHint="@color/White"
+        android:backgroundColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_cidade"
         tools:layout_editor_absoluteX="66dp"
         />
@@ -151,6 +155,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="  --"
         android:inputType="text"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_estado"
         tools:layout_editor_absoluteX="195dp"
@@ -178,6 +183,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="  -- "
         android:inputType="number"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_numero"
         tools:layout_editor_absoluteX="275dp"
@@ -205,6 +211,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="  --"
         android:inputType="text"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_complemento"
         tools:layout_editor_absoluteX="66dp"
@@ -232,6 +239,7 @@
         android:fontFamily="@font/montserrat"
         android:hint="  example@email.com"
         android:inputType="text"
+        android:backgroundColorHint="@color/White"
         android:textColorHint="@color/White"
         app:layout_constraintTop_toBottomOf="@id/tv_email_contato"
         tools:layout_editor_absoluteX="66dp"
