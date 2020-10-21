@@ -412,7 +412,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="right|center_horizontal"
                 android:layout_marginTop="12dp"
-                android:onClick="goToLocalUserActivity"
+                android:onClick="goToHomeWelcomeLocalUser"
                 android:src="@drawable/icon_next_user"
                 app:layout_constraintTop_toBottomOf="@id/bt_pagode"
                 tools:layout_editor_absoluteX="315dp" />

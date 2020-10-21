@@ -10,4 +10,10 @@ class WelcomeMusicActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome_music)
     }
+
+    fun goToHomeWelcomeLocalUser(){
+        val welcomeLocalUser = Intent(this, WelcomeLocalActivity::class.java)
+        startActivity(welcomeLocalUser)
+    }
+
 }

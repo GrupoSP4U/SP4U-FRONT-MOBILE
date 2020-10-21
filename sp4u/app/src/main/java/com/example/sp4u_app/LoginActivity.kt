@@ -64,7 +64,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToHome(){
-        val home = Intent(this, HomeActivity::class.java)
+        val home = Intent(this, WelcomeMusicActivity::class.java)
         startActivity(home)
     }
 }

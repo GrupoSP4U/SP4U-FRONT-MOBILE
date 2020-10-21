@@ -17,11 +17,11 @@
 
         <TextView
             android:id="@+id/tv_titulo_login"
-            android:layout_width="193dp"
-            android:layout_height="28dp"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="12sp"
             android:background="@color/White"
+            android:elegantTextHeight="true"
             android:fontFamily="@font/montserrat"
             android:text="login"
             android:textAlignment="center"
@@ -61,6 +61,7 @@
             android:background="@drawable/et_style_blue"
             android:fontFamily="@font/montserrat"
             android:hint="Digite seu e-mail"
+            android:paddingLeft="10dp"
             android:inputType="textEmailAddress"
             android:textColor="@color/White"
             android:textColorHint="@color/White"
@@ -88,6 +89,7 @@
             android:background="@drawable/et_style_blue"
             android:fontFamily="@font/montserrat"
             android:hint="Digite sua senha"
+            android:paddingLeft="10dp"
             android:inputType="textPassword"
             android:textColor="@color/White"
             android:textColorHint="@color/White"
@@ -95,35 +97,45 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_senha" />
 
-        <TextView
-            android:id="@+id/tv_cadastrar"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/montserrat"
-            android:onClick="goToRegister"
-            android:text="cadastre-se"
-            android:textColor="@color/White"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/et_senha"
-            tools:layout_editor_absoluteX="66dp" />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_esqueci_senha"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="146sp"
-            android:fontFamily="@font/montserrat"
-            android:onClick="goToForgotPassword"
-            android:text="esqueci a senha"
-            android:textColor="@color/White"
-            android:textSize="18sp"
-            app:layout_constraintLeft_toRightOf="@id/tv_cadastrar"
-            app:layout_constraintTop_toBottomOf="@id/et_senha" />
+            <TextView
+                android:id="@+id/tv_cadastrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/montserrat"
+                android:onClick="goToRegister"
+                android:text="cadastre-se"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/et_senha"
+                tools:layout_editor_absoluteX="66dp" />
+
+            <TextView
+                android:id="@+id/tv_esqueci_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat"
+                android:onClick="goToForgotPassword"
+                android:text="esqueci a senha"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@id/tv_cadastrar"
+                app:layout_constraintTop_toBottomOf="@id/et_senha" />
+
+        </LinearLayout>
+
+
 
         <Button
             android:id="@+id/bt_cadastrar"
-            android:layout_width="240dp"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
             android:background="@color/Blue"
@@ -135,7 +147,6 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_esqueci_senha"
-            android:layout_marginLeft="20dp"
             />
 
     </LinearLayout>
