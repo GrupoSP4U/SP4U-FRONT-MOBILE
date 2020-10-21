@@ -132,7 +132,6 @@
         </LinearLayout>
 
 
-
         <Button
             android:id="@+id/bt_cadastrar"
             android:layout_width="match_parent"
@@ -142,12 +141,12 @@
             android:fontFamily="@font/montserrat"
             android:onClick="login"
             android:text="entrar"
+            android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_esqueci_senha"
-            />
+            app:layout_constraintTop_toBottomOf="@id/tv_esqueci_senha" />
 
     </LinearLayout>
 
