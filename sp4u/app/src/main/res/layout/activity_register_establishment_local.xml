@@ -108,11 +108,11 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="70dp"
-        android:src="@drawable/icon_next"
-        app:layout_constraintTop_toBottomOf="@id/bt_pub"
-        tools:layout_editor_absoluteX="315dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
         android:onClick="goToRegisterEstablishmentFilters"
-        />
+        android:src="@drawable/icon_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_pub" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
