@@ -31,6 +31,7 @@
         <activity android:name=".RegisterEstablishmentLocalActivity" />
         <activity android:name=".RegisterEstablishmentFiltersActivity" />
         <activity android:name=".AdditionalFiltersActivity" />
+        <activity android:name="RegisterEstabilishmentConfigActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

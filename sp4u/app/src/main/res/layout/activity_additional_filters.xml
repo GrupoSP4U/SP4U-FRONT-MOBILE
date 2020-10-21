@@ -127,22 +127,21 @@
         />
 
 
-
-    <Button
-        android:id="@+id/bt_vamos_la"
-        android:layout_width="260dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="60dp"
-        android:background="@color/Blue"
-        android:text="vamos la"
-        android:textColor="@color/White"
-        android:textSize="20sp"
-        android:onClick="goToHome"
-        />
+        <Button
+            android:id="@+id/bt_vamos_la"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/DarkBlue"
+            android:fontFamily="@font/montserrat"
+            android:onClick="goToHome"
+            android:text="vamos la"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida" />
 
     </LinearLayout>
 
