@@ -277,6 +277,7 @@
                 android:text="Ja é cadastrado? Faça o login"
                 android:textColor="@color/White"
                 android:textSize="18sp"
+                android:onClick="goToLogin"
                 app:layout_constraintTop_toBottomOf="@id/et_confirmar_senha" />
 
             <Button

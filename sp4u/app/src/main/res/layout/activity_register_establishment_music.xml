@@ -1,378 +1,409 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Fund">
+    android:background="@color/Fund"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="367dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat"
-        android:text="@string/title"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/subTitle"
-        android:layout_width="320dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat"
-        android:text="precisamos de algumas informações sobre seu estabelecimento... Qual é o tipo de música mais tocada?"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
-
-    <Button
-        android:id="@+id/bt_sertanejo"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/LightRed"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/sertanejo"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
-
-    <Button
-        android:id="@+id/bt_samba"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/DarkBlue"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/samba"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_kpop"
-        app:layout_constraintTop_toBottomOf="@+id/bt_trance" />
-
-    <Button
-        android:id="@+id/bt_rap"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/DarkBlue"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/rap"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_metal"
-        app:layout_constraintTop_toBottomOf="@+id/bt_trap" />
-
-    <Button
-        android:id="@+id/bt_pagode"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/Green"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/pagode"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_funk2"
-        app:layout_constraintTop_toBottomOf="@+id/bt_folk" />
-
-    <Button
-        android:id="@+id/bt_funk2"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/LightRed"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/funk"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_axe"
-        app:layout_constraintTop_toBottomOf="@+id/bt_mpb" />
-
-    <Button
-        android:id="@+id/bt_trap"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/Green"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/trap"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_eletronica"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
-
-    <Button
-        android:id="@+id/bt_jazz"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/LightRed"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/jazz"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_trance"
-        app:layout_constraintTop_toBottomOf="@+id/bt_rap" />
-
-    <Button
-        android:id="@+id/bt_mpb"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/Green"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/mpb"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_samba"
-        app:layout_constraintTop_toBottomOf="@+id/bt_jazz" />
-
-    <Button
-        android:id="@+id/bt_axe"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/axe"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_rock"
-        app:layout_constraintTop_toBottomOf="@+id/bt_samba" />
-
-    <Button
-        android:id="@+id/bt_gospel"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="70dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/DarkBlue"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/gospel"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_trap"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
-
-    <Button
-        android:id="@+id/bt_metal"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/LightRed"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/metal"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_hiphop"
-        app:layout_constraintTop_toBottomOf="@+id/bt_eletronica" />
-
-    <Button
-        android:id="@+id/bt_rock"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/LightRed"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/rock"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_kpop" />
-
-    <Button
-        android:id="@+id/bt_eletronica"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/eletronica"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_sertanejo"
-        app:layout_constraintTop_toBottomOf="@+id/subTitle" />
-
-    <Button
-        android:id="@+id/bt_forro"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/forro"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_jazz"
-        app:layout_constraintTop_toBottomOf="@+id/bt_classico" />
-
-    <Button
-        android:id="@+id/bt_kpop"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/kpop"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_pop" />
-
-    <Button
-        android:id="@+id/bt_trance"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/trance"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_pop"
-        app:layout_constraintTop_toBottomOf="@+id/bt_metal" />
-
-    <Button
-        android:id="@+id/bt_folk"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/DarkBlue"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/folk"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_mpb"
-        app:layout_constraintTop_toBottomOf="@+id/bt_forro" />
-
-    <Button
-        android:id="@+id/bt_hiphop"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/DarkBlue"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/hip_hop"
-        android:textColorHint="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_sertanejo" />
-
-    <Button
-        android:id="@+id/bt_pop"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="8dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/Green"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/pop"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_hiphop" />
-
-    <Button
-        android:id="@+id/bt_classico"
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
-        android:width="68dp"
-        android:height="68dp"
-        android:background="@drawable/btn_circle_background"
-        android:backgroundTint="@color/Green"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/classico"
-        android:textColorHint="@color/Fund"
-        android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/bt_rap"
-        app:layout_constraintTop_toBottomOf="@+id/bt_gospel" />
-
-    <ImageView
-        android:id="@+id/img_next"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="300dp"
-        android:src="@drawable/icon_next"
-        app:layout_constraintTop_toBottomOf="@id/bt_classico"
-        tools:layout_editor_absoluteX="315dp"
-        android:onClick="goToRegisterEstablishmentLocal"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/subTitile"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_sertanejo"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/sertanejo"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+
+                <Button
+                    android:id="@+id/bt_samba"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/Green"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/samba"
+                    android:textColorHint="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_kpop"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_trance" />
+
+                <Button
+                    android:id="@+id/bt_rap"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/DarkBlue"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/rap"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_metal"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_trap" />
+
+                <Button
+                    android:id="@+id/bt_pagode"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/Green"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/pagode"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_funk2"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_folk" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_eletronica"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/eletronica"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_sertanejo"
+                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+
+                <Button
+                    android:id="@+id/bt_forro"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/forro"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_jazz"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_classico" />
+
+                <Button
+                    android:id="@+id/bt_kpop"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/kpop"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_pop" />
+
+                <Button
+                    android:id="@+id/bt_trance"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/trance"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_pop"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_metal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/bt_folk"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/DarkBlue"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/folk"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_mpb"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_forro" />
+
+                <Button
+                    android:id="@+id/bt_hiphop"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/Green"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/hip_hop"
+                    android:textColorHint="#000000"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_sertanejo" />
+
+                <Button
+                    android:id="@+id/bt_pop"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:hint="@string/pop"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_hiphop" />
+
+                <Button
+                    android:id="@+id/bt_classico"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/Green"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/classico"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_rap"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_gospel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/bt_axe"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/axe"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_rock"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_samba" />
+
+                <Button
+                    android:id="@+id/bt_gospel"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/DarkBlue"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/gospel"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_trap"
+                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+
+                <Button
+                    android:id="@+id/bt_metal"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/metal"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_hiphop"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_eletronica" />
+
+                <Button
+                    android:id="@+id/bt_rock"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/btn_circle_background"
+
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/rock"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_kpop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/bt_funk2"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/funk"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_axe"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_mpb" />
+
+                <Button
+                    android:id="@+id/bt_trap"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/trap"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_eletronica"
+                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+
+                <Button
+                    android:id="@+id/bt_jazz"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:backgroundTint="@color/LightRed"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/jazz"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_trance"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_rap" />
+
+                <Button
+                    android:id="@+id/bt_mpb"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:width="68dp"
+                    android:height="68dp"
+                    android:background="@drawable/btn_circle_background"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/mpb"
+                    android:textColorHint="@color/Fund"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/bt_samba"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_jazz" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_horizontal"
+                android:layout_marginTop="12dp"
+                android:onClick="goToRegisterEstablishmentLocal"
+                android:src="@drawable/icon_next"
+                app:layout_constraintTop_toBottomOf="@id/bt_pagode"
+                tools:layout_editor_absoluteX="315dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
