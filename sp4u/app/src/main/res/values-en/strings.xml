@@ -103,6 +103,8 @@
     <string name="estabilishment_config_desc_role_vegano">do you have vegan manu?</string>
     <string name="estabilishment_config_desc_role_animais">are pets allowed?</string>
     <string name="estabilishment_config_desc_role_maioridade">are minors allowed?</string>
+    <string name="estabilishment_config_desc_role_tipo_role">the local is a</string>
+    <string name="estabilishment_config_desc_role_tipo_musica">type of music more played</string>
     <string name="estabilishment_config_desc_role_concluir">done</string>
     <!-- End the second estabilishment edit screen -->
 </resources>

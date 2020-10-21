@@ -134,10 +134,10 @@
     <string name="estabilishment_config_desc_role_vegano">possui cardápio vegano?</string>
     <string name="estabilishment_config_desc_role_animais">são permitidos animais no local?</string>
     <string name="estabilishment_config_desc_role_maioridade">menores de idade são permitidos?</string>
+    <string name="estabilishment_config_desc_role_tipo_role">o rolê é um</string>
+    <string name="estabilishment_config_desc_role_tipo_musica">tipo de música mais tocado</string>
     <string name="estabilishment_config_desc_role_concluir">concluir</string>
     <!-- Finalizando  segunda tela de edição de estabelecimento -->
-
-
 </resources>
 
 

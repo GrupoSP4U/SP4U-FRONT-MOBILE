@@ -159,6 +159,42 @@
                     android:textColor="@color/LightRed"
                     tools:layout_editor_absoluteX="40dp" />
 
+                <TextView
+                    android:id="@+id/tv_tipo_musica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/estabilishment_config_desc_role_tipo_musica"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="66dp" />
+
+                <Spinner
+                    android:id="@+id/ps_musica"
+                    android:layout_width="139dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/et_style_orange"/>
+
+                <TextView
+                    android:id="@+id/tv_tipo_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/estabilishment_config_desc_role_tipo_role"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="66dp" />
+
+                <Spinner
+                    android:id="@+id/ps_estab"
+                    android:layout_width="139dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/et_style_orange"/>
+
                 <Button
                     android:id="@+id/bt_concluir_config_estabelecimento"
                     android:layout_width="156dp"
