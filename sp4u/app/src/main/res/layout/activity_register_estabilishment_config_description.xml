@@ -107,6 +107,7 @@
                     android:textSize="16sp"
                     tools:layout_editor_absoluteX="66dp" />
 
+
                 <EditText
                     android:id="@+id/et_descricao_atual"
                     android:layout_width="280dp"
@@ -115,8 +116,8 @@
                     android:background="@drawable/et_style_orange"
                     android:fontFamily="@font/montserrat"
                     android:inputType="text"
-                    android:textColorHint="@color/White"/>
-
+                    android:textColor="@color/White"
+                    android:textColorHint="@color/White" />
 
                 <Switch
                     android:id="@+id/sw_cardapio_vegetariano"
@@ -201,6 +202,7 @@
                     android:layout_width="156dp"
                     android:layout_height="25dp"
                     android:layout_marginLeft="60dp"
+                    android:layout_marginBottom="80dp"
                     android:background="@color/LightRed"
                     android:text="@string/estabilishment_config_desc_role_concluir"
                     android:textSize="12sp"

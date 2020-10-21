@@ -96,7 +96,7 @@
                 android:orientation="vertical"
                 android:paddingStart="40dp"
                 android:paddingEnd="40dp">
-                
+
                 <TextView
                     android:id="@+id/tv_razao_social"
                     android:layout_width="wrap_content"
@@ -118,6 +118,7 @@
                     android:hint="@string/estabilishment_config_basica_edite_razao_social"
                     android:inputType="text"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/White"
                     android:textColorHint="@color/White" />
 
                 <TextView
@@ -141,6 +142,7 @@
                     android:hint="@string/estabilishment_config_basica_edite_nome_fantasia"
                     android:inputType="text"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/White"
                     android:textColorHint="@color/White" />
 
                 <TextView
@@ -164,6 +166,7 @@
                     android:hint="@string/estabilishment_config_basica_edite_nome_fantasia"
                     android:inputType="phone"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/White"
                     android:textColorHint="@color/White" />
 
                 <TextView
@@ -187,6 +190,7 @@
                     android:hint="@string/estabilishment_config_basica_edite_endereco"
                     android:inputType="text"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/White"
                     android:textColorHint="@color/White" />
 
                 <LinearLayout
@@ -235,6 +239,7 @@
                         android:hint="00000-000"
                         android:inputType="text"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                     <EditText
@@ -247,6 +252,7 @@
                         android:hint="@string/estabilishment_config_basica_edite_bairro"
                         android:inputType="text"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                 </LinearLayout>
@@ -308,6 +314,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="text"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                     <EditText
@@ -319,6 +326,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="text"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
 
@@ -332,6 +340,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="number"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                 </LinearLayout>
@@ -363,6 +372,7 @@
                         android:fontFamily="@font/montserrat"
                         android:inputType="text"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                     <TextView
@@ -388,6 +398,7 @@
                         android:hint="Digite o seu e-mail "
                         android:inputType="textEmailAddress"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/White"
                         android:textColorHint="@color/White" />
 
                 </LinearLayout>
@@ -397,7 +408,8 @@
                     android:layout_width="156dp"
                     android:layout_height="25dp"
                     android:layout_marginLeft="60dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="80dp"
                     android:background="@color/LightRed"
                     android:fontFamily="@font/montserrat"
                     android:text="@string/estabilishment_config_basica_concluir"
