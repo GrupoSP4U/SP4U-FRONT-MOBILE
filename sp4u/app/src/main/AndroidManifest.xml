@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sp4u_app">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_foreground_sp4u"
@@ -10,27 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".FeelsActivity"></activity>
-        <activity android:name=".ForgotPasswordActivity"></activity>
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".RegisterEstablishmentActivity"></activity>
-        <activity android:name=".ResultActivity"></activity>
-        <activity android:name=".WelcomeLocalActivity"></activity>
-        <activity android:name=".WelcomeMusicActivity"></activity>
-        <activity android:name=".RegisterEstablishmentMusicActivity"></activity>
-        <activity android:name=".RegisterEstablishmentLocalActivity"></activity>
-        <activity android:name=".RegisterEstablishmentFiltersActivity"></activity>
-        <activity android:name=".AdditionalFiltersActivity"></activity>
         <activity android:name=".UserProfileActivity" />
         <activity android:name=".UserProfile2Activity" />
         <activity android:name=".UserProfile3Activity" />
         <activity android:name=".RegisterEstablishmentPrincipalActivity" />
         <activity android:name=".RegisterEstablishmentAdressActivity" />
+        <activity android:name=".RegisterEstabilishmentConfigDescriptionActivity" />
+        <activity android:name=".FeelsActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RegisterEstablishmentActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".WelcomeLocalActivity" />
+        <activity android:name=".WelcomeMusicActivity" />
+        <activity android:name=".RegisterEstablishmentMusicActivity" />
+        <activity android:name=".RegisterEstablishmentLocalActivity" />
+        <activity android:name=".RegisterEstablishmentFiltersActivity" />
+        <activity android:name=".AdditionalFiltersActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -40,5 +44,4 @@
             android:resource="@array/preloaded_fonts" />
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
