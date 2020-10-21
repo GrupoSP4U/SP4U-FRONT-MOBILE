@@ -74,7 +74,8 @@
             android:layout_marginLeft="30dp"
             android:textAllCaps="false"
             android:textColor="@color/White"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:onClick="goToBasicSettings"/>
 
         <Button
             android:id="@+id/bt_email"
@@ -87,7 +88,8 @@
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintRight_toLeftOf="@id/bt_configuracoes" />
+            app:layout_constraintRight_toLeftOf="@id/bt_configuracoes"
+            android:onClick="goToEmailEditing"/>
 
         <Button
             android:id="@+id/bt_senha"
