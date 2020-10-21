@@ -1,5 +1,6 @@
 package com.example.sp4u_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +11,8 @@ class RegisterEstablishmentActivity : AppCompatActivity(){
         setContentView(R.layout.activity_register_establishment)
     }
 
-    fun registerEstablishmen(button: View){
-        //
+    fun goToregisterEstablishment(button: View){
+        val registerEstablishment = Intent(this, RegisterEstablishmentPrincipalActivity::class.java)
+        startActivity(registerEstablishment)
     }
 }
