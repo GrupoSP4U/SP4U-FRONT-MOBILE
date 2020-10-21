@@ -49,7 +49,6 @@
             android:background="@drawable/et_style_orange"
             android:fontFamily="@font/montserrat"
             android:inputType="text"
-            android:backgroundColorHint="@color/White"
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
