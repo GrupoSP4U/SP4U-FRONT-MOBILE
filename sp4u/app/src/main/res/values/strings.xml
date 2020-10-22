@@ -144,6 +144,14 @@
     <string name="estabilishment_config_desc_role_tipo_musica">tipo de música mais tocado</string>
     <string name="estabilishment_config_desc_role_concluir">concluir</string>
     <!-- Finalizando  segunda tela de edição de estabelecimento -->
+
+    <!--Iniciando o menu -->
+    <string name="menu_roles">rolês</string>
+    <string name="menu_humor">humor</string>
+    <string name="menu_perfil">perfil</string>
+    <string name="menu_empresa">empresa</string>
+    <!--Finalizando o menu -->
+
 </resources>
 
 
