@@ -23,7 +23,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:fontFamily="@font/montserrat"
         android:layout_gravity="center"
-        android:text="cadastro"
+        android:text="@string/titulo_cadastro_estabelecimento"
         android:layout_marginTop="12sp"
         tools:layout_editor_absoluteY="60dp"
         android:textSize="18sp"

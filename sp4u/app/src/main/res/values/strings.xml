@@ -138,6 +138,95 @@
     <string name="estabilishment_config_desc_role_tipo_musica">tipo de música mais tocado</string>
     <string name="estabilishment_config_desc_role_concluir">concluir</string>
     <!-- Finalizando  segunda tela de edição de estabelecimento -->
+
+    <!-- Inicializando tela de esqueceu senha-->
+    <string name="titulo_esqueceu_senha">esqueceu sua senha?</string>
+    <string name="nova_senha">nova senha</string>
+    <string name="et_nova_senha">Digite a nova senha</string>
+    <string name="confirmar_nova_senha">confirmar nova senha</string>
+    <string name="et_confirmar_nova_senha">Cnfirmar nova senha</string>
+    <string name="btn_esqueceu_senha">confirmar</string>
+    <!-- finalizando tela de esqueceu senha -->
+
+    <!-- Inicializando tela de login-->
+    <string name="titulo_login">login</string>
+    <string name="login_email">e-mail</string>
+    <string name="et_login_email">Digite seu e-mail</string>
+    <string name="login_senha">senha</string>
+    <string name="et_login_senha">Digite sua senha</string>
+    <string name="login_cadastrar">cadastre-se</string>
+    <string name="login_esqueceu_senha">esqueceu senha</string>
+    <string name="btn_login_entrar">entrarar</string>
+    <!-- finalizando tela de login -->
+
+    <!-- Inicializando tela de cadastro-->
+    <string name="titulo_cadastro">cadastro</string>
+    <string name="cadastro_nome">nome</string>
+    <string name="et_cadastro_nome">Digite seu nome</string>
+    <string name="cadastro_nome_social">nome social</string>
+    <string name="et_cadastro_nome_social">Digite seu nome social</string>
+    <string name="cadastro_nascimento">data de nascimento</string>
+    <string name="et_cadastro_nascimento">aaaa-mm-dd</string>
+    <string name="cadastro_telefone">telefone</string>
+    <string name="et_cadastro_telefone">(11) XXXXX-XXXX</string>
+    <string name="cadastro_genero">genero</string>
+    <string name="et_cadastro_genero">Escolha seu genero</string>
+    <string name="cadastro_email">e-mail</string>
+    <string name="et_cadastro_email">Digite seu e-mail</string>
+    <string name="cadastro_senha">senha</string>
+    <string name="et_cadastro_senha">Digite sua senha</string>
+    <string name="cadastro_confirmar_senha">confirmar senha</string>
+    <string name="et_cadastro_confirmar_senha">confirme sua senha</string>
+    <string name="cadastro_login">Já é cadastrado? Faça seu login</string>
+    <string name="btn_cadastro">confirmar</string>
+    <!-- finalizando tela de login -->
+
+    <!-- Inicializando tela de filtros adicionais -->
+    <string name="titulo_addiciotnal_filters">quer refinar sua busca?</string>
+    <string name="addfilters_vegetariano">Possui cardápio vegetariano?</string>
+    <string name="addfilters_vegano">Possui cardápio vegano?</string>
+    <string name="addfilters_animal">Animais são permitidos?</string>
+    <string name="addfilters_maioridade">Permitidos menores de idade?</string>
+    <string name="btn_addfilters">Vamos la!</string>
+    <!-- finalizando tela de filtros adicionais -->
+
+    <!-- Inicializando tela de cadastro estabelecimentos -->
+    <string name="titulo_cadastro_estabelecimento">cadastro</string>
+    <string name="cadastro_estab_endereco">endereço</string>
+    <string name="et_cadastro_estab_endereco">Digite seu endereço</string>
+    <string name="cadastro_estab_cep">cep</string>
+    <string name="et_cadastro_estab_cep">00000-000</string>
+    <string name="cadastro_estab_bairro">bairro</string>
+    <string name="et_cadastro_estab_bairro">Bairro</string>
+    <string name="cadastro_estab_cidade">cidade</string>
+    <string name="et_cadastro_estab_cidade">Cidade</string>
+    <string name="cadastro_estab_estado">estado</string>
+    <string name="et_cadastro_estab_estado">--</string>
+    <string name="cadastro_estab_numero">número</string>
+    <string name="et_cadastro_estab_numero">--</string>
+    <string name="cadastro_estab_complemento">complemento</string>
+    <string name="et_cadastro_estab_complemento">--</string>
+    <string name="cadastro_estab_email">e-mail para contato</string>
+    <string name="et_cadastro_estab_email">exemplo@email.com</string>
+    <!-- Inicializando tela de cadastro estabelecimentos -->
+
+    <!-- Inicializando tela de cadastro filtros adicionais -->
+    <string name="titulo_cadastro_estab_filters">queremos saber um pouquinho mais do seu estabelecimento</string>
+    <string name="cadastro_estab_filters">conte um pouco mais sobre seu estabelecimento"</string>
+    <!-- finalizando tela de cadastro filtros adicionais -->
+
+
+    <!-- Inicializando tela de cadastro estabelecimento principals -->
+    <string name="cadastro_principal_razao">razão social</string>
+    <string name="et_cadastro_principal_razao">Digite a razão social</string>
+    <string name="cadastro_nome_fantasia">nome fantasia</string>
+    <string name="et_cadastro_nome_fantasia">Digite o nome fantasia</string>
+    <string name="cadastro_estab_telefone">telefone</string>
+    <string name="et_cadastro_estab_telefone">(11) XXXXX-XXXX</string>
+    <string name="cadastro_cnpj">cnpj</string>
+    <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
+    <!-- finalizando tela de cadastro estabelecimento principals -->
+
 </resources>
 
 

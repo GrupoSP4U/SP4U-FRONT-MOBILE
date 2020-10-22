@@ -107,5 +107,127 @@
     <string name="estabilishment_config_desc_role_tipo_musica">type of music more played</string>
     <string name="estabilishment_config_desc_role_concluir">done</string>
     <!-- End the second estabilishment edit screen -->
+
+    <!-- Start forgot password screen -->
+    <string name="titulo_esqueceu_senha">did you forget your password?</string>
+    <string name="nova_senha">new password</string>
+    <string name="et_nova_senha">Input your new password</string>
+    <string name="confirmar_nova_senha">confirm your new password</string>
+    <string name="et_confirmar_nova_senha">Cnfirm your new password</string>
+    <string name="btn_esqueceu_senha">confirm</string>
+    <!-- End the forgot password screen -->
+
+    <!-- Start login screen-->
+    <string name="titulo_login">login</string>
+    <string name="login_email">e-mail</string>
+    <string name="et_login_email">Input your e-mail</string>
+    <string name="login_senha">password</string>
+    <string name="et_login_senha">Input your password</string>
+    <string name="login_cadastrar">Sign up</string>
+    <string name="login_esqueceu_senha">forgot the password</string>
+    <string name="btn_login_entrar">Sign in</string>
+    <!-- End login screen-->
+
+    <!-- Start register screen-->
+    <string name="titulo_cadastro">register</string>
+    <string name="cadastro_nome">name</string>
+    <string name="et_cadastro_nome">Input your name</string>
+    <string name="cadastro_nome_social">social name</string>
+    <string name="et_cadastro_nome_social">Input your social name</string>
+    <string name="cadastro_nascimento">date of Birth</string>
+    <string name="et_cadastro_nascimento">yyyy-mm-dd</string>
+    <string name="cadastro_telefone">phone</string>
+    <string name="et_cadastro_telefone">(11) XXXXX-XXXX</string>
+    <string name="cadastro_genero">gender</string>
+    <string name="et_cadastro_genero">Choose your gender</string>
+    <string name="cadastro_email">e-mail</string>
+    <string name="et_cadastro_email">Input your e-mail</string>
+    <string name="cadastro_senha">password</string>
+    <string name="et_cadastro_senha">Input ypur senha</string>
+    <string name="cadastro_confirmar_senha">confirm the password</string>
+    <string name="et_cadastro_confirmar_senha">confirm your password</string>
+    <string name="cadastro_login">Have you an account? Sign in</string>
+    <string name="btn_cadastro">confirm</string>
+    <!-- End register screen -->
+
+    <!-- Start addictional filters screen -->
+    <string name="titulo_addiciotnal_filters">Wanna refine your search?</string>
+    <string name="addfilters_vegetariano">have a vegetarian menu?</string>
+    <string name="addfilters_vegano">have a vegan menu?</string>
+    <string name="addfilters_animal">Are animals allowed?</string>
+    <string name="addfilters_maioridade">Are minors allowed?</string>
+    <string name="btn_addfilters">Lets go</string>
+    <!-- End addictiona filters sreen -->
+
+    <!-- Start establishment register screen - address -->
+    <string name="titulo_cadastro_estabelecimento">register</string>
+    <string name="cadastro_estab_endereco">adress</string>
+    <string name="et_cadastro_estab_endereco">Input your adress</string>
+    <string name="cadastro_estab_cep">zip code</string>
+    <string name="et_cadastro_estab_cep">00000-000</string>
+    <string name="cadastro_estab_bairro">neighborhood</string>
+    <string name="et_cadastro_estab_bairro">Neoghborhood</string>
+    <string name="cadastro_estab_cidade">city</string>
+    <string name="et_cadastro_estab_cidade">City</string>
+    <string name="cadastro_estab_estado">state</string>
+    <string name="et_cadastro_estab_estado">--</string>
+    <string name="cadastro_estab_numero">number</string>
+    <string name="et_cadastro_estab_numero">--</string>
+    <string name="cadastro_estab_complemento">complement</string>
+    <string name="et_cadastro_estab_complemento">--</string>
+    <string name="cadastro_estab_email">contact e-mai</string>
+    <string name="et_cadastro_estab_email">example@email.com</string>
+    <!-- End establishment register sreen - adress -->
+
+
+    <!-- Start establishment register screen - addictional filters  -->
+    <string name="titulo_cadastro_estab_filters">we wanna know a little more abour your establishment</string>
+    <string name="cadastro_estab_filters">tell us more about your establishment"</string>
+    <!-- End establishment register screen - addictional filters -->
+
+    <!-- Start establish register - principal-->
+    <string name="cadastro_principal_razao">company name</string>
+    <string name="et_cadastro_principal_razao">Input your company name</string>
+    <string name="cadastro_nome_fantasia">tradename</string>
+    <string name="et_cadastro_nome_fantasia">Input your tradename</string>
+    <string name="cadastro_estab_telefone">phone</string>
+    <string name="et_cadastro_estab_telefone">(11) XXXXX-XXXX</string>
+    <string name="cadastro_cnpj">NRLE</string>
+    <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
+    <!-- End establishment register - principal -->
+
+
+
+
+    <!-- ARRUMAR -->
+    <string name="trance">trance</string>
+    <string name="jazz">jazz</string>
+    <string name="forro">forro</string>
+    <string name="kpop">kpop</string>
+    <string name="samba">samba</string>
+    <string name="mpb">mpb</string>
+    <string name="folk">folk</string>
+    <string name="rock">rock</string>
+    <string name="axe">axe</string>
+    <string name="funk">funk</string>
+    <string name="pagode">pagode</string>
+
+    <string name="gospel">gospel</string>
+    <string name="hip_hop">hip-hop</string>
+    <string name="metal">metal</string>
+    <string name="rap">rap</string>
+    <string name="trap">trap</string>
+    <string name="pop">pop</string>
+    <string name="user_profile_apelido">João Teodoro</string>
+    <string name="user_profile_hint_data_nascimento">00/00/0000</string>
+    <string name="user_profile_hint_email">email@email.com</string>
+    <string name="user_profile_hint_telefone">(XX) 00000-0000</string>
+    <string name="user_profile_hint_senha">*****************</string>
+    <string name="todo">TODO</string>
+
+    <string name="recanto">Recanto</string>
+    <string name="com_base_no_seu_humor_recomendamos">com base no seu humor recomendamos:</string>
+    <string name="solteiros">solteiros</string>
+    <string name="caos">Caos</string>
 </resources>
 
