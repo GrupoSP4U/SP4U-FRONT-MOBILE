@@ -322,6 +322,7 @@
             android:layout_weight="1"
             android:background="@color/Grey"
             android:padding="7dp"
+            android:onClick="goToHomeAuthenticated"
             android:text="@string/menu_roles"
             android:textAllCaps="false"
             android:textColor="@color/White"
@@ -335,6 +336,7 @@
             android:background="@color/Grey"
             android:padding="5dp"
             android:text="@string/menu_humor"
+            android:onClick="goToHumor"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp" />
@@ -348,6 +350,7 @@
             android:padding="5dp"
             android:text="@string/menu_perfil"
             android:textAllCaps="false"
+            android:onClick="goToBasicSettings"
             android:textColor="@color/White"
             android:textSize="16sp" />
 
@@ -360,6 +363,7 @@
             android:padding="5dp"
             android:text="@string/menu_empresa"
             android:textAllCaps="false"
+            android:onClick="goToEnterprise"
             android:textColor="@color/White"
             android:textSize="16sp" />
 

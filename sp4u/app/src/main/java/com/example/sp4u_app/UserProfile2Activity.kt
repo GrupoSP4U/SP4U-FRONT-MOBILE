@@ -20,4 +20,6 @@ class UserProfile2Activity : AppCompatActivity() {
         val register = Intent(this, UserProfile3Activity::class.java)
         startActivity(register)
     }
+
+
 }

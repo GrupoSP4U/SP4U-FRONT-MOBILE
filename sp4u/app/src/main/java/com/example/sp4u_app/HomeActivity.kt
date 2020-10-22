@@ -2,6 +2,7 @@ package com.example.sp4u_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -15,4 +16,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
+
+     fun goToHumor(button: View) {
+        val intent = Intent(this, FeelsActivity::class.java)
+        startActivity(intent)
+    }
+
 }
