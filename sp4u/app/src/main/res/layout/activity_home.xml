@@ -40,6 +40,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
+                android:onClick="goToHumor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.52"
