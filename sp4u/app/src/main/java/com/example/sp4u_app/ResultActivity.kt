@@ -4,35 +4,36 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.sp4u_app.utils.AbstractActivity
 
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : AbstractActivity() {
+
+    private var userId: Int? = 0
+    private var token: String? = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+        userId = intent.getIntExtra("USER_ID", 0)
+        token = intent.getStringExtra("TOKEN")
     }
 
     //    menu config
-
     fun goToHomeAuthenticated(button: View) {
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
+        navigate(userId, token, HomeActivity().javaClass)
     }
 
     fun goToHumor(button: View) {
-        val intent = Intent(this, FeelsActivity::class.java)
-        startActivity(intent)
+        navigate(userId, token, FeelsActivity().javaClass)
     }
 
     fun goToBasicSettings(button: View){
-        val register = Intent(this, UserProfileActivity::class.java)
-        startActivity(register)
+        navigate(userId, token, UserProfileActivity().javaClass)
     }
 
     fun goToEnterprise(button: View){
-        val register = Intent(this, RegisterEstablishmentActivity::class.java)
-        startActivity(register)
+        navigate(userId, token, RegisterEstablishmentActivity().javaClass)
     }
-
 //    fim menu config
 
 

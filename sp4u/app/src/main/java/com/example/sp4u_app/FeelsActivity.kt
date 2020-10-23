@@ -23,26 +23,21 @@ class FeelsActivity : AbstractActivity() {
     }
 
     //    menu config
-
     fun goToHomeAuthenticated(button: View) {
         navigate(userId, token, HomeActivity().javaClass)
     }
 
     fun goToHumor(button: View) {
-        val intent = Intent(this, FeelsActivity::class.java)
-        startActivity(intent)
+        navigate(userId, token, FeelsActivity().javaClass)
     }
 
-    fun goToBasicSettings(button: View) {
-        val register = Intent(this, UserProfileActivity::class.java)
-        startActivity(register)
+    fun goToBasicSettings(button: View){
+        navigate(userId, token, UserProfileActivity().javaClass)
     }
 
-    fun goToEnterprise(button: View) {
-        val register = Intent(this, RegisterEstablishmentActivity::class.java)
-        startActivity(register)
+    fun goToEnterprise(button: View){
+        navigate(userId, token, RegisterEstablishmentActivity().javaClass)
     }
-
 //    fim menu config
 
 }

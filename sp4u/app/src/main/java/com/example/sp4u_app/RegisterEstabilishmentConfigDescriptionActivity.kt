@@ -6,12 +6,19 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import com.example.sp4u_app.utils.AbstractActivity
 import kotlinx.android.synthetic.main.activity_register_estabilishment_config_description.*
 
-class RegisterEstabilishmentConfigDescriptionActivity : AppCompatActivity() {
+class RegisterEstabilishmentConfigDescriptionActivity : AbstractActivity() {
+
+    private var userId: Int? = 0
+    private var token: String? = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_estabilishment_config_description)
+        userId = intent.getIntExtra("USER_ID", 0)
+        token = intent.getStringExtra("TOKEN")
 
         val comboMusica = ArrayAdapter(baseContext, android.R.layout.simple_spinner_item,
                 listOf("sertanejo", "metal", "trap", "gospel","hip-hop","rap","clássico","pop",
@@ -54,8 +61,7 @@ class RegisterEstabilishmentConfigDescriptionActivity : AppCompatActivity() {
 
 
     fun goToBasicConfig(textView: View) {
-        val estabilishmentConfig = Intent(this, RegisterEstabilishmentConfigActivity::class.java)
-        startActivity(estabilishmentConfig)
+        navigate(userId, token, HomeActivity().javaClass)
     }
 
 }
