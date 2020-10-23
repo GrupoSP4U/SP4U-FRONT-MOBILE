@@ -1,19 +1,12 @@
 package com.example.sp4u_app
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import androidx.appcompat.app.AppCompatActivity
+import com.example.sp4u_app.utils.AbstractActivity
 
-class RegisterEstablishmentFiltersActivity : AppCompatActivity() {
+class RegisterEstablishmentFiltersActivity : AbstractActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_establishment_filters)
+        setVariables()
     }
-
-    fun goToHomeAuthenticated(button: View) {
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
-    }
-
 }

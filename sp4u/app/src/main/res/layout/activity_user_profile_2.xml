@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_menu">
 
         <TextView
-            android:id="@+id/tv_emailAntigo"
+            android:id="@+id/tv_email_antigo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -127,7 +127,7 @@
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_emailAntigo"
+            android:id="@+id/et_email_antigo"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -138,10 +138,10 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_emailAntigo" />
+            app:layout_constraintTop_toBottomOf="@id/tv_email_antigo" />
 
         <TextView
-            android:id="@+id/tv_emailNovo"
+            android:id="@+id/tv_email_novo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -149,11 +149,11 @@
             android:text="@string/user_profile_email_novo"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_emailAntigo"
+            app:layout_constraintTop_toBottomOf="@id/et_email_antigo"
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_emailNovo"
+            android:id="@+id/et_email_novo"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -164,10 +164,10 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_emailNovo" />
+            app:layout_constraintTop_toBottomOf="@id/tv_email_novo" />
 
         <TextView
-            android:id="@+id/tv_confirmaEmailNovo"
+            android:id="@+id/tv_confirma_email_novo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -175,11 +175,11 @@
             android:text="@string/user_profile_confirma_email"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_emailNovo"
+            app:layout_constraintTop_toBottomOf="@id/et_email_novo"
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_confirmaEmailNovo"
+            android:id="@+id/et_confirma_email_novo"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -190,7 +190,7 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_confirmaEmailNovo" />
+            app:layout_constraintTop_toBottomOf="@id/tv_confirma_email_novo" />
 
         <Button
             android:id="@+id/bt_concluir"
@@ -203,9 +203,10 @@
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
+            android:onClick="changeEmail"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_confirmaEmailNovo" />
+            app:layout_constraintTop_toBottomOf="@id/et_confirma_email_novo" />
 
     </LinearLayout>
 

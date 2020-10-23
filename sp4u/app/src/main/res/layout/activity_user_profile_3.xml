@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_menu">
 
         <TextView
-            android:id="@+id/tv_senhaAntiga"
+            android:id="@+id/tv_senha_antiga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -128,7 +128,7 @@
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_senhaAntiga"
+            android:id="@+id/et_senha_antiga"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -139,10 +139,10 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_senhaAntiga" />
+            app:layout_constraintTop_toBottomOf="@id/tv_senha_antiga" />
 
         <TextView
-            android:id="@+id/tv_senhaNova"
+            android:id="@+id/tv_senha_nova"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -150,11 +150,11 @@
             android:text="@string/user_profile_senha_nova"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_senhaAntiga"
+            app:layout_constraintTop_toBottomOf="@id/et_senha_antiga"
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_senhaNova"
+            android:id="@+id/et_senha_nova"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -165,10 +165,10 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_senhaNova" />
+            app:layout_constraintTop_toBottomOf="@id/tv_senha_nova" />
 
         <TextView
-            android:id="@+id/tv_confirmaSenhaNova"
+            android:id="@+id/tv_confirma_senha_nova"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -176,11 +176,11 @@
             android:text="@string/user_profile_confirma_senha"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_senhaNova"
+            app:layout_constraintTop_toBottomOf="@id/et_senha_nova"
             tools:layout_editor_absoluteX="66dp" />
 
         <EditText
-            android:id="@+id/et_confirmaSenhaNova"
+            android:id="@+id/et_confirma_senha_nova"
             android:layout_width="280dp"
             android:layout_height="40dp"
             android:layout_marginTop="8sp"
@@ -191,7 +191,7 @@
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_confirmaSenhaNova" />
+            app:layout_constraintTop_toBottomOf="@id/tv_confirma_senha_nova" />
 
         <Button
             android:id="@+id/bt_concluir"
@@ -204,9 +204,10 @@
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
+            android:onClick="changePassword"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_confirmaSenhaNova" />
+            app:layout_constraintTop_toBottomOf="@id/et_confirma_senha_nova" />
 
     </LinearLayout>
 

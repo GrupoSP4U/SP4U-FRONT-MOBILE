@@ -17,5 +17,4 @@ class RegisterEstablishmentLocalActivity : AppCompatActivity() {
         val registerFilters = Intent(this, RegisterEstablishmentFiltersActivity::class.java)
         startActivity(registerFilters)
     }
-
 }

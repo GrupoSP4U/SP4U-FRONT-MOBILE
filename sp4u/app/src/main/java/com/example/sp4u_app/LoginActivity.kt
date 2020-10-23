@@ -3,18 +3,12 @@ package com.example.sp4u_app
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
-import com.example.sp4u_app.dto.response.AuthenticateResponseDTO
-import com.example.sp4u_app.utils.RetrofitInitializer
+import com.example.sp4u_app.utils.AbstractActivityOut
 import com.example.sp4u_app.validator.validator
 import kotlinx.android.synthetic.main.activity_login.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : AbstractActivityOut() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -28,7 +22,8 @@ class LoginActivity : AppCompatActivity() {
             email = et_email.text.toString(),
             password = et_senha.text.toString()
         )
-        callEndpoint(request)
+
+        callLoginEndpoint(request, HomeActivity().javaClass)
     }
 
     fun goToForgotPassword(button: View) {
@@ -39,45 +34,5 @@ class LoginActivity : AppCompatActivity() {
     fun goToRegister(button: View) {
         val register = Intent(this, RegisterActivity::class.java)
         startActivity(register)
-    }
-
-    private fun goToHome(body: AuthenticateResponseDTO) {
-        val intent = Intent(this, HomeActivity::class.java)
-        intent.putExtra("USER_ID", body.userId)
-        intent.putExtra("TOKEN", body.jwttoken)
-        startActivity(intent)
-    }
-
-    private fun callEndpoint(request: AuthenticateRequestDTO) {
-        val call =
-            RetrofitInitializer("http://ec2-100-26-215-123.compute-1.amazonaws.com:8080/")
-                .authenticateService()
-                .authenticate(request)
-
-        call.enqueue(object : Callback<AuthenticateResponseDTO?> {
-            override fun onResponse(
-                call: Call<AuthenticateResponseDTO?>?,
-                response: Response<AuthenticateResponseDTO?>?
-            ) {
-                if (response?.code() == 200) {
-                    response?.body()?.let {
-                        goToHome(it)
-                    }
-                } else if (response?.code() == 404) {
-                    Toast.makeText(
-                        this@LoginActivity,
-                        resources.getString(R.string.login_senha_email_incorreto),
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-
-            override fun onFailure(
-                call: Call<AuthenticateResponseDTO?>?,
-                t: Throwable?
-            ) {
-                println(t.toString())
-            }
-        })
     }
 }

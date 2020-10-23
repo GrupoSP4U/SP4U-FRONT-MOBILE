@@ -15,5 +15,4 @@ class RegisterEstablishmentAdressActivity : AppCompatActivity() {
         val registerMusic = Intent(this, RegisterEstablishmentMusicActivity::class.java)
         startActivity(registerMusic)
     }
-
 }
