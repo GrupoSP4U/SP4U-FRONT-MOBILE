@@ -169,6 +169,7 @@
                 android:hint="@string/user_profile_hint_email_novo"
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/White"
+                android:textColor="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_email_novo" />
@@ -195,6 +196,7 @@
                 android:hint="@string/user_profile_hint_email_novo"
                 android:inputType="textEmailAddress"
                 android:textColorHint="@color/White"
+                android:textColor="@color/White"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_confirma_email_novo" />

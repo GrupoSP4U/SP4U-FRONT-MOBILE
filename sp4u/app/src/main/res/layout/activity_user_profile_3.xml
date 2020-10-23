@@ -148,6 +148,7 @@
             android:hint="@string/user_profile_hint_senha"
             android:inputType="textPassword"
             android:textColorHint="@color/White"
+            android:textColor="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_senha_antiga" />
@@ -174,6 +175,7 @@
             android:hint="@string/user_profile_hint_senha"
             android:inputType="textPassword"
             android:textColorHint="@color/White"
+            android:textColor="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_senha_nova" />
@@ -200,6 +202,7 @@
             android:hint="@string/user_profile_hint_senha"
             android:inputType="textPassword"
             android:textColorHint="@color/White"
+            android:textColor="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_confirma_senha_nova" />
