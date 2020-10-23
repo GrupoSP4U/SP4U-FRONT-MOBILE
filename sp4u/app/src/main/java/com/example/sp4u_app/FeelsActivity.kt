@@ -11,6 +11,11 @@ class FeelsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_feels)
     }
 
+    fun goToAdditionalFilters(button: View) {
+        val intent = Intent(this, AdditionalFiltersActivity::class.java)
+        startActivity(intent)
+    }
+
     //    menu config
 
     fun goToHomeAuthenticated(button: View) {

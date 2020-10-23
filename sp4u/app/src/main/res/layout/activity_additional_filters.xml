@@ -134,7 +134,7 @@
             android:layout_marginTop="60dp"
             android:background="@color/DarkBlue"
             android:fontFamily="@font/montserrat"
-            android:onClick="goToHome"
+            android:onClick="goToResult"
             android:text="vamos la"
             android:textAllCaps="false"
             android:textColor="@color/White"

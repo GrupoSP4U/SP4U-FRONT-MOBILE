@@ -37,7 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
-                android:backgroundTint="@color/Blue">
+                android:backgroundTint="@color/Blue"
+                android:onClick="goToAdditionalFilters">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -81,7 +82,8 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/Yellow"
-                android:padding="18dp">
+                android:padding="18dp"
+                android:onClick="goToAdditionalFilters">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,7 +127,8 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/LightRed"
-                android:padding="18dp">
+                android:padding="18dp"
+                android:onClick="goToAdditionalFilters">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -170,7 +173,8 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/DarkBlue"
-                android:padding="18dp">
+                android:padding="18dp"
+                android:onClick="goToAdditionalFilters">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -214,7 +218,9 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/Grey"
-                android:padding="18dp">
+                android:padding="18dp"
+                 android:onClick="goToAdditionalFilters">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -258,8 +264,8 @@
                 android:layout_height="80dp"
                 android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/DarkPink"
-                android:padding="18dp">
-
+                android:padding="18dp"
+                android:onClick="goToAdditionalFilters">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
