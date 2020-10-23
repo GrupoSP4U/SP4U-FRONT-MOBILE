@@ -1,213 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Fund"
+    android:orientation="vertical"
     tools:context=".UserProfile2Activity">
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tv_menu"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:background="@color/DarkBlue"
         android:fontFamily="@font/montserrat"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent">
 
-    <LinearLayout
-        android:id="@+id/ll_dados"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-        <ImageView
-            android:id="@+id/img_usuario"
-            android:layout_width="95dp"
-            android:layout_height="110dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="36dp"
-            android:src="@drawable/user"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/tv_alterar_foto"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_dados"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_alterar_foto"
-            android:textColor="@color/Blue"
-            android:textSize="12sp"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_apelido"
-            android:textColor="@color/White"
-            android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/img_usuario"
+                android:layout_width="95dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/user"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_alterar_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_alterar_foto"
+                android:textColor="@color/Blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_apelido"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/DarkBlue"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ll_dados"
         tools:layout_editor_absoluteX="10dp">
 
         <Button
             android:id="@+id/bt_configuracoes"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:background="@color/DarkBlue"
             android:padding="7dp"
             android:text="@string/user_profile_configuracoes_basicas"
-            android:layout_marginLeft="30dp"
+            android:onClick="goToBasicSettings"
             android:textAllCaps="false"
             android:textColor="@color/White"
-            android:textSize="16sp"
-            android:onClick="goToBasicSettings"/>
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/bt_email"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:background="@color/DarkBlue"
             android:padding="5dp"
             android:text="@string/user_profile_alterar_email"
-            android:layout_marginLeft="30dp"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintRight_toLeftOf="@id/bt_configuracoes"/>
+            app:layout_constraintRight_toLeftOf="@id/bt_configuracoes" />
 
         <Button
             android:id="@+id/bt_senha"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:background="@color/DarkBlue"
+            android:onClick="goToPasswordEditing"
             android:padding="5dp"
             android:text="@string/user_profile_alterar_senha"
-            android:layout_marginLeft="30dp"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintLeft_toRightOf="@id/bt_email"
-            android:onClick="goToPasswordEditing"/>
+            app:layout_constraintLeft_toRightOf="@id/bt_email" />
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/sv_dados"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_menu">
 
-        <TextView
-            android:id="@+id/tv_email_antigo"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_email_antigo"
-            android:textColor="@color/White"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_menu"
-            tools:layout_editor_absoluteX="66dp" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/et_email_antigo"
-            android:layout_width="280dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8sp"
-            android:background="@drawable/et_style_blue"
-            android:fontFamily="@font/montserrat"
-            android:hint="@string/user_profile_hint_email"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/White"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_email_antigo" />
+            <TextView
+                android:id="@+id/tv_email_atual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_email_atual"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_menu"
+                tools:layout_editor_absoluteX="66dp" />
 
-        <TextView
-            android:id="@+id/tv_email_novo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_email_novo"
-            android:textColor="@color/White"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_email_antigo"
-            tools:layout_editor_absoluteX="66dp" />
+            <TextView
+                android:id="@+id/tv_email_antigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_hint_email"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_atual"
+                tools:layout_editor_absoluteX="66dp" />
 
-        <EditText
-            android:id="@+id/et_email_novo"
-            android:layout_width="280dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8sp"
-            android:background="@drawable/et_style_blue"
-            android:fontFamily="@font/montserrat"
-            android:hint="@string/user_profile_hint_email_novo"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/White"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_email_novo" />
+            <TextView
+                android:id="@+id/tv_email_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_email_novo"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_antigo"
+                tools:layout_editor_absoluteX="66dp" />
 
-        <TextView
-            android:id="@+id/tv_confirma_email_novo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_confirma_email"
-            android:textColor="@color/White"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/et_email_novo"
-            tools:layout_editor_absoluteX="66dp" />
+            <EditText
+                android:id="@+id/et_email_novo"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_blue"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/user_profile_hint_email_novo"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_email_novo" />
 
-        <EditText
-            android:id="@+id/et_confirma_email_novo"
-            android:layout_width="280dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8sp"
-            android:background="@drawable/et_style_blue"
-            android:fontFamily="@font/montserrat"
-            android:hint="@string/user_profile_hint_email_novo"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/White"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_confirma_email_novo" />
+            <TextView
+                android:id="@+id/tv_confirma_email_novo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_confirma_email"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/et_email_novo"
+                tools:layout_editor_absoluteX="66dp" />
+
+            <EditText
+                android:id="@+id/et_confirma_email_novo"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8sp"
+                android:background="@drawable/et_style_blue"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/user_profile_hint_email_novo"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_confirma_email_novo" />
+
+            <Button
+                android:id="@+id/bt_concluir"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@color/LightBlue"
+                android:onClick="changeEmail"
+                android:text="@string/user_profile_botao_alterar_email"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_confirma_email_novo" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sv_dados">
 
         <Button
-            android:id="@+id/bt_concluir"
-            android:layout_width="240dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
-            android:background="@color/LightBlue"
-            android:text="@string/user_profile_botao_alterar_email"
+            android:id="@+id/bt_roles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:onClick="goToHome"
+            android:padding="7dp"
+            android:text="@string/menu_roles"
             android:textAllCaps="false"
             android:textColor="@color/White"
-            android:textSize="16sp"
-            android:onClick="changeEmail"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_confirma_email_novo" />
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_humor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:onClick="goToHumor"
+            android:padding="5dp"
+            android:text="@string/menu_humor"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_perfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:onClick="goToBasicSettings"
+            android:padding="5dp"
+            android:text="@string/menu_perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_empresa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:onClick="goToEnterprise"
+            android:padding="5dp"
+            android:text="@string/menu_empresa"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
 
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

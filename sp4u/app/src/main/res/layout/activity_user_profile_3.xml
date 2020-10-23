@@ -1,78 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Fund"
-    tools:context=".UserProfile3Activity">
+    tools:context=".UserProfile3Activity"
+    android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:id="@+id/tv_menu"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:background="@color/DarkBlue"
         android:fontFamily="@font/montserrat"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent">
 
-    <LinearLayout
-        android:id="@+id/ll_dados"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-        <ImageView
-            android:id="@+id/img_usuario"
-            android:layout_width="95dp"
-            android:layout_height="110dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="36dp"
-            android:src="@drawable/user"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/tv_alterar_foto"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_dados"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_alterar_foto"
-            android:textColor="@color/Blue"
-            android:textSize="12sp"/>
+            android:orientation="vertical"
+            >
 
-        <TextView
-            android:id="@+id/tv_usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/user_profile_apelido"
-            android:textColor="@color/White"
-            android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/img_usuario"
+                android:layout_width="95dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/user"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv_alterar_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_alterar_foto"
+                android:textColor="@color/Blue"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/user_profile_apelido"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
+
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@id/ll_dados"
-        tools:layout_editor_absoluteX="10dp">
+        tools:layout_editor_absoluteX="10dp"
+        android:background="@color/DarkBlue">
 
         <Button
             android:id="@+id/bt_configuracoes"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:background="@color/DarkBlue"
             android:padding="7dp"
             android:text="@string/user_profile_configuracoes_basicas"
             android:layout_marginLeft="30dp"
             android:textAllCaps="false"
+            android:background="@color/DarkBlue"
             android:textColor="@color/White"
             android:textSize="16sp"
             android:onClick="goToBasicSettings"/>
@@ -102,18 +107,24 @@
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="16sp"
-            app:layout_constraintLeft_toRightOf="@id/bt_email"/>
+            app:layout_constraintLeft_toRightOf="@id/bt_email" />
 
     </LinearLayout>
-    
-    <LinearLayout
-        android:id="@+id/linearLayout"
+
+    <ScrollView
+        android:id="@+id/sv_dados"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_senha_antiga"
@@ -135,7 +146,7 @@
             android:background="@drawable/et_style_blue"
             android:fontFamily="@font/montserrat"
             android:hint="@string/user_profile_hint_senha"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -161,7 +172,7 @@
             android:background="@drawable/et_style_blue"
             android:fontFamily="@font/montserrat"
             android:hint="@string/user_profile_hint_senha"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -187,7 +198,7 @@
             android:background="@drawable/et_style_blue"
             android:fontFamily="@font/montserrat"
             android:hint="@string/user_profile_hint_senha"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:textColorHint="@color/White"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -209,6 +220,68 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_confirma_senha_nova" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/sv_dados">
+
+        <Button
+            android:id="@+id/bt_roles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:padding="7dp"
+            android:onClick="goToHome"
+            android:text="@string/menu_roles"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_humor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:padding="5dp"
+            android:text="@string/menu_humor"
+            android:onClick="goToHumor"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_perfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:padding="5dp"
+            android:text="@string/menu_perfil"
+            android:textAllCaps="false"
+            android:onClick="goToBasicSettings"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_empresa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/Grey"
+            android:padding="5dp"
+            android:text="@string/menu_empresa"
+            android:textAllCaps="false"
+            android:onClick="goToEnterprise"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -20,7 +20,7 @@ class UserProfile2Activity : AbstractActivity() {
     }
 
     fun changeEmail(component: View) {
-        if (!validator(listOf(et_confirma_email_novo, et_email_novo, et_email_antigo))) {
+        if (!validator(listOf(et_confirma_email_novo, et_email_novo))) {
             return
         }
 

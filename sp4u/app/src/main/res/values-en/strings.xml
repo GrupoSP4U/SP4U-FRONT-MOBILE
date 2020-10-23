@@ -16,7 +16,7 @@
     <string name="user_profile_hint_nome">Enter the full name</string>
     <string name="user_profile_hint_nome_social">Enter the social name</string>
     <string name="user_profile_hint_genero">Enter your gender</string>
-    <string name="user_profile_email_antigo">old e-mail</string>
+    <string name="user_profile_email_atual">current e-mail</string>
     <string name="user_profile_email_novo">new e-mail</string>
     <string name="user_profile_hint_email_novo">newemail@email.com</string>
     <string name="user_profile_confirma_email">confirm new e-mail</string>

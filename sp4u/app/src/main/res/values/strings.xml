@@ -50,7 +50,7 @@
     <string name="user_profile_hint_email">email@email.com</string>
     <string name="user_profile_hint_telefone">(XX) 00000-0000</string>
     <string name="user_profile_hint_genero">Digite o seu gênero</string>
-    <string name="user_profile_email_antigo">e-mail antigo</string>
+    <string name="user_profile_email_atual">e-mail atual</string>
     <string name="user_profile_email_novo">novo e-mail</string>
     <string name="user_profile_hint_email_novo">novoemail@email.com</string>
     <string name="user_profile_confirma_email">confirmar novo e-mail</string>
