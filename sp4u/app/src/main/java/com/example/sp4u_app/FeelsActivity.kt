@@ -4,23 +4,28 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sp4u_app.utils.AbstractActivity
 
-class FeelsActivity : AppCompatActivity() {
+class FeelsActivity : AbstractActivity() {
+
+    private var userId: Int? = 0
+    private var token: String? = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feels)
+        userId = intent.getIntExtra("USER_ID", 0)
+        token = intent.getStringExtra("TOKEN")
     }
 
     fun goToAdditionalFilters(button: View) {
-        val intent = Intent(this, AdditionalFiltersActivity::class.java)
-        startActivity(intent)
+        navigate(userId, token, AdditionalFiltersActivity().javaClass)
     }
 
     //    menu config
 
     fun goToHomeAuthenticated(button: View) {
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
+        navigate(userId, token, HomeActivity().javaClass)
     }
 
     fun goToHumor(button: View) {
@@ -28,12 +33,12 @@ class FeelsActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun goToBasicSettings(button: View){
+    fun goToBasicSettings(button: View) {
         val register = Intent(this, UserProfileActivity::class.java)
         startActivity(register)
     }
 
-    fun goToEnterprise(button: View){
+    fun goToEnterprise(button: View) {
         val register = Intent(this, RegisterEstablishmentActivity::class.java)
         startActivity(register)
     }
