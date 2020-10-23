@@ -110,7 +110,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="27dp"
         android:src="@drawable/icon_next_user"
-        android:onClick="goToHomeLeavingLocal"
+        android:onClick="goToHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bt_pub" />
 

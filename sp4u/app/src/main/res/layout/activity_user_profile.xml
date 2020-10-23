@@ -322,7 +322,7 @@
             android:layout_weight="1"
             android:background="@color/Grey"
             android:padding="7dp"
-            android:onClick="goToHomeAuthenticated"
+            android:onClick="goToHome"
             android:text="@string/menu_roles"
             android:textAllCaps="false"
             android:textColor="@color/White"

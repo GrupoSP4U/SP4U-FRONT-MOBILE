@@ -16,4 +16,3 @@ class RegisterEstablishmentPrincipalActivity : AppCompatActivity() {
         startActivity(registerAdress)
     }
 }
-
