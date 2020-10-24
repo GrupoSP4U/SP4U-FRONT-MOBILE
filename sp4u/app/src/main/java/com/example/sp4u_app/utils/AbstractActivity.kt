@@ -54,4 +54,26 @@ abstract class AbstractActivity : AppCompatActivity() {
     fun goToEmailEditing(button: View) {
         navigate(userId, token, UserProfile2Activity().javaClass)
     }
+
+    fun goToRegisterEstablishmentMusic(button: View){
+        navigate(userId, token, RegisterEstablishmentMusicActivity().javaClass)
+    }
+
+    fun goToRegisterEstablishmentAdress(button: View){
+        navigate(userId, token, RegisterEstablishmentAdressActivity().javaClass)
+    }
+
+
+    fun goToregisterEstablishment(button: View){
+        navigate(userId, token, RegisterEstablishmentPrincipalActivity().javaClass)
+    }
+
+    fun goToRegisterEstablishmentFilters(button: View){
+        navigate(userId, token, RegisterEstablishmentFiltersActivity().javaClass)
+    }
+
+    fun goToRegisterEstablishmentLocal(button: View){
+        navigate(userId, token, RegisterEstablishmentLocalActivity().javaClass)
+    }
+
 }

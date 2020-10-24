@@ -6,15 +6,12 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sp4u_app.R
 import com.example.sp4u_app.RegisterEstablishmentMusicActivity
+import com.example.sp4u_app.utils.AbstractActivity
 
-class RegisterEstablishmentLocalActivity : AppCompatActivity() {
+class RegisterEstablishmentLocalActivity : AbstractActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_establishment_local)
-    }
-
-    fun goToRegisterEstablishmentFilters(button: View){
-        val registerFilters = Intent(this, RegisterEstablishmentFiltersActivity::class.java)
-        startActivity(registerFilters)
+        setVariables()
     }
 }
