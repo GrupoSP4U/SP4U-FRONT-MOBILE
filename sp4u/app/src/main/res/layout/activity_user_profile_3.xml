@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Fund"
-    tools:context=".UserProfile3Activity"
     android:orientation="vertical">
 
     <LinearLayout

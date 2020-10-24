@@ -4,6 +4,10 @@ import android.os.Bundle
 import android.view.View
 
 import android.widget.Toast
+import com.example.sp4u_app.dto.UserDTO
+import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
+import com.example.sp4u_app.dto.response.AuthenticateResponseDTO
+import com.example.sp4u_app.dto.response.UserResponseDTO
 import com.example.sp4u_app.utils.AbstractActivity
 import com.example.sp4u_app.utils.RetrofitInitializer
 import com.example.sp4u_app.validator.validator
@@ -17,6 +21,7 @@ class UserProfile2Activity : AbstractActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_profile_2)
         setVariables()
+        callGetUser()
     }
 
     fun changeEmail(component: View) {
@@ -66,6 +71,40 @@ class UserProfile2Activity : AbstractActivity() {
 
             override fun onFailure(
                 call: Call<Void?>?,
+                t: Throwable?
+            ) {
+                println(t.toString())
+            }
+        })
+    }
+
+    private fun callGetUser() {
+        val call =
+            RetrofitInitializer(token)
+                .userService()
+                .getById(userId)
+
+        call.enqueue(object : Callback<UserResponseDTO?> {
+            override fun onResponse(
+                call: Call<UserResponseDTO?>?,
+                response: Response<UserResponseDTO?>?
+            ) {
+                println(response.toString())
+                if (response?.code() == 200) {
+                    response?.body()?.let {
+                        tv_email_antigo.text = it.usuario.email
+                    }
+                } else if (response?.code() == 404) {
+                    Toast.makeText(
+                        applicationContext,
+                        resources.getString(R.string.requisicao_erro_interno),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+
+            override fun onFailure(
+                call: Call<UserResponseDTO?>?,
                 t: Throwable?
             ) {
                 println(t.toString())

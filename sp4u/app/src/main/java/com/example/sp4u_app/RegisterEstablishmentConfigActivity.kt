@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.sp4u_app.utils.AbstractActivity
 
-class RegisterEstabilishmentConfigActivity : AbstractActivity() {
+class RegisterEstablishmentConfigActivity : AbstractActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -13,6 +13,6 @@ class RegisterEstabilishmentConfigActivity : AbstractActivity() {
     }
 
     fun goToDescriptionOfRole(textView:View){
-        navigate(userId, token, RegisterEstabilishmentConfigDescriptionActivity().javaClass)
+        navigate(userId, token, RegisterEstablishmentConfigDescriptionActivity().javaClass)
     }
 }

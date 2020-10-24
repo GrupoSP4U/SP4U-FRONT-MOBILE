@@ -18,7 +18,7 @@
         <activity android:name=".UserProfile3Activity" />
         <activity android:name=".RegisterEstablishmentPrincipalActivity" />
         <activity android:name=".RegisterEstablishmentAdressActivity" />
-        <activity android:name=".RegisterEstabilishmentConfigDescriptionActivity" />
+        <activity android:name=".RegisterEstablishmentConfigDescriptionActivity" />
         <activity android:name=".FeelsActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".HomeActivity" />
@@ -32,7 +32,7 @@
         <activity android:name=".RegisterEstablishmentLocalActivity" />
         <activity android:name=".RegisterEstablishmentFiltersActivity" />
         <activity android:name=".AdditionalFiltersActivity" />
-        <activity android:name="RegisterEstabilishmentConfigActivity" />
+        <activity android:name="RegisterEstablishmentConfigActivity" />
 
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
