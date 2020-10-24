@@ -27,7 +27,7 @@ abstract class AbstractActivityOut : AbstractActivity() {
                 } else if (response?.code() == 404) {
                     Toast.makeText(
                         applicationContext,
-                        resources.getString(R.string.requisicao_erro_interno),
+                        resources.getString(R.string.login_senha_email_incorreto),
                         Toast.LENGTH_SHORT
                     ).show()
                 }

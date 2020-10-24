@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter
 import com.example.sp4u_app.utils.AbstractActivity
 import kotlinx.android.synthetic.main.activity_register_estabilishment_config_description.*
 
-class RegisterEstabilishmentConfigDescriptionActivity : AbstractActivity() {
+class RegisterEstablishmentConfigDescriptionActivity : AbstractActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

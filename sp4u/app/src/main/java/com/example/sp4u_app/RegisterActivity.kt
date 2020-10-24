@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
-import com.example.sp4u_app.dto.request.RegisterRequestDTO
+import com.example.sp4u_app.dto.UserDTO
 import com.example.sp4u_app.utils.RetrofitInitializer
 import com.example.sp4u_app.utils.AbstractActivityOut
 import com.example.sp4u_app.validator.validator
@@ -41,8 +41,8 @@ class RegisterActivity : AbstractActivityOut() {
         callRegisterEndpoint(register)
     }
 
-    private fun buildRegisterRequestDTO(): RegisterRequestDTO {
-        return RegisterRequestDTO(
+    private fun buildRegisterRequestDTO(): UserDTO {
+        return UserDTO(
             nomeCompleto = et_nome.text.toString(),
             nomeSocial = et_nome_social.text.toString(),
             dataNascimento = et_nascimento.text.toString(),
@@ -53,7 +53,7 @@ class RegisterActivity : AbstractActivityOut() {
         )
     }
 
-    private fun callRegisterEndpoint(request: RegisterRequestDTO) {
+    private fun callRegisterEndpoint(request: UserDTO) {
         val call =
             RetrofitInitializer()
                 .userService()
