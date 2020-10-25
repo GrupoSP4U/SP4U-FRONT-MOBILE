@@ -59,12 +59,11 @@ abstract class AbstractActivity : AppCompatActivity() {
         navigate(userId, token, RegisterEstablishmentMusicActivity().javaClass)
     }
 
-    fun goToRegisterEstablishmentAdress(button: View){
+    fun goToRegisterEstablishmentAddress(button: View){
         navigate(userId, token, RegisterEstablishmentAdressActivity().javaClass)
     }
 
-
-    fun goToregisterEstablishment(button: View){
+    fun goToRegisterEstablishment(button: View){
         navigate(userId, token, RegisterEstablishmentPrincipalActivity().javaClass)
     }
 
@@ -76,4 +75,7 @@ abstract class AbstractActivity : AppCompatActivity() {
         navigate(userId, token, RegisterEstablishmentLocalActivity().javaClass)
     }
 
+    fun goToEstablishmentConfig(button: View){
+        navigate(userId, token, RegisterEstablishmentConfigActivity().javaClass)
+    }
 }

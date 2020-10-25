@@ -4,11 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
-import com.example.sp4u_app.utils.AbstractActivityOut
+import com.example.sp4u_app.utils.AbstractAuthenticateActivity
 import com.example.sp4u_app.validator.validator
 import kotlinx.android.synthetic.main.activity_login.*
 
-class LoginActivity : AbstractActivityOut() {
+class LoginActivity : AbstractAuthenticateActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)

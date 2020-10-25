@@ -78,7 +78,7 @@
                 android:layout_marginTop="40dp"
                 android:background="@color/LightBlue"
                 android:fontFamily="@font/montserrat"
-                android:onClick="goToregisterEstablishment"
+                android:onClick="goToRegisterEstablishment"
                 android:text="@string/estabilishment_cadastro_estabelecimento"
                 android:textAlignment="center"
                 android:textColor="@color/Black"

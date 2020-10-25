@@ -236,7 +236,7 @@
 
     <!-- Inicializando tela de cadastro estabelecimento principals -->
     <string name="cadastro_principal_razao">razão social</string>
-    <string name="et_cadastro_principal_razao">Digite a razão social</string>
+    <string name="et_cadastro_principal_razao">digite a razão social</string>
     <string name="cadastro_nome_fantasia">nome fantasia</string>
     <string name="et_cadastro_nome_fantasia">Digite o nome fantasia</string>
     <string name="cadastro_estab_telefone">telefone</string>

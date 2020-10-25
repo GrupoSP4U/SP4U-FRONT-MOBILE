@@ -6,14 +6,14 @@ import android.widget.Toast
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
 import com.example.sp4u_app.dto.UserDTO
 import com.example.sp4u_app.utils.RetrofitInitializer
-import com.example.sp4u_app.utils.AbstractActivityOut
+import com.example.sp4u_app.utils.AbstractAuthenticateActivity
 import com.example.sp4u_app.validator.validator
 import kotlinx.android.synthetic.main.activity_register.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class RegisterActivity : AbstractActivityOut() {
+class RegisterActivity : AbstractAuthenticateActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
