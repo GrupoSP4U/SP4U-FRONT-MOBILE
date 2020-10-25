@@ -231,7 +231,7 @@
 
     <!-- Inicializando tela de cadastro filtros adicionais -->
     <string name="titulo_cadastro_estab_filters">queremos saber um pouquinho mais do seu estabelecimento</string>
-    <string name="cadastro_estab_filters">conte um pouco mais sobre seu estabelecimento"</string>
+    <string name="cadastro_estab_filters">descrição</string>
     <!-- finalizando tela de cadastro filtros adicionais -->
 
     <!-- Inicializando tela de cadastro estabelecimento principals -->

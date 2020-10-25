@@ -1,172 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Fund"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:paddingTop="15dp">
 
+    <TextView
+        android:id="@+id/tv_more_information"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/titulo_cadastro_estab_filters"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="2dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_more_information"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/titulo_cadastro_estab_filters"
-            android:textAlignment="center"
-            android:textColor="@color/White"
-            android:textSize="20sp"
-            tools:layout_editor_absoluteX="45dp"
-            tools:layout_editor_absoluteY="40dp" />
-
-        <TextView
-            android:id="@+id/tv_tell_about"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat"
-            android:gravity="center|center_horizontal"
-            android:text="@string/cadastro_estab_filters"
-            android:textColor="@color/White"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_more_information"
-            tools:layout_editor_absoluteX="56dp" />
+            android:padding="20dp"
+            android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="300dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_tell_about"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center|center_horizontal"
+                android:text="@string/cadastro_estab_filters"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_more_information" />
 
-        <EditText
-            android:id="@+id/et_tell_about"
-            android:layout_width="match_parent"
-            android:layout_height="119dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/et_style_orange"
-            android:fontFamily="@font/montserrat"
-            android:inputType="text"
-            android:textColorHint="@color/White"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_tell_about" />
-
-
-
-                <TextView
-                    android:id="@+id/tv_cardapio_vegetariano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/addfilters_vegetariano"
-                    android:textColor="@color/White"
-                    android:textSize="20sp"
-                    app:layout_constraintTop_toBottomOf="@+id/et_tell_about"
-                    tools:layout_editor_absoluteX="40dp" />
-
-                <Switch
-                    android:id="@+id/sw_cardapio_vegetariano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12sp"
-                    android:checked="false"
-                    app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegetariano"
-                    tools:layout_editor_absoluteX="40dp" />
+            <EditText
+                android:id="@+id/et_tell_about"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/et_style_orange"
+                android:fontFamily="@font/montserrat"
+                android:inputType="text"
+                android:textColorHint="@color/White"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tell_about" />
 
 
-                <TextView
-                    android:id="@+id/tv_cardapio_vegano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/addfilters_vegano"
-                    android:textColor="@color/White"
-                    android:textSize="20sp"
-                    app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegetariano"
-                    tools:layout_editor_absoluteX="40dp" />
+            <TextView
+                android:id="@+id/tv_cardapio_vegetariano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/addfilters_vegetariano"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/et_tell_about" />
 
-                <Switch
-                    android:id="@+id/sw_cardapio_vegano"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12sp"
-                    android:checked="false"
-                    app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegano"
-                    tools:layout_editor_absoluteX="40dp" />
+            <Switch
+                android:id="@+id/sw_cardapio_vegetariano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:checked="false"
+                app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegetariano" />
 
-                <TextView
-                    android:id="@+id/tv_animais_permitidos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/addfilters_animal"
-                    android:textColor="@color/White"
-                    android:textSize="20sp"
-                    app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegano"
-                    tools:layout_editor_absoluteX="40dp" />
 
-                <Switch
-                    android:id="@+id/sw_animais_permitidos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12sp"
-                    android:checked="false"
-                    app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos"
-                    tools:layout_editor_absoluteX="40dp" />
+            <TextView
+                android:id="@+id/tv_cardapio_vegano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/addfilters_vegano"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegetariano" />
 
-                <TextView
-                    android:id="@+id/tv_idade_permitida"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="22dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="@string/addfilters_maioridade"
-                    android:textColor="@color/White"
-                    android:textSize="20sp"
-                    app:layout_constraintTop_toBottomOf="@+id/sw_animais_permitidos"
-                    tools:layout_editor_absoluteX="40dp" />
+            <Switch
+                android:id="@+id/sw_cardapio_vegano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:checked="false"
+                app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegano" />
 
-                <Switch
-                    android:id="@+id/sw_idade_permitida"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12sp"
-                    android:checked="true"
-                    app:layout_constraintTop_toBottomOf="@id/tv_idade_permitida"
-                    tools:layout_editor_absoluteX="40dp" />
+            <TextView
+                android:id="@+id/tv_animais_permitidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/addfilters_animal"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/sw_cardapio_vegano" />
 
-                <ImageView
-                    android:id="@+id/img_next"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="35dp"
-                    android:src="@drawable/icon_next"
-                    android:onClick="goToEstablishmentConfig"
-                    app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida" />
+            <Switch
+                android:id="@+id/sw_animais_permitidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:checked="false"
+                app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos" />
 
-            </LinearLayout>
-        </ScrollView>
+            <TextView
+                android:id="@+id/tv_idade_permitida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/addfilters_maioridade"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/sw_animais_permitidos" />
 
-    </LinearLayout>
+            <Switch
+                android:id="@+id/sw_idade_permitida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:checked="true"
+                app:layout_constraintTop_toBottomOf="@id/tv_idade_permitida" />
 
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:onClick="goToEstablishmentConfig"
+                android:src="@drawable/icon_next"
+                app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

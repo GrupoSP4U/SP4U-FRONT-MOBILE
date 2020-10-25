@@ -203,7 +203,7 @@
 
     <!-- Start establishment register screen - addictional filters  -->
     <string name="titulo_cadastro_estab_filters">we wanna know a little more abour your establishment</string>
-    <string name="cadastro_estab_filters">tell us more about your establishment"</string>
+    <string name="cadastro_estab_filters">description</string>
     <!-- End establishment register screen - addictional filters -->
 
     <!-- Start establish register - principal-->
