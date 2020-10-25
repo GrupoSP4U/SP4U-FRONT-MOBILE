@@ -44,7 +44,7 @@
         <LinearLayout
             android:id="@+id/ll_imagem_estabelecimento"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="265dp"
             android:orientation="vertical">
 
             <ImageView
@@ -56,18 +56,6 @@
                 android:src="@drawable/icon_company"
                 tools:layout_editor_absoluteX="131dp"
                 tools:layout_editor_absoluteY="175dp" />
-
-            <TextView
-                android:id="@+id/tv_informacoes_estabelecimento"
-                android:layout_width="297dp"
-                android:layout_height="89dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/montserrat"
-                android:text="@string/estabilishment_informacoes_cadastro_estabelecimento"
-                android:textAlignment="center"
-                android:textColor="@color/White"
-                android:textSize="14sp" />
 
             <Button
                 android:id="@+id/bt_cadastrar_estabelecimento"
@@ -83,6 +71,67 @@
                 android:textColor="@color/Black"
                 android:textSize="12sp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/bt_roles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Grey"
+                android:padding="7dp"
+                android:onClick="goToHome"
+                android:text="@string/menu_roles"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_humor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Grey"
+                android:padding="5dp"
+                android:text="@string/menu_humor"
+                android:onClick="goToHumor"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_perfil"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Grey"
+                android:padding="5dp"
+                android:text="@string/menu_perfil"
+                android:textAllCaps="false"
+                android:onClick="goToBasicSettings"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_empresa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/Grey"
+                android:padding="5dp"
+                android:text="@string/menu_empresa"
+                android:textAllCaps="false"
+                android:onClick="goToEnterprise"
+                android:textColor="@color/White"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
