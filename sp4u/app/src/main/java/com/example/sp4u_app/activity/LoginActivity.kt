@@ -1,8 +1,10 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import com.example.sp4u_app.R
+import com.example.sp4u_app.activity.register.RegisterActivity
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
 import com.example.sp4u_app.utils.AbstractAuthenticateActivity
 import com.example.sp4u_app.validator.validator

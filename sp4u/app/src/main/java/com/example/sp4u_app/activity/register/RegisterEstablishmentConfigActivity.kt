@@ -1,7 +1,8 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity.register
 
 import android.os.Bundle
 import android.view.View
+import com.example.sp4u_app.R
 import com.example.sp4u_app.utils.AbstractActivity
 
 class RegisterEstablishmentConfigActivity : AbstractActivity() {

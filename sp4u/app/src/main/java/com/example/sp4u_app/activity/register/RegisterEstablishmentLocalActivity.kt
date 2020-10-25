@@ -1,11 +1,7 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity.register
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import com.example.sp4u_app.R
-import com.example.sp4u_app.RegisterEstablishmentMusicActivity
 import com.example.sp4u_app.utils.AbstractActivity
 
 class RegisterEstablishmentLocalActivity : AbstractActivity() {

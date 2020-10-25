@@ -1,25 +1,23 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity.user
 
 import android.os.Bundle
 import android.view.View
 
 import android.widget.Toast
-import com.example.sp4u_app.dto.UserDTO
-import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
-import com.example.sp4u_app.dto.response.AuthenticateResponseDTO
+import com.example.sp4u_app.R
 import com.example.sp4u_app.dto.response.UserResponseDTO
 import com.example.sp4u_app.utils.AbstractActivity
 import com.example.sp4u_app.utils.RetrofitInitializer
 import com.example.sp4u_app.validator.validator
-import kotlinx.android.synthetic.main.activity_user_profile_2.*
+import kotlinx.android.synthetic.main.activity_user_profile_email.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UserProfile2Activity : AbstractActivity() {
+class UserProfileEmailActivity : AbstractActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_profile_2)
+        setContentView(R.layout.activity_user_profile_email)
         setVariables()
         callGetUser()
     }
@@ -49,20 +47,20 @@ class UserProfile2Activity : AbstractActivity() {
             ) {
                 if (response?.code() == 200) {
                     Toast.makeText(
-                        this@UserProfile2Activity,
+                        this@UserProfileEmailActivity,
                         resources.getString(R.string.user_email_alterado),
                         Toast.LENGTH_LONG
                     ).show()
                 } else if (response?.code() == 400) {
                     Toast.makeText(
-                        this@UserProfile2Activity,
+                        this@UserProfileEmailActivity,
                         resources.getString(R.string.user_email_nao_existe),
                         Toast.LENGTH_LONG
                     ).show()
                 } else {
                     println(response.toString())
                     Toast.makeText(
-                        this@UserProfile2Activity,
+                        this@UserProfileEmailActivity,
                         resources.getString(R.string.requisicao_erro_interno),
                         Toast.LENGTH_SHORT
                     ).show()

@@ -1,8 +1,10 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity.register
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.sp4u_app.R
+import com.example.sp4u_app.activity.welcome.WelcomeMusicActivity
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
 import com.example.sp4u_app.dto.UserDTO
 import com.example.sp4u_app.utils.RetrofitInitializer

@@ -1,21 +1,22 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity.user
 
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.sp4u_app.R
 import com.example.sp4u_app.dto.request.ChangePasswordRequestDTO
 import com.example.sp4u_app.utils.AbstractActivity
 import com.example.sp4u_app.utils.RetrofitInitializer
 import com.example.sp4u_app.validator.validator
-import kotlinx.android.synthetic.main.activity_user_profile_3.*
+import kotlinx.android.synthetic.main.activity_user_profile_password.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class UserProfile3Activity : AbstractActivity() {
+class UserProfilePasswordActivity : AbstractActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user_profile_3)
+        setContentView(R.layout.activity_user_profile_password)
         setVariables()
     }
 
@@ -46,20 +47,20 @@ class UserProfile3Activity : AbstractActivity() {
             ) {
                 if (response?.code() == 200) {
                     Toast.makeText(
-                        this@UserProfile3Activity,
+                        this@UserProfilePasswordActivity,
                         resources.getString(R.string.user_senha_alterada),
                         Toast.LENGTH_LONG
                     ).show()
                 } else if (response?.code() == 400) {
                     Toast.makeText(
-                        this@UserProfile3Activity,
+                        this@UserProfilePasswordActivity,
                         resources.getString(R.string.user_senha_incorreta),
                         Toast.LENGTH_LONG
                     ).show()
                 } else {
                     println(response.toString())
                     Toast.makeText(
-                        this@UserProfile3Activity,
+                        this@UserProfilePasswordActivity,
                         resources.getString(R.string.requisicao_erro_interno),
                         Toast.LENGTH_SHORT
                     ).show()

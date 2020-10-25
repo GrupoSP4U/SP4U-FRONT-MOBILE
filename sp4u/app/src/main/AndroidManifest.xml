@@ -13,28 +13,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".UserProfileActivity" />
-        <activity android:name=".UserProfile2Activity" />
-        <activity android:name=".UserProfile3Activity" />
-        <activity android:name=".RegisterEstablishmentPrincipalActivity" />
-        <activity android:name=".RegisterEstablishmentAdressActivity" />
-        <activity android:name=".RegisterEstablishmentConfigDescriptionActivity" />
-        <activity android:name=".FeelsActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".RegisterEstablishmentActivity" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".WelcomeLocalActivity" />
-        <activity android:name=".WelcomeMusicActivity" />
-        <activity android:name=".RegisterEstablishmentMusicActivity" />
-        <activity android:name=".RegisterEstablishmentLocalActivity" />
-        <activity android:name=".RegisterEstablishmentFiltersActivity" />
-        <activity android:name=".AdditionalFiltersActivity" />
-        <activity android:name="RegisterEstablishmentConfigActivity" />
+        <activity android:name=".activity.user.UserProfileConfigActivity" />
+        <activity android:name=".activity.user.UserProfileEmailActivity" />
+        <activity android:name=".activity.user.UserProfilePasswordActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentPrincipalActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentAdressActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentConfigDescriptionActivity" />
+        <activity android:name=".activity.FeelsActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.register.RegisterActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentActivity" />
+        <activity android:name=".activity.ResultActivity" />
+        <activity android:name=".activity.welcome.WelcomeLocalActivity" />
+        <activity android:name=".activity.welcome.WelcomeMusicActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentMusicActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentLocalActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentFiltersActivity" />
+        <activity android:name=".activity.AdditionalFiltersActivity" />
+        <activity android:name=".activity.register.RegisterEstablishmentConfigActivity" />
 
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

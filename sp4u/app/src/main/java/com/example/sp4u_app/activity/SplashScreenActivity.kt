@@ -1,9 +1,10 @@
-package com.example.sp4u_app
+package com.example.sp4u_app.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.sp4u_app.R
 
 class SplashScreenActivity : AppCompatActivity() {
 

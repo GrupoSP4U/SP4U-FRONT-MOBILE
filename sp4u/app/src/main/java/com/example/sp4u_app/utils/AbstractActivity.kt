@@ -5,6 +5,13 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sp4u_app.*
+import com.example.sp4u_app.activity.FeelsActivity
+import com.example.sp4u_app.activity.HomeActivity
+import com.example.sp4u_app.activity.LoginActivity
+import com.example.sp4u_app.activity.register.*
+import com.example.sp4u_app.activity.user.UserProfileEmailActivity
+import com.example.sp4u_app.activity.user.UserProfilePasswordActivity
+import com.example.sp4u_app.activity.user.UserProfileConfigActivity
 
 abstract class AbstractActivity : AppCompatActivity() {
     protected var userId: Int? = 0
@@ -36,7 +43,7 @@ abstract class AbstractActivity : AppCompatActivity() {
     }
 
     fun goToBasicSettings(button: View) {
-        navigate(userId, token, UserProfileActivity().javaClass)
+        navigate(userId, token, UserProfileConfigActivity().javaClass)
     }
 
     fun goToEnterprise(button: View) {
@@ -48,11 +55,11 @@ abstract class AbstractActivity : AppCompatActivity() {
     }
 
     fun goToPasswordEditing(button: View) {
-        navigate(userId, token, UserProfile3Activity().javaClass)
+        navigate(userId, token, UserProfilePasswordActivity().javaClass)
     }
 
     fun goToEmailEditing(button: View) {
-        navigate(userId, token, UserProfile2Activity().javaClass)
+        navigate(userId, token, UserProfileEmailActivity().javaClass)
     }
 
     fun goToRegisterEstablishmentMusic(button: View){
