@@ -19,7 +19,7 @@ class UserProfileEmailActivity : AbstractActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_profile_email)
         setVariables()
-        callGetUser()
+        callGetEmail()
     }
 
     fun changeEmail(component: View) {
@@ -76,7 +76,7 @@ class UserProfileEmailActivity : AbstractActivity() {
         })
     }
 
-    private fun callGetUser() {
+    private fun callGetEmail() {
         val call =
             RetrofitInitializer(token)
                 .userService()
@@ -87,7 +87,6 @@ class UserProfileEmailActivity : AbstractActivity() {
                 call: Call<UserResponseDTO?>?,
                 response: Response<UserResponseDTO?>?
             ) {
-                println(response.toString())
                 if (response?.code() == 200) {
                     response?.body()?.let {
                         tv_email_antigo.text = it.usuario.email

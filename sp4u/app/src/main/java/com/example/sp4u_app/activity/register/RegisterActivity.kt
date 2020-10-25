@@ -1,8 +1,10 @@
 package com.example.sp4u_app.activity.register
 
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.sp4u_app.R
 import com.example.sp4u_app.activity.welcome.WelcomeMusicActivity
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
@@ -14,7 +16,11 @@ import kotlinx.android.synthetic.main.activity_register.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.sql.Date
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 
+@RequiresApi(Build.VERSION_CODES.O)
 class RegisterActivity : AbstractAuthenticateActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,6 +72,7 @@ class RegisterActivity : AbstractAuthenticateActivity() {
                 call: Call<Void?>?,
                 response: Response<Void?>?
             ) {
+                println(response.toString())
                 if (response?.code() == 201) {
                     callLoginEndpoint(
                         AuthenticateRequestDTO(
