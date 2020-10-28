@@ -243,6 +243,7 @@
     <string name="et_cadastro_estab_telefone">(11) XXXXX-XXXX</string>
     <string name="cadastro_cnpj">cnpj</string>
     <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
+    <string name="slogan">O melhor de SP nas suas mãos</string>
     <!-- finalizando tela de cadastro estabelecimento principals -->
 
 </resources>

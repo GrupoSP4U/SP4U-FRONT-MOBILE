@@ -215,6 +215,7 @@
     <string name="et_cadastro_estab_telefone">(11) XXXXX-XXXX</string>
     <string name="cadastro_cnpj">NRLE</string>
     <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
+    <string name="slogan">"The best of  SP in your hands "</string>
     <!-- End establishment register - principal -->
 </resources>
 

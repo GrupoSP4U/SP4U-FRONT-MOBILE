@@ -27,7 +27,7 @@
         android:fontFamily="@font/montserrat"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
-        android:text="O melhor de SP nas suas mãos"
+        android:text="@string/slogan"
         android:textColor="@color/Green"
         android:textSize="18sp"
         />
