@@ -4,32 +4,31 @@
     <string name="sertanejo">sertanejo</string>
     <string name="subTitile">precisamos entender o que você curte quando quer dar um rolê por ai.... vou te fazer algumas perguntas, vai ser rápidinho, prometo!</string>
     <string name="title">uhull, bem-vindx ao SP4U!</string>
-    <string name="trap">trap</string>
+    <string name="trap" translatable="false">trap</string>
     <string name="eletronica">eletronica</string>
-    <string name="gospel">gospel</string>
-    <string name="hip_hop">hip-hop</string>
-    <string name="metal">metal</string>
-    <string name="rap">rap</string>
+    <string name="gospel" translatable="false">gospel</string>
+    <string name="hip_hop" translatable="false">hip-hop</string>
+    <string name="metal" translatable="false">metal</string>
+    <string name="rap" translatable="false">rap</string>
     <string name="classico">classico</string>
-    <string name="pop">pop</string>
-    <string name="trance">trance</string>
-    <string name="jazz">jazz</string>
-    <string name="forro">forro</string>
-    <string name="kpop">kpop</string>
-    <string name="samba">samba</string>
-    <string name="mpb">mpb</string>
-    <string name="folk">folk</string>
-    <string name="rock">rock</string>
-    <string name="axe">axe</string>
-    <string name="funk">funk</string>
-    <string name="pagode">pagode</string>
+    <string name="pop" translatable="false">pop</string>
+    <string name="trance" translatable="false">trance</string>
+    <string name="jazz" translatable="false">jazz</string>
+    <string name="forro" translatable="false">forro</string>
+    <string name="kpop" translatable="false">kpop</string>
+    <string name="samba" translatable="false">samba</string>
+    <string name="mpb" translatable="false">mpb</string>
+    <string name="folk" translatable="false">folk</string>
+    <string name="rock" translatable="false">rock</string>
+    <string name="axe" translatable="false">axe</string>
+    <string name="funk" translatable="false">funk</string>
+    <string name="pagode" translatable="false">pagode</string>
     <string name="qual_voc_prefere">qual você prefere?</string>
     <string name="restaurantes">restaurantes</string>
     <string name="bares">bares</string>
     <string name="baladas">baladas</string>
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">qual é o seu estilo de música?</string>
-
 
     <!-- Iniciando tela de edição de dados do usuário  -->
     <string name="user_profile_alterar_foto">alterar foto de perfil</string>

@@ -11,7 +11,7 @@ import retrofit2.Response
 abstract class AbstractAuthenticateActivity : AbstractActivity() {
     fun callLoginEndpoint(request: AuthenticateRequestDTO, activityClass: Class<Any>) {
         val call =
-                RetrofitInitializer("", "http://ec2-100-26-215-123.compute-1.amazonaws.com:8080/")
+                RetrofitInitializer("", "http://ec2-107-23-7-31.compute-1.amazonaws.com:8080/")
                         .authenticateService()
                         .authenticate(request)
 
