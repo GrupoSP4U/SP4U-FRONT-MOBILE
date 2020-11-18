@@ -394,11 +394,11 @@
     </ScrollView>
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fr_menu">
         <fragment
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             class="com.example.sp4u_app.fragment.MenuFragment"
             />
