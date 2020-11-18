@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sp4u_app.*
+import com.example.sp4u_app.activity.AboutEstabilishmentActivity
 import com.example.sp4u_app.activity.FeelsActivity
 import com.example.sp4u_app.activity.HomeActivity
 import com.example.sp4u_app.activity.LoginActivity
@@ -84,5 +85,9 @@ abstract class AbstractActivity : AppCompatActivity() {
 
     fun goToEstablishmentConfig(button: View){
         navigate(userId, token, RegisterEstablishmentConfigActivity().javaClass)
+    }
+
+    fun goToAbout(button: View){
+        navigate(userId, token, AboutEstabilishmentActivity().javaClass)
     }
 }
