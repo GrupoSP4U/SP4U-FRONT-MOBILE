@@ -216,6 +216,10 @@
     <string name="cadastro_cnpj">NRLE</string>
     <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
     <string name="slogan">"The best of  SP in your hands "</string>
+    <string name="conhecido">it known as:</string>
+    <string name="mais_tocados">most played styles:</string>
+    <string name="recomendado">recommended</string>
+    <string name="ambiente">this environment is:</string>
     <!-- End establishment register - principal -->
 </resources>
 

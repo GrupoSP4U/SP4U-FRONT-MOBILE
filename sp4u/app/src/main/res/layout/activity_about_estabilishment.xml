@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:text="@string/caos"
             android:textColor="#FFFFFF"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textAlignment="center"
             android:layout_marginBottom="12dp"/>
 
@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:text="Casa noturna descolada com pegada alternativa e shows animados por mixagem sofisticada sob efeitos luminosos."
             android:textColor="#FFFFFF"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textAlignment="center"/>
 
 
@@ -45,15 +45,14 @@
                 android:layout_height="89dp"
                 android:src="@drawable/icon_company"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:layout_marginLeft="20dp" />
 
             <ImageView
                 android:id="@+id/img_estabelecimento2"
                 android:layout_width="79dp"
                 android:layout_height="89dp"
                 android:src="@drawable/icon_company"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 />
 
             <ImageView
@@ -74,9 +73,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="estilos mais tocados"
+            android:text="@string/mais_tocados"
             android:textColor="@color/White"
-            android:textSize="15dp"
+            android:textSize="15sp"
             />
 
         <TextView
@@ -85,7 +84,7 @@
             android:layout_height="wrap_content"
             android:text="funk, sertanejo, pagode"
             android:textColor="@color/Green"
-            android:textSize="15dp"
+            android:textSize="15sp"
             />
     </LinearLayout>
 
@@ -98,9 +97,9 @@
             <TextView
                 android:layout_width="137dp"
                 android:layout_height="wrap_content"
-                android:text="recomendado para"
+                android:text="@string/recomendado"
                 android:textColor="@color/White"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <TextView
@@ -109,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:text="sozinho, amigos, namorade"
                 android:textColor="@color/Green"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
         </LinearLayout>
 
@@ -122,9 +121,9 @@
             <TextView
                 android:layout_width="137dp"
                 android:layout_height="wrap_content"
-                android:text="esse ambiente é:"
+                android:text="@string/ambiente"
                 android:textColor="@color/White"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <TextView
@@ -133,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:text="animado, fogoso, feliz"
                 android:textColor="@color/Green"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
         </LinearLayout>
 
@@ -146,18 +145,18 @@
             <TextView
                 android:layout_width="137dp"
                 android:layout_height="wrap_content"
-                android:text="é conhecido como:"
+                android:text="@string/conhecido"
                 android:textColor="@color/White"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:layout_height="wrap_content"
                 android:text="bar"
                 android:textColor="@color/Green"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 />
         </LinearLayout>
 
@@ -167,7 +166,7 @@
             android:layout_marginTop="18dp"
             android:text="R. da Consolação - 2659 - Cerqueira César - São Paulo - SP"
             android:textColor="@color/White"
-            android:textSize="15dp"
+            android:textSize="15sp"
             />
 
     </LinearLayout>

@@ -245,6 +245,12 @@
     <string name="slogan">O melhor de SP nas suas mãos</string>
     <!-- finalizando tela de cadastro estabelecimento principals -->
 
+    <!-- Iniciando tela de sobre o local -->
+    <string name="conhecido">é conhecido como:</string>
+    <string name="mais_tocados">estilos mais tocados</string>
+    <string name="recomendado">recomendado para</string>
+    <string name="ambiente">esse ambiente é:</string>
+    <!-- -->
 </resources>
 
 
