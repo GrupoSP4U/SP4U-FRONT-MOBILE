@@ -1,5 +1,7 @@
 package com.example.sp4u_app.dto.enums
 
-enum class Dias {
+import java.io.Serializable
+
+enum class Dias: Serializable {
     SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO
 }

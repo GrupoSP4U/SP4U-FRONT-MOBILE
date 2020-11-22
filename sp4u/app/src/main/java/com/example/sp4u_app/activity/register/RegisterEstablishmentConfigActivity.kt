@@ -9,7 +9,7 @@ class RegisterEstablishmentConfigActivity : AbstractActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register_estabilishment_config)
+        setContentView(R.layout.activity_register_establishment_config)
         setVariables()
     }
 

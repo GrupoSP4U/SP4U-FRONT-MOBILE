@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.AboutEstabilishmentActivity"></activity>
+        <activity android:name=".activity.AboutEstablishmentActivity"></activity>
         <activity android:name=".activity.user.UserProfileConfigActivity" />
         <activity android:name=".activity.user.UserProfileEmailActivity" />
         <activity android:name=".activity.user.UserProfilePasswordActivity" />

@@ -204,6 +204,10 @@
     <!-- Start establishment register screen - addictional filters  -->
     <string name="titulo_cadastro_estab_filters">we wanna know a little more abour your establishment</string>
     <string name="cadastro_estab_filters">description</string>
+    <string name="cadastro_estab_adicionado">music added</string>
+    <string name="cadastro_estab_lista_vazia_musica">please, add a music style</string>
+    <string name="cadastro_estab_tipo_selecionaddo">you selected the type </string>
+    <string name="cadastro_estab_lista_vazia_tipo">please, add a estabilishment type</string>
     <!-- End establishment register screen - addictional filters -->
 
     <!-- Start establish register - principal-->
@@ -221,5 +225,13 @@
     <string name="recomendado">recommended</string>
     <string name="ambiente">this environment is:</string>
     <!-- End establishment register - principal -->
+
+    <!-- Inicializando tela de cadastro estabelecimento local -->
+    <string name="cadastro_local_titulo">how it identifies itself?</string>
+    <string name="cadastro_local_restaurante">restaurant</string>
+    <string name="cadastro_local_bar">bar</string>
+    <string name="cadastro_local_balada">ballad</string>
+    <string name="cadastro_local_pub">pub</string>
+    <!-- finalizando tela de cadastro estabelecimento local -->
 </resources>
 

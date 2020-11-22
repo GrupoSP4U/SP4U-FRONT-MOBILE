@@ -231,6 +231,10 @@
     <!-- Inicializando tela de cadastro filtros adicionais -->
     <string name="titulo_cadastro_estab_filters">queremos saber um pouquinho mais do seu estabelecimento</string>
     <string name="cadastro_estab_filters">descrição</string>
+    <string name="cadastro_estab_adicionado">musica adicionada</string>
+    <string name="cadastro_estab_lista_vazia_musica">por favor, adicione um estilo de música</string>
+    <string name="cadastro_estab_tipo_selecionaddo">você selecionou o tipo  </string>
+    <string name="cadastro_estab_lista_vazia_tipo">por favor, adicione um tipo de estabelecimento </string>
     <!-- finalizando tela de cadastro filtros adicionais -->
 
     <!-- Inicializando tela de cadastro estabelecimento principals -->
@@ -244,6 +248,14 @@
     <string name="et_cadastro_cnpj">00.000.000/0000-00</string>
     <string name="slogan">O melhor de SP nas suas mãos</string>
     <!-- finalizando tela de cadastro estabelecimento principals -->
+
+    <!-- Inicializando tela de cadastro estabelecimento local -->
+    <string name="cadastro_local_titulo">e como ele se identifica?</string>
+    <string name="cadastro_local_restaurante">restaurante</string>
+    <string name="cadastro_local_bar">bar</string>
+    <string name="cadastro_local_balada">balada</string>
+    <string name="cadastro_local_pub">pub</string>
+    <!-- finalizando tela de cadastro estabelecimento local -->
 
     <!-- Iniciando tela de sobre o local -->
     <string name="conhecido">é conhecido como:</string>

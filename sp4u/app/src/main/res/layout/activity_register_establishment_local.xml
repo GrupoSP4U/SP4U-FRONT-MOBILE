@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="e ele se identifica como?"
+        android:text="@string/cadastro_local_titulo"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginEnd="24dp"
         android:background="@drawable/btn_rectangle_background"
         android:fontFamily="@font/montserrat"
-        android:hint="restaurante"
+        android:hint="@string/cadastro_local_restaurante"
         android:paddingStart="16dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
@@ -37,7 +37,8 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_bares"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:onClick="addTipoEstabelecimento"/>
 
     <Button
         android:id="@+id/bt_bares"
@@ -49,7 +50,7 @@
         android:background="@drawable/btn_rectangle_background"
         android:backgroundTint="@color/Grey"
         android:fontFamily="@font/montserrat"
-        android:hint="bar"
+        android:hint="@string/cadastro_local_bar"
         android:paddingStart="16dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
@@ -58,7 +59,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_restaurantes" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_restaurantes"
+        android:onClick="addTipoEstabelecimento"/>
 
     <Button
         android:id="@+id/bt_baladas"
@@ -70,7 +72,7 @@
         android:background="@drawable/btn_rectangle_background"
         android:backgroundTint="@color/LightRed"
         android:fontFamily="@font/montserrat"
-        android:hint="balada"
+        android:hint="@string/cadastro_local_balada"
         android:paddingStart="16dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
@@ -79,29 +81,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_bares" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_bares"
+        android:onClick="addTipoEstabelecimento"/>
 
     <Button
         android:id="@+id/bt_pub"
         android:layout_width="313dp"
         android:layout_height="79dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/btn_rectangle_background"
         android:backgroundTint="@color/LightPink"
         android:fontFamily="@font/montserrat"
-        android:hint="pub"
+        android:hint="@string/cadastro_local_pub"
         android:paddingStart="16dp"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
         android:textAlignment="viewStart"
         android:textColorHint="#fff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.42"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_baladas"
-        />
+        android:onClick="addTipoEstabelecimento"/>
 
     <ImageView
         android:id="@+id/img_next"
