@@ -72,7 +72,6 @@
                 android:checked="false"
                 app:layout_constraintTop_toBottomOf="@id/tv_cardapio_vegetariano" />
 
-
             <TextView
                 android:id="@+id/tv_cardapio_vegano"
                 android:layout_width="wrap_content"
@@ -109,7 +108,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12sp"
                 android:checked="false"
-                app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos" />
+                app:layout_constraintTop_toBottomOf="@id/tv_animais_permitidos"
+                />
 
             <TextView
                 android:id="@+id/tv_idade_permitida"
@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12sp"
-                android:checked="true"
+                android:checked="false"
                 app:layout_constraintTop_toBottomOf="@id/tv_idade_permitida" />
 
             <ImageView

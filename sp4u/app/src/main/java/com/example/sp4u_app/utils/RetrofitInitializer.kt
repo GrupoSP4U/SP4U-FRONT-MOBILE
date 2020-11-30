@@ -1,8 +1,8 @@
 package com.example.sp4u_app.utils
 
 import com.example.sp4u_app.service.AuthenticateService
+import com.example.sp4u_app.service.EstablishmentService
 import com.example.sp4u_app.service.UserService
-import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -24,4 +24,6 @@ class RetrofitInitializer(
         retrofit.create(AuthenticateService::class.java)
 
     fun userService(): UserService = retrofit.create(UserService::class.java)
+
+    fun establishmentService(): EstablishmentService = retrofit.create(EstablishmentService::class.java)
 }

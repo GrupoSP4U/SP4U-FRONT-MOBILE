@@ -38,7 +38,7 @@
         />
 
     <EditText
-        android:id="@+id/et_enderece"
+        android:id="@+id/et_endereco"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:paddingLeft="10dp"
@@ -64,7 +64,7 @@
             android:id="@+id/tv_cep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/et_enderece"
+            app:layout_constraintTop_toBottomOf="@id/et_endereco"
             android:fontFamily="@font/montserrat"
             android:text="@string/cadastro_estab_cep"
             android:textColor="@color/White"
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/et_enderece"
+            app:layout_constraintTop_toBottomOf="@id/et_endereco"
             android:fontFamily="@font/montserrat"
             android:text="@string/cadastro_estab_bairro"
             android:textColor="@color/White"
@@ -303,14 +303,13 @@
 
     <ImageView
         android:id="@+id/img_next"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:layout_constraintTop_toBottomOf="@id/et_email_contato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:src="@drawable/icon_next"
-        tools:layout_editor_absoluteX="315dp"
         android:onClick="goToRegisterEstablishmentMusic"
-        />
+        android:src="@drawable/icon_next"
+        app:layout_constraintTop_toBottomOf="@id/et_email_contato"
+        tools:layout_editor_absoluteX="315dp" />
 
 </LinearLayout>

@@ -68,7 +68,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+                    app:layout_constraintTop_toBottomOf="@+id/question_music"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_samba"
@@ -84,7 +85,8 @@
                     android:textColorHint="#000000"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_kpop"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_trance" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_trance"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_rap"
@@ -100,7 +102,8 @@
                     android:textColorHint="#FFFFFF"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_metal"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_trap" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_trap"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_pagode"
@@ -113,8 +116,9 @@
                     android:hint="@string/pagode"
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
-                    app:layout_constraintStart_toEndOf="@+id/bt_funk2"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_folk" />
+                    app:layout_constraintStart_toEndOf="@+id/bt_funk"
+                    app:layout_constraintTop_toBottomOf="@+id/bt_folk"
+                    android:onClick="addTipoMusica"/>
 
             </LinearLayout>
 
@@ -137,7 +141,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_sertanejo"
-                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+                    app:layout_constraintTop_toBottomOf="@+id/question_music"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_forro"
@@ -153,7 +158,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_jazz"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_classico" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_classico"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_kpop"
@@ -168,7 +174,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_pop" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_pop"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_trance"
@@ -184,7 +191,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_pop"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_metal" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_metal"
+                    android:onClick="addTipoMusica"/>
 
             </LinearLayout>
 
@@ -208,7 +216,8 @@
                     android:textColorHint="#FFFFFF"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_mpb"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_forro" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_forro"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_hiphop"
@@ -224,7 +233,8 @@
                     android:textColorHint="#000000"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_sertanejo" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_sertanejo"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_pop"
@@ -238,12 +248,13 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_hiphop" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_hiphop"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_classico"
                     android:layout_width="68dp"
-                    android:layout_height="68dp"
+                    android:layout_height="54dp"
                     android:layout_marginStart="12dp"
                     android:width="68dp"
                     android:height="68dp"
@@ -254,7 +265,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_rap"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_gospel" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_gospel"
+                    android:onClick="addTipoMusica"/>
 
             </LinearLayout>
 
@@ -268,7 +280,7 @@
                 <Button
                     android:id="@+id/bt_axe"
                     android:layout_width="68dp"
-                    android:layout_height="68dp"
+                    android:layout_height="match_parent"
                     android:width="68dp"
                     android:height="68dp"
                     android:background="@drawable/btn_circle_background"
@@ -277,7 +289,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_rock"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_samba" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_samba"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_gospel"
@@ -293,7 +306,8 @@
                     android:textColorHint="#FFFFFF"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_trap"
-                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+                    app:layout_constraintTop_toBottomOf="@+id/question_music"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_metal"
@@ -307,7 +321,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_hiphop"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_eletronica" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_eletronica"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_rock"
@@ -321,7 +336,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_kpop" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_kpop"
+                    android:onClick="addTipoMusica"/>
 
             </LinearLayout>
 
@@ -333,7 +349,7 @@
                 android:layout_marginTop="12dp">
 
                 <Button
-                    android:id="@+id/bt_funk2"
+                    android:id="@+id/bt_funk"
                     android:layout_width="68dp"
                     android:layout_height="68dp"
                     android:background="@drawable/btn_circle_background"
@@ -343,7 +359,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_axe"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_mpb" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_mpb"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_trap"
@@ -358,7 +375,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_eletronica"
-                    app:layout_constraintTop_toBottomOf="@+id/question_music" />
+                    app:layout_constraintTop_toBottomOf="@+id/question_music"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_jazz"
@@ -372,7 +390,8 @@
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
                     app:layout_constraintStart_toEndOf="@+id/bt_trance"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_rap" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_rap"
+                    android:onClick="addTipoMusica"/>
 
                 <Button
                     android:id="@+id/bt_mpb"
@@ -386,8 +405,10 @@
                     android:hint="@string/mpb"
                     android:textColorHint="@color/Fund"
                     android:textSize="12sp"
+                    android:clickable="true"
                     app:layout_constraintStart_toEndOf="@+id/bt_samba"
-                    app:layout_constraintTop_toBottomOf="@+id/bt_jazz" />
+                    app:layout_constraintTop_toBottomOf="@+id/bt_jazz"
+                    android:onClick="addTipoMusica"/>
 
             </LinearLayout>
 
