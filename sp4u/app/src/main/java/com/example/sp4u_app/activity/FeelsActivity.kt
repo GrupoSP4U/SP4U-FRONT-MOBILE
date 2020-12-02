@@ -15,6 +15,6 @@ class FeelsActivity : AbstractActivity() {
     }
 
     fun goToAdditionalFilters(button: View) {
-        navigate(userId, token, AdditionalFiltersActivity().javaClass)
+        navigate(AdditionalFiltersActivity().javaClass)
     }
 }

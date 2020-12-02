@@ -49,11 +49,9 @@ class RegisterEstablishmentLocalActivity : AbstractActivity() {
 
         estabelecimentoDTO?.tagsEstabelecimento?.tipoEstabelecimento = listOf(estiloEstabelecimento)
 
-        val intent = Intent(this, RegisterEstablishmentFiltersActivity::class.java)
-        intent.putExtra("ESTABELECIMENTO", estabelecimentoDTO)
-        intent.putExtra("USER_ID", userId)
-        intent.putExtra("TOKEN", token)
-        startActivity(intent)
+        navigateWithEstablishmentObject(
+            estabelecimentoDTO,
+            RegisterEstablishmentFiltersActivity().javaClass
+        )
     }
-
 }

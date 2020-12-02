@@ -115,7 +115,7 @@
     <!-- Start the second estabilishment edit screen -->
     <string name="estabilishment_config_desc_role_atual">current description</string>
     <string name="estabilishment_config_desc_role_cardapio_vegetariano">do you have vegetarian menu?</string>
-    <string name="estabilishment_config_desc_role_vegano">do you have vegan manu?</string>
+    <string name="estabilishment_config_desc_role_vegano">do you have vegan menu?</string>
     <string name="estabilishment_config_desc_role_animais">are pets allowed?</string>
     <string name="estabilishment_config_desc_role_maioridade">are minors allowed?</string>
     <string name="estabilishment_config_desc_role_tipo_role">the local is a</string>
