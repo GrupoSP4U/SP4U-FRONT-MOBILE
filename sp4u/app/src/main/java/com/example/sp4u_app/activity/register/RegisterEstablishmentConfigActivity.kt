@@ -27,14 +27,13 @@ class RegisterEstablishmentConfigActivity : AbstractActivity() {
             et_bairro.setText(it.bairro)
             et_cidade.setText(it.cidade)
             et_estado.setText(it.estado)
-            it.numeroEndereco?.let { it1 -> et_numero.setText(it1.toString()) }
+            it.numeroEndereco?.let { nmr -> et_numero.setText(nmr.toString()) }
             et_complemento.setText(it.complemento)
             et_email.setText(it.emailContato)
         }
     }
 
     fun goToDescriptionOfRole(textView: View) {
-        println((intent.getSerializableExtra("ESTABELECIMENTO") as EstabelecimentoDTO?).toString())
         navigateWithEstablishmentObject(
             intent.getSerializableExtra("ESTABELECIMENTO") as EstabelecimentoDTO?,
             RegisterEstablishmentConfigDescriptionActivity().javaClass

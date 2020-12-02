@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInitializer(
     token: String? = "",
-    path: String = "http://192.168.15.136:8081/"
+    path: String = "http://ec2-100-26-253-161.compute-1.amazonaws.com:8081/"
 ) {
     private val interceptor = TokenInterceptor(token)
     private val client: OkHttpClient = OkHttpClient.Builder().addInterceptor(interceptor).build()
