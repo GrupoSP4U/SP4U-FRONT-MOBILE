@@ -15,6 +15,6 @@ class AdditionalFiltersActivity : AbstractActivity() {
     }
 
     fun goToResult(button: View){
-        navigate(userId, token, ResultActivity().javaClass)
+        navigate(ResultActivity().javaClass)
     }
 }

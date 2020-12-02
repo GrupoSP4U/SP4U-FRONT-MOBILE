@@ -23,11 +23,11 @@ class RegisterEstablishmentPrincipalActivity : AbstractActivity() {
         estabelecimento.nomeFantasia = et_nome_fantasia.text.toString()
         estabelecimento.cnpj = et_cnpj.text.toString()
         estabelecimento.userId = userId
+        estabelecimento.telefone = et_telefone.text.toString()
 
-        val intent = Intent(this, RegisterEstablishmentAdressActivity::class.java)
-        intent.putExtra("ESTABELECIMENTO", estabelecimento)
-        intent.putExtra("USER_ID", userId)
-        intent.putExtra("TOKEN", token)
-        startActivity(intent)
+        navigateWithEstablishmentObject(
+            estabelecimento,
+            RegisterEstablishmentAdressActivity().javaClass
+        )
     }
 }

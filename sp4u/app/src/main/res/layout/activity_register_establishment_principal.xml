@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Fund">
 
 
@@ -15,21 +15,20 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="2dp">
 
-    <TextView
-        android:id="@+id/tv_titulo_cadastro_empresa"
-        android:layout_width="193dp"
-        android:layout_height="28dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:fontFamily="@font/montserrat"
-        android:layout_gravity="center"
-        android:text="@string/titulo_cadastro"
-        android:layout_marginTop="12sp"
-        tools:layout_editor_absoluteY="60dp"
-        android:textSize="20sp"
-        android:background="@color/White"
-        android:textAlignment="center"
-        />
+        <TextView
+            android:id="@+id/tv_titulo_cadastro_empresa"
+            android:layout_width="193dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12sp"
+            android:background="@color/White"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/titulo_cadastro"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="60dp" />
 
         <ImageView
             android:id="@+id/img_empresa"
@@ -43,125 +42,117 @@
             app:layout_constraintTop_toBottomOf="@id/tv_titulo_cadastro_empresa" />
 
         <TextView
-    android:id="@+id/tv_razao_social"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/img_empresa"
-    android:fontFamily="@font/montserrat"
-    android:layout_marginTop="10dp"
-    android:text="@string/cadastro_principal_razao"
-    android:textColor="@color/White"
-    android:textSize="18sp"
-    tools:layout_editor_absoluteX="66dp"
-    />
+            android:id="@+id/tv_razao_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastro_principal_razao"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/img_empresa"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_razao_social"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_razao_social"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/et_cadastro_principal_razao"
-        android:layout_marginTop="8sp"
-        android:textColor="@color/White"
-        android:paddingLeft="10dp"
-        android:background="@drawable/et_style_orange"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        />
+        <EditText
+            android:id="@+id/et_razao_social"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/et_style_orange"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/et_cadastro_principal_razao"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_razao_social" />
 
-    <TextView
-        android:id="@+id/tv_nome_fantasia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_razao_social"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="15dp"
-        android:text="@string/cadastro_nome_fantasia"
-        android:textColor="@color/White"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+        <TextView
+            android:id="@+id/tv_nome_fantasia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastro_nome_fantasia"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/et_razao_social"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_nome_fantasia"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_nome_fantasia"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/et_cadastro_nome_fantasia"
-        android:textColor="@color/White"
-        android:layout_marginTop="8sp"
-        android:paddingLeft="10dp"
-        android:background="@drawable/et_style_orange"
-        android:textColorHint="@color/White"
-        android:inputType="text"
-        />
+        <EditText
+            android:id="@+id/et_nome_fantasia"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/et_style_orange"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/et_cadastro_nome_fantasia"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nome_fantasia" />
 
 
-    <TextView
-        android:id="@+id/tv_telefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_nome_fantasia"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="15dp"
-        android:text="@string/cadastro_estab_telefone"
-        android:textColor="@color/White"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+        <TextView
+            android:id="@+id/tv_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastro_estab_telefone"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/et_nome_fantasia"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_telefone"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_telefone"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/et_cadastro_estab_telefone"
-        android:layout_marginTop="8sp"
-        android:paddingLeft="10dp"
-        android:textColor="@color/White"
-        android:background="@drawable/et_style_orange"
-        android:textColorHint="@color/White"
-        android:inputType="phone"
-        />
+        <EditText
+            android:id="@+id/et_telefone"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/et_style_orange"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/et_cadastro_estab_telefone"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_telefone" />
 
-    <TextView
-        android:id="@+id/tv_cnpj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_telefone"
-        android:fontFamily="@font/montserrat"
-        android:layout_marginTop="15dp"
-        android:text="@string/cadastro_cnpj"
-        android:textColor="@color/White"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="66dp"
-        />
+        <TextView
+            android:id="@+id/tv_cnpj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/cadastro_cnpj"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/et_telefone"
+            tools:layout_editor_absoluteX="66dp" />
 
-    <EditText
-        android:id="@+id/et_cnpj"
-        android:layout_width="280dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_cnpj"
-        android:fontFamily="@font/montserrat"
-        android:hint="@string/et_cadastro_cnpj"
-        android:layout_marginTop="8sp"
-        android:paddingLeft="10dp"
-        android:background="@drawable/et_style_orange"
-        android:textColorHint="@color/White"
-        android:textColor="@color/White"
-        android:inputType="phone"
-        />
+        <EditText
+            android:id="@+id/et_cnpj"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/et_style_orange"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/et_cadastro_cnpj"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cnpj" />
 
         <ImageView
             android:id="@+id/img_next"

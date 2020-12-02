@@ -7,7 +7,7 @@ import com.example.sp4u_app.dto.enums.TipoEstabelecimento
 import java.io.Serializable
 
 
-data class TagsEstabelecimento (
+data class TagsEstabelecimentoDTO (
     var estiloMusica: List<EstiloMusica>? = null,
     var tipoEstabelecimento: List<TipoEstabelecimento>? = null,
     var caracteristicas: List<Caracteristicas>? = null,

@@ -1,5 +1,6 @@
 package com.example.sp4u_app.activity.register
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -21,7 +22,7 @@ class RegisterEstablishmentFiltersActivity : AbstractActivity() {
         setVariables()
     }
 
-    fun goToEstablishmentConfig(button: View) {
+    fun registerAndGoToEstablishmentConfig(button: View) {
         validator(listOf(et_tell_about))
 
         var caracteristicasEstabelecimento: MutableList<Caracteristicas> = mutableListOf()
@@ -50,7 +51,10 @@ class RegisterEstablishmentFiltersActivity : AbstractActivity() {
                     response: Response<Void?>?
             ) {
                 if (response?.code() == 201) {
-                    navigate(userId, token, RegisterEstablishmentConfigActivity().javaClass)
+                    navigateWithEstablishmentObject(
+                        request,
+                        RegisterEstablishmentConfigActivity().javaClass
+                    )
                 } else {
                     Toast.makeText(
                             baseContext,

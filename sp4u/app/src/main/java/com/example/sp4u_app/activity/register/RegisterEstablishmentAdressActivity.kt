@@ -38,11 +38,13 @@ class RegisterEstablishmentAdressActivity : AbstractActivity() {
         estabelecimentoDTO?.numeroEndereco = et_numero.text.toString().toInt()
         estabelecimentoDTO?.complemento = et_complemento.text.toString()
         estabelecimentoDTO?.emailContato = et_email_contato.text.toString()
+        estabelecimentoDTO?.bairro = et_bairro.text.toString()
+        estabelecimentoDTO?.estado = et_estado.text.toString()
+        estabelecimentoDTO?.cidade = et_cidade.text.toString()
 
-        val intent = Intent(this, RegisterEstablishmentMusicActivity::class.java)
-        intent.putExtra("ESTABELECIMENTO", estabelecimentoDTO)
-        intent.putExtra("USER_ID", userId)
-        intent.putExtra("TOKEN", token)
-        startActivity(intent)
+        navigateWithEstablishmentObject(
+            intent.getSerializableExtra("ESTABELECIMENTO") as EstabelecimentoDTO?,
+            RegisterEstablishmentMusicActivity().javaClass
+        )
     }
 }

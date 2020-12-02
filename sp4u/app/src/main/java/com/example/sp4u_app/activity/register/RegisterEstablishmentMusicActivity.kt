@@ -1,17 +1,13 @@
 package com.example.sp4u_app.activity.register
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.sp4u_app.R
 import com.example.sp4u_app.dto.EstabelecimentoDTO
+import com.example.sp4u_app.dto.TagsEstabelecimentoDTO
 import com.example.sp4u_app.dto.enums.EstiloMusica
-import com.example.sp4u_app.dto.enums.TipoEstabelecimento
 import com.example.sp4u_app.utils.AbstractActivity
-import com.example.sp4u_app.validator.validator
-import kotlinx.android.synthetic.main.activity_register_establishment_adress.*
-import kotlinx.android.synthetic.main.activity_register_establishment_music.*
 
 class RegisterEstablishmentMusicActivity : AbstractActivity() {
     private var estiloMusica: MutableList<EstiloMusica> = mutableListOf()
@@ -66,12 +62,14 @@ class RegisterEstablishmentMusicActivity : AbstractActivity() {
             return
         }
 
-        estabelecimentoDTO?.tagsEstabelecimento?.estiloMusica = estiloMusica
+        val tagsEstabelecimento = TagsEstabelecimentoDTO()
+        tagsEstabelecimento.estiloMusica = estiloMusica
 
-        val intent = Intent(this, RegisterEstablishmentLocalActivity::class.java)
-        intent.putExtra("ESTABELECIMENTO", estabelecimentoDTO)
-        intent.putExtra("USER_ID", userId)
-        intent.putExtra("TOKEN", token)
-        startActivity(intent)
+        estabelecimentoDTO?.tagsEstabelecimento = tagsEstabelecimento
+
+        navigateWithEstablishmentObject(
+            estabelecimentoDTO,
+            RegisterEstablishmentLocalActivity().javaClass
+        )
     }
 }

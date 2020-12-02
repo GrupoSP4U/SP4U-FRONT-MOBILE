@@ -19,7 +19,11 @@ data class EstabelecimentoDTO(
     var nota: Double? = null,
     var foto: String? = null,
     var descricao: String? = null,
-    var paraMaiores: Boolean? = null ,
+    var paraMaiores: Boolean? = null,
     var dias: Collection<Dias>? = null,
-    var tagsEstabelecimento: TagsEstabelecimento? = null
+    var tagsEstabelecimento: TagsEstabelecimentoDTO? = null,
+    var telefone: String? = null,
+    var bairro: String? = null,
+    var cidade: String? = null,
+    var estado: String? = null
 ): Serializable

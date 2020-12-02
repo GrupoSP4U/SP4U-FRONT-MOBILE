@@ -136,7 +136,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="35dp"
-                android:onClick="goToEstablishmentConfig"
+                android:onClick="registerAndGoToEstablishmentConfig"
                 android:src="@drawable/icon_next"
                 app:layout_constraintTop_toBottomOf="@id/sw_idade_permitida" />
 

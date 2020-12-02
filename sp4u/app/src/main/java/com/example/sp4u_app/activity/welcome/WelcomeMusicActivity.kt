@@ -13,6 +13,6 @@ class WelcomeMusicActivity : AbstractActivity() {
     }
 
     fun goToWelcomeLocal(component: View) {
-        navigate(userId, token, WelcomeLocalActivity().javaClass)
+        navigate(WelcomeLocalActivity().javaClass)
     }
 }
