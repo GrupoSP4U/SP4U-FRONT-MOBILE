@@ -135,7 +135,7 @@
             android:background="@color/DarkBlue"
             android:fontFamily="@font/montserrat"
             android:onClick="goToResult"
-            android:text="vamos la"
+            android:text="@string/btn_addfilters"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:textSize="20sp"

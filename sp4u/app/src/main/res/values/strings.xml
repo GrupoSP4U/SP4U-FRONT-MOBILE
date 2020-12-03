@@ -81,6 +81,8 @@
     <string name="restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar">Restobar rústico e aconchegante serve opções de petiscos mistos da casa com área externa e boemia familiar.</string>
     <string name="com_base_no_seu_humor_recomendamos">com base no seu humor recomendamos:</string>
     <string name="solteiros">solteiros</string>
+    <string name="casais">casais</string>
+    <string name="amigxs">amigxs</string>
     <string name="com_base_no_seu_humor">com base no seu humor</string>
     <string name="os_mais_frequentados_da_sua_regi_o">os mais frequentados da sua região</string>
     <string name="para_os_econ_micos_do_rol">para os econômicos do rolê</string>
@@ -174,7 +176,7 @@
     <string name="et_login_senha">Digite sua senha</string>
     <string name="login_cadastrar">cadastre-se</string>
     <string name="login_esqueceu_senha">esqueceu senha</string>
-    <string name="btn_login_entrar">entrarar</string>
+    <string name="btn_login_entrar">entrar</string>
     <!-- finalizando tela de login -->
 
     <!-- Inicializando tela de cadastro-->

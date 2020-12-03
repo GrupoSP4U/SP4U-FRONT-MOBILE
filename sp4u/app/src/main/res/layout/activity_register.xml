@@ -167,21 +167,18 @@
                 app:layout_constraintTop_toBottomOf="@id/et_telefone"
                 tools:layout_editor_absoluteX="66dp" />
 
-            <EditText
-                android:id="@+id/et_genero"
+            <Spinner
+                android:id="@+id/ps_genero"
                 android:layout_width="280dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="8sp"
-                android:background="@drawable/et_style_green"
-                android:fontFamily="@font/montserrat"
-                android:hint="@string/et_cadastro_genero"
-                android:paddingLeft="10dp"
-                android:inputType="text"
-                android:textColorHint="@color/White"
                 android:textColor="@color/White"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/et_style_green"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_genero" />
+                app:layout_constraintTop_toBottomOf="@id/tv_genero"/>
 
             <TextView
                 android:id="@+id/tv_email"

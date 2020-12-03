@@ -10,7 +10,7 @@
     <string name="user_profile_nome_social">social name</string>
     <string name="user_profile_data_nascimento">date of birth</string>
     <string name="user_profile_email">e-mail</string>
-    <string name="user_profile_telefone">telephone</string>
+    <string name="user_profile_telefone">phone</string>
     <string name="user_profile_genero">gender</string>
     <string name="user_profile_botao_concluir">conclude</string>
     <string name="user_profile_hint_nome">Enter the full name</string>
@@ -21,7 +21,7 @@
     <string name="user_profile_hint_email_novo">newemail@email.com</string>
     <string name="user_profile_confirma_email">confirm new e-mail</string>
     <string name="user_profile_botao_alterar_email">change e-mail</string>
-    <string name="user_profile_senha_antiga">old password</string>
+    <string name="user_profile_senha_antiga">current password</string>
     <string name="user_profile_senha_nova">new password</string>
     <string name="user_profile_confirma_senha">confirm new password</string>
     <string name="user_profile_botao_alterar_senha">change password</string>
@@ -66,11 +66,15 @@
     <string name="pub">pub</string>
     <string name="qual_o_seu_estilo_de_m_sica">what is your favorite kind of music?</string>
     <string name="restobar_r_stico_e_aconchegante_serve_op_es_de_petiscos_mistos_da_casa_com_rea_externa_e_boemia_familiar">The rustic and cozy restaurant/bar serves options of mixed snacks with an outdoor area and a bohemian family atmosphere.</string>
-    <string name="com_base_no_seu_humor">based on your mood we recommend</string>
+    <string name="com_base_no_seu_humor">based on your mood</string>
+    <string name="com_base_no_seu_humor_recomendamos">based on your mood we recommend</string>
     <string name="os_mais_frequentados_da_sua_regi_o">the usually frequented in your region</string>
     <string name="para_os_econ_micos_do_rol">for the economics</string>
     <string name="para_os_solteir_es">for singles</string>
     <string name="para_os_casalz_es_da_por">for couples</string>
+    <string name="solteiros">singles</string>
+    <string name="casais">couples</string>
+    <string name="amigxs">friends</string>
     <string name="casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos">Cool and alternative nightclub with animated shows under light effects.</string>
     <!-- -->
 
@@ -95,8 +99,8 @@
     <string name="estabilishment_config_basica_edite_razao_social">Type the company name</string>
     <string name="estabilishment_config_basica_nome_fantasia">fantasy name</string>
     <string name="estabilishment_config_basica_edite_nome_fantasia">Type the fantasy name</string>
-    <string name="estabilishment_config_basica_telefone">telephone</string>
-    <string name="estabilishment_config_basica_edite_telefone">Type the telephone</string>
+    <string name="estabilishment_config_basica_telefone">phone</string>
+    <string name="estabilishment_config_basica_edite_telefone">Type the phone number</string>
     <string name="estabilishment_config_basica_endereço">address</string>
     <string name="estabilishment_config_basica_edite_endereco">type the address</string>
     <string name="estabilishment_config_basica_cep">cep</string>
@@ -126,7 +130,7 @@
     <!--Start menu screen -->
     <string name="menu_roles">stroll</string>
     <string name="menu_humor">humor</string>
-    <string name="menu_perfil">perfil</string>
+    <string name="menu_perfil">profile</string>
     <string name="menu_empresa">company</string>
     <!-- End menu sreen -->
 
@@ -146,7 +150,7 @@
     <string name="login_senha">password</string>
     <string name="et_login_senha">Input your password</string>
     <string name="login_cadastrar">Sign up</string>
-    <string name="login_esqueceu_senha">forgot the password</string>
+    <string name="login_esqueceu_senha">Forgot password</string>
     <string name="btn_login_entrar">Sign in</string>
     <!-- End login screen-->
 
@@ -165,17 +169,17 @@
     <string name="cadastro_email">e-mail</string>
     <string name="et_cadastro_email">Input your e-mail</string>
     <string name="cadastro_senha">password</string>
-    <string name="et_cadastro_senha">Input ypur senha</string>
+    <string name="et_cadastro_senha">Input your senha</string>
     <string name="cadastro_confirmar_senha">confirm the password</string>
-    <string name="et_cadastro_confirmar_senha">confirm your password</string>
+    <string name="et_cadastro_confirmar_senha">Confirm your password</string>
     <string name="cadastro_login">Have you an account? Sign in</string>
     <string name="btn_cadastro">confirm</string>
     <!-- End register screen -->
 
     <!-- Start addictional filters screen -->
     <string name="titulo_addiciotnal_filters">Wanna refine your search?</string>
-    <string name="addfilters_vegetariano">have a vegetarian menu?</string>
-    <string name="addfilters_vegano">have a vegan menu?</string>
+    <string name="addfilters_vegetariano">Have a vegetarian menu?</string>
+    <string name="addfilters_vegano">Have a vegan menu?</string>
     <string name="addfilters_animal">Are animals allowed?</string>
     <string name="addfilters_maioridade">Are minors allowed?</string>
     <string name="btn_addfilters">Lets go</string>
@@ -230,7 +234,7 @@
     <string name="cadastro_local_titulo">how it identifies itself?</string>
     <string name="cadastro_local_restaurante">restaurant</string>
     <string name="cadastro_local_bar">bar</string>
-    <string name="cadastro_local_balada">ballad</string>
+    <string name="cadastro_local_balada">nightclub</string>
     <string name="cadastro_local_pub">pub</string>
     <!-- finalizando tela de cadastro estabelecimento local -->
 </resources>

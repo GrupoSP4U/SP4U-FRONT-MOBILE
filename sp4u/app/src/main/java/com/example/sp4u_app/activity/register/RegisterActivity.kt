@@ -5,14 +5,17 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.view.get
 import com.example.sp4u_app.R
 import com.example.sp4u_app.activity.welcome.WelcomeMusicActivity
 import com.example.sp4u_app.dto.request.AuthenticateRequestDTO
 import com.example.sp4u_app.dto.UserDTO
 import com.example.sp4u_app.utils.RetrofitInitializer
 import com.example.sp4u_app.utils.AbstractAuthenticateActivity
+import com.example.sp4u_app.utils.buildSpinner
 import com.example.sp4u_app.validator.validator
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.activity_register_establishment_config_description.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -26,12 +29,14 @@ class RegisterActivity : AbstractAuthenticateActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        buildSpinner(baseContext, ps_genero, listOf("feminino", "masculino"))
     }
 
     fun register(component: View) {
         if (!validator(
                 listOf(
-                    et_nome, et_nome_social, et_nascimento, et_telefone, et_genero,
+                    et_nome, et_nome_social, et_nascimento, et_telefone,
                     et_email, et_senha, et_confirmar_senha
                 )
             )
@@ -54,7 +59,7 @@ class RegisterActivity : AbstractAuthenticateActivity() {
             nomeCompleto = et_nome.text.toString(),
             nomeSocial = et_nome_social.text.toString(),
             dataNascimento = et_nascimento.text.toString(),
-            genero = et_genero.text.toString(),
+            genero = ps_genero.selectedItem.toString(),
             email = et_email.text.toString(),
             telefone = et_telefone.text.toString(),
             senha = et_senha.text.toString()
