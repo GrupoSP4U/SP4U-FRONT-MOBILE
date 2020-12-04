@@ -1,16 +1,17 @@
 package com.example.sp4u_app.utils
 
-import android.R
+
 import android.content.Context
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import com.example.sp4u_app.R
 
 fun buildSpinner(context: Context, spinner: Spinner, list: List<String>?) {
-    val combo = list?.let { ArrayAdapter(context, R.layout.simple_spinner_item, it) }
+    val combo = list?.let { ArrayAdapter(context, R.layout.spinner_item, it) }
 
-    combo?.setDropDownViewResource(R.layout.simple_spinner_dropdown_item)
+    combo?.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
     spinner.adapter = combo
 
     spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

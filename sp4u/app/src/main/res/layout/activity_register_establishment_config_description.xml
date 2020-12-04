@@ -175,7 +175,7 @@
                 <Spinner
                     android:id="@+id/ps_musica"
                     android:layout_width="139dp"
-                    android:layout_height="30dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/White"
                     android:background="@drawable/et_style_orange"/>
@@ -194,7 +194,7 @@
                 <Spinner
                     android:id="@+id/ps_estab"
                     android:layout_width="139dp"
-                    android:layout_height="30dp"
+                    android:layout_height="40dp"
                     android:layout_marginTop="12dp"
                     android:textColor="@color/White"
                     android:background="@drawable/et_style_orange"/>
