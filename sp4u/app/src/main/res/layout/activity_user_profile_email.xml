@@ -212,7 +212,7 @@
                 android:onClick="changeEmail"
                 android:text="@string/user_profile_botao_alterar_email"
                 android:textAllCaps="false"
-                android:textColor="@color/White"
+                android:textColor="@color/Fund"
                 android:textSize="16sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
