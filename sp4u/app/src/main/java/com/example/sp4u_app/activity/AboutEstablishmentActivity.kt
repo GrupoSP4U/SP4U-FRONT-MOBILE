@@ -15,31 +15,33 @@ class AboutEstablishmentActivity : AppCompatActivity() {
             intent.getSerializableExtra("ESTABELECIMENTO") as EstabelecimentoDTO?
 
         estabelecimentoDTO.let {
-            var estilos = ""
-            var acompanhamento = ""
-            var caracteristicas = ""
+            var styles = ""
+            var concomitant = ""
+            var characteristics = ""
             it?.tagsEstabelecimento?.estiloMusica?.forEach { em ->
-                estilos += em.toString().replace("_", " ").toLowerCase() + ", "
+                styles += em.toString().replace("_", " ").toLowerCase() + ", "
             }
-            estilos = estilos.substring(0, estilos.length - 2)
+            styles = styles.substring(0, styles.length - 2)
 
             it?.tagsEstabelecimento?.tipoAcompanhamento?.forEach { ac ->
-                acompanhamento += ac.toString().toLowerCase() + ", "
+                concomitant += ac.toString().toLowerCase() + ", "
             }
-            acompanhamento = acompanhamento.substring(0, acompanhamento.length - 2)
+            concomitant = concomitant.substring(0, concomitant.length - 2)
 
             it?.tagsEstabelecimento?.caracteristicas?.forEach { crs ->
-                caracteristicas += crs.toString().replace("_", " ").toLowerCase() + ", "
+                characteristics += crs.toString().replace("_", " ").toLowerCase() + ", "
             }
-            caracteristicas = caracteristicas.substring(0, caracteristicas.length - 2)
+            characteristics = characteristics.substring(0, characteristics.length - 2)
 
-            tv_estilos.text = estilos
-            tv_acompanhamento.text = acompanhamento
-            tv_caracteristicas.text = caracteristicas
+            tv_estilos.text = styles
+            tv_acompanhamento.text = concomitant
+            tv_caracteristicas.text = characteristics
             tv_tipo.text =
                 it?.tagsEstabelecimento?.tipoEstabelecimento?.first().toString().toLowerCase()
 
             tv_endereco.text = it?.endereco
+            tv_nome.text = it?.nomeFantasia
+            tv_descricao.text = it?.descricao
         }
     }
 }
