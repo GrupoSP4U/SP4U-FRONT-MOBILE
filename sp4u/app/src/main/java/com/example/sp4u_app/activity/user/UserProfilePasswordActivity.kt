@@ -58,7 +58,6 @@ class UserProfilePasswordActivity : AbstractActivity() {
                         Toast.LENGTH_LONG
                     ).show()
                 } else {
-                    println(response.toString())
                     Toast.makeText(
                         this@UserProfilePasswordActivity,
                         resources.getString(R.string.requisicao_erro_interno),

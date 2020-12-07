@@ -44,7 +44,6 @@ class HomeActivity : AbstractActivity() {
                 if (response?.code() == 200) {
                     response?.body()?.let {
                         it.forEach { et ->
-                            println(et.toString())
                             buildCards(concomitant, et)
                         }
                     }
@@ -86,7 +85,7 @@ class HomeActivity : AbstractActivity() {
             )
         newLinearLayout.background =
             ContextCompat.getDrawable(baseContext, R.drawable.btn_rectangle_background)
-
+        newLinearLayout.orientation = LinearLayout.HORIZONTAL
         if (concomitant == Acompanhamento.SOZINHO) {
             newLinearLayout.backgroundTintList =
                 ContextCompat.getColorStateList(baseContext, R.color.LightBlue)
@@ -94,8 +93,6 @@ class HomeActivity : AbstractActivity() {
             newLinearLayout.backgroundTintList =
                 ContextCompat.getColorStateList(baseContext, R.color.Pink)
         }
-
-        newLinearLayout.orientation = LinearLayout.HORIZONTAL
 
         val imageLinearLayout = LinearLayout(baseContext)
         val imageLayoutParams =
