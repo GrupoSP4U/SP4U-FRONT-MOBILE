@@ -31,6 +31,7 @@
                 android:background="@drawable/btn_rectangle_background"
                 android:backgroundTint="@color/LightRed"
                 android:fontFamily="@font/montserrat"
+                android:onClick="goToHumor"
                 android:paddingStart="16dp"
                 android:paddingLeft="0dp"
                 android:paddingTop="0dp"
@@ -40,7 +41,6 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
-                android:onClick="goToHumor"
                 android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.52"
@@ -94,7 +94,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/regiao" />
 
             <TextView
-                android:id="@+id/title_solteiros3"
+                android:id="@+id/title_solteiros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -102,177 +102,22 @@
                 android:text="@string/para_os_solteir_es"
                 android:textColor="#fff"
                 android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent" />
 
-                <HorizontalScrollView
-                    android:id="@+id/horizontalCasal"
+            <HorizontalScrollView
+                android:id="@+id/sv_solteiros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_solteiros"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:id="@+id/linearLayoutCasais"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/LightBlue"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/LightBlue"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/LightBlue"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
 
             <TextView
-                android:id="@+id/title_Casais"
+                android:id="@+id/title_casais"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -284,183 +129,29 @@
                 app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
             <HorizontalScrollView
-                    android:id="@+id/horizontalSolteiros"
+                android:id="@+id/sv_casais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_casais"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:id="@+id/linearLayoutSolteiros"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/Pink"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/Pink"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="287dp"
-                            android:layout_height="90dp"
-                            android:layout_marginEnd="10dp"
-                            android:onClick="goToAbout">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/btn_rectangle_background"
-                                android:backgroundTint="@color/Pink"
-                                android:orientation="horizontal">
-
-                                <LinearLayout
-                                    android:layout_width="95dp"
-                                    android:layout_height="match_parent">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:src="@drawable/texas_image"
-                                        android:contentDescription="@string/todo" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="169dp"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginStart="8dp"
-                                        android:textSize="16sp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/caos"
-                                        android:textColor="@color/Fund" />
-
-                                    <TextView
-                                        android:layout_width="155dp"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="8dp"
-                                        android:fontFamily="@font/montserrat"
-                                        android:text="@string/casa_noturna_descolada_com_pegada_alternativa_e_shows_animados_por_sob_efeitos_luminosos"
-                                        android:textColor="@color/Fund"
-                                        android:textSize="12sp" />
-                                </LinearLayout>
-
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
         </LinearLayout>
     </ScrollView>
 
     <FrameLayout
+        android:id="@+id/fr_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fr_menu"
         app:layout_constraintTop_toBottomOf="@+id/sv_dados">
+
         <fragment
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             class="com.example.sp4u_app.fragment.MenuFragment"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </FrameLayout>
 
 </LinearLayout>

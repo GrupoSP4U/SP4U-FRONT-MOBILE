@@ -6,13 +6,16 @@ import com.example.sp4u_app.service.UserService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.concurrent.TimeUnit
 
 class RetrofitInitializer(
     token: String? = "",
-    path: String = "http://ec2-100-26-253-161.compute-1.amazonaws.com:8081/"
+    path: String = "http://c2-100-26-253-161.compute-1.amazonaws.com:8081/"
 ) {
     private val interceptor = TokenInterceptor(token)
-    private val client: OkHttpClient = OkHttpClient.Builder().addInterceptor(interceptor).build()
+    private val client: OkHttpClient =
+        OkHttpClient.Builder().addInterceptor(interceptor)
+            .readTimeout(60, TimeUnit.SECONDS).build()
 
     private val retrofit = Retrofit.Builder()
         .client(client)

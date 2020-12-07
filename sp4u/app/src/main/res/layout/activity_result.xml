@@ -40,12 +40,12 @@
         android:textColor="#FFF"
         android:textSize="18sp" />
     <HorizontalScrollView
-        android:id="@+id/horizontalSolteiros"
+        android:id="@+id/sv_casais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/linearLayoutSolteiros"
+            android:id="@+id/ll_casais"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -187,12 +187,12 @@
         android:textColor="#FFF"
         android:textSize="18sp" />
     <HorizontalScrollView
-        android:id="@+id/horizontalCasal"
+        android:id="@+id/sv_solteiros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/linearLayoutCasais"
+            android:id="@+id/ll_solteiros"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">

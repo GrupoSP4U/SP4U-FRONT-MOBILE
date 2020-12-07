@@ -11,5 +11,5 @@ data class TagsEstabelecimentoDTO (
     var estiloMusica: List<EstiloMusica>? = null,
     var tipoEstabelecimento: List<TipoEstabelecimento>? = null,
     var caracteristicas: List<Caracteristicas>? = null,
-    var acompanhamento: List<Acompanhamento>? = null
+    var tipoAcompanhamento: List<Acompanhamento>? = null
 ): Serializable
