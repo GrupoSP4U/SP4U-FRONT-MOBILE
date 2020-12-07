@@ -86,7 +86,6 @@ abstract class AbstractActivity : AppCompatActivity() {
     }
 
     fun searchEstablishment(button: View) {
-
         val call = RetrofitInitializer(token).establishmentService()
             .getById(userId)
 
@@ -95,7 +94,6 @@ abstract class AbstractActivity : AppCompatActivity() {
                 call: Call<EstabelecimentoDTO?>?,
                 response: Response<EstabelecimentoDTO?>?
             ) {
-                println(response.toString())
                 when(response?.code()) {
                     200 -> {
                         val intent = Intent(baseContext, RegisterEstablishmentConfigActivity::class.java)

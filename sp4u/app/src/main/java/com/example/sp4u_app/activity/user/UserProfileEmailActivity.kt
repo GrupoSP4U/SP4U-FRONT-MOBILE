@@ -58,7 +58,6 @@ class UserProfileEmailActivity : AbstractActivity() {
                         Toast.LENGTH_LONG
                     ).show()
                 } else {
-                    println(response.toString())
                     Toast.makeText(
                         this@UserProfileEmailActivity,
                         resources.getString(R.string.requisicao_erro_interno),

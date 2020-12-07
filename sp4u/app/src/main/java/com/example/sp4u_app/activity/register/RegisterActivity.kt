@@ -77,23 +77,20 @@ class RegisterActivity : AbstractAuthenticateActivity() {
                 call: Call<Void?>?,
                 response: Response<Void?>?
             ) {
-                println(response.toString())
-                if (response?.code() == 201) {
-                    callLoginEndpoint(
+                when (response?.code()) {
+                    201 -> callLoginEndpoint(
                         AuthenticateRequestDTO(
                             email = request.email,
                             password = request.senha
                         ),
                         WelcomeMusicActivity().javaClass
                     )
-                } else if (response?.code() == 400) {
-                    Toast.makeText(
+                    400 -> Toast.makeText(
                         this@RegisterActivity,
                         resources.getString(R.string.requisicao_email_ja_cadastrado),
                         Toast.LENGTH_SHORT
                     ).show()
-                } else {
-                    Toast.makeText(
+                    else -> Toast.makeText(
                         this@RegisterActivity,
                         resources.getString(R.string.requisicao_erro_interno),
                         Toast.LENGTH_SHORT
