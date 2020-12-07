@@ -36,7 +36,7 @@ class UserProfileConfigActivity : AbstractActivity() {
 
                     response?.body()?.let {
                         val sf = SimpleDateFormat("yyyy-MM-dd")
-
+                        tv_usuario.setText(it.usuario.nomeSocial)
                         et_nome.setText(it.usuario.nomeCompleto)
                         et_nome_social.setText(it.usuario.nomeSocial)
                         et_data_nasc.setText(sf.format(Date(it.usuario.dataNascimento.toLong())))
